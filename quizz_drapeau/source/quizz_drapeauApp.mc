@@ -1,3 +1,4 @@
+// source/quizz_drapeauApp.mc
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
@@ -18,7 +19,9 @@ class quizz_drapeauApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new quizz_drapeauView(), new quizz_drapeauDelegate() ];
+        var view = new quizz_drapeauView();
+        var delegate = new quizz_drapeauDelegate(view);
+        return [ view, delegate ];
     }
 
 }

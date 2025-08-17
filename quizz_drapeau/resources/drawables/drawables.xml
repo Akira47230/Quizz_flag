@@ -1,3 +1,50 @@
+<!-- resources/drawables/drawables.xml - Structure pour les drapeaux -->
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+    <!-- Icône de lancement -->
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
+    
+    <!-- Drapeaux - ajoutez vos fichiers PNG ici -->
+    <!-- Format recommandé: 80x50 pixels, PNG -->
+    
+    <!-- Europe -->
+    <bitmap id="france" filename="flags/france.png" dithering="none" />
+    <bitmap id="germany" filename="flags/germany.png" dithering="none" />
+    <bitmap id="spain" filename="flags/spain.png" dithering="none" />
+    <bitmap id="italy" filename="flags/italy.png" dithering="none" />
+    <bitmap id="uk" filename="flags/uk.png" dithering="none" />
+    <bitmap id="netherlands" filename="flags/netherlands.png" dithering="none" />
+    <bitmap id="belgium" filename="flags/belgium.png" dithering="none" />
+    <bitmap id="switzerland" filename="flags/switzerland.png" dithering="none" />
+    <bitmap id="sweden" filename="flags/sweden.png" dithering="none" />
+    <bitmap id="norway" filename="flags/norway.png" dithering="none" />
+    <bitmap id="portugal" filename="flags/portugal.png" dithering="none" />
+    <bitmap id="greece" filename="flags/greece.png" dithering="none" />
+    <bitmap id="turkey" filename="flags/turkey.png" dithering="none" />
+    
+    <!-- Amérique -->
+    <bitmap id="usa" filename="flags/usa.png" dithering="none" />
+    <bitmap id="canada" filename="flags/canada.png" dithering="none" />
+    <bitmap id="brazil" filename="flags/brazil.png" dithering="none" />
+    <bitmap id="argentina" filename="flags/argentina.png" dithering="none" />
+    <bitmap id="mexico" filename="flags/mexico.png" dithering="none" />
+    
+    <!-- Asie -->
+    <bitmap id="japan" filename="flags/japan.png" dithering="none" />
+    <bitmap id="china" filename="flags/china.png" dithering="none" />
+    <bitmap id="india" filename="flags/india.png" dithering="none" />
+    <bitmap id="south_korea" filename="flags/south_korea.png" dithering="none" />
+    <bitmap id="thailand" filename="flags/thailand.png" dithering="none" />
+    <bitmap id="vietnam" filename="flags/vietnam.png" dithering="none" />
+    <bitmap id="singapore" filename="flags/singapore.png" dithering="none" />
+    
+    <!-- Océanie -->
+    <bitmap id="australia" filename="flags/australia.png" dithering="none" />
+    <bitmap id="new_zealand" filename="flags/new_zealand.png" dithering="none" />
+    
+    <!-- Afrique -->
+    <bitmap id="egypt" filename="flags/egypt.png" dithering="none" />
+    <bitmap id="south_africa" filename="flags/south_africa.png" dithering="none" />
+    
+    <!-- Europe de l'Est -->
+    <bitmap id="russia" filename="flags/russia.png" dithering="none" />
 </drawables>

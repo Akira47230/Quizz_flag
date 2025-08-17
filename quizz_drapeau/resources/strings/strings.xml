@@ -1,8 +1,16 @@
+<!-- resources/strings/strings.xml -->
 <strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <string id="AppName">quizz_drapeau</string>
-
-    <string id="prompt">Click the menu button</string>
-
-    <string id="menu_label_1">Item 1</string>
-    <string id="menu_label_2">Item 2</string>
+    <string id="AppName">Quiz Drapeaux</string>
+    <string id="prompt">Quiz des Drapeaux du Monde</string>
+    <string id="start_game">Commencer le Quiz</string>
+    <string id="quit_game">Quitter</string>
+    <string id="continue_game">Continuer</string>
+    <string id="new_game">Nouveau Jeu</string>
+    <string id="final_score">Score Final</string>
+    <string id="correct">Correct!</string>
+    <string id="incorrect">Incorrect!</string>
+    <string id="excellent">Excellent!</string>
+    <string id="very_good">Très bien!</string>
+    <string id="not_bad">Pas mal!</string>
+    <string id="practice_more">Entraînez-vous!</string>
 </strings>
