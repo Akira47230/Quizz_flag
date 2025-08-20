@@ -1,39 +1,40 @@
 // source/FlagData.mc
 import Toybox.Lang;
+import Toybox.Math;
 
 class FlagData {
-    // Base de données des pays et leurs drapeaux
+    // Base de données des pays et leurs drapeaux (ids de drawables, sans extension)
     static var countries = [
-        { :name => "France", :flag => "france.png" },
-        { :name => "Allemagne", :flag => "germany.png" },
-        { :name => "Espagne", :flag => "spain.png" },
-        { :name => "Italie", :flag => "italy.png" },
-        { :name => "Royaume-Uni", :flag => "uk.png" },
-        { :name => "États-Unis", :flag => "usa.png" },
-        { :name => "Canada", :flag => "canada.png" },
-        { :name => "Japon", :flag => "japan.png" },
-        { :name => "Chine", :flag => "china.png" },
-        { :name => "Brésil", :flag => "brazil.png" },
-        { :name => "Argentine", :flag => "argentina.png" },
-        { :name => "Australie", :flag => "australia.png" },
-        { :name => "Russie", :flag => "russia.png" },
-        { :name => "Inde", :flag => "india.png" },
-        { :name => "Mexique", :flag => "mexico.png" },
-        { :name => "Suède", :flag => "sweden.png" },
-        { :name => "Norvège", :flag => "norway.png" },
-        { :name => "Pays-Bas", :flag => "netherlands.png" },
-        { :name => "Suisse", :flag => "switzerland.png" },
-        { :name => "Belgique", :flag => "belgium.png" },
-        { :name => "Portugal", :flag => "portugal.png" },
-        { :name => "Grèce", :flag => "greece.png" },
-        { :name => "Turquie", :flag => "turkey.png" },
-        { :name => "Égypte", :flag => "egypt.png" },
-        { :name => "Afrique du Sud", :flag => "south_africa.png" },
-        { :name => "Corée du Sud", :flag => "south_korea.png" },
-        { :name => "Thaïlande", :flag => "thailand.png" },
-        { :name => "Vietnam", :flag => "vietnam.png" },
-        { :name => "Singapour", :flag => "singapore.png" },
-        { :name => "Nouvelle-Zélande", :flag => "new_zealand.png" }
+        { :name => "France", :flag => "fr" },
+        { :name => "Allemagne", :flag => "de" },
+        { :name => "Espagne", :flag => "es" },
+        { :name => "Italie", :flag => "it" },
+        { :name => "Royaume-Uni", :flag => "gb" },
+        { :name => "États-Unis", :flag => "us" },
+        { :name => "Canada", :flag => "ca" },
+        { :name => "Japon", :flag => "jp" },
+        { :name => "Chine", :flag => "cn" },
+        { :name => "Brésil", :flag => "br" },
+        { :name => "Argentine", :flag => "ar" },
+        { :name => "Australie", :flag => "au" },
+        { :name => "Russie", :flag => "ru" },
+        { :name => "Inde", :flag => "in" },
+        { :name => "Mexique", :flag => "mx" },
+        { :name => "Suède", :flag => "se" },
+        { :name => "Norvège", :flag => "no" },
+        { :name => "Pays-Bas", :flag => "nl" },
+        { :name => "Suisse", :flag => "ch" },
+        { :name => "Belgique", :flag => "be" },
+        { :name => "Portugal", :flag => "pt" },
+        { :name => "Grèce", :flag => "gr" },
+        { :name => "Turquie", :flag => "tr" },
+        { :name => "Égypte", :flag => "eg" },
+        { :name => "Afrique du Sud", :flag => "za" },
+        { :name => "Corée du Sud", :flag => "kr" },
+        { :name => "Thaïlande", :flag => "th" },
+        { :name => "Vietnam", :flag => "vn" },
+        { :name => "Singapour", :flag => "sg" },
+        { :name => "Nouvelle-Zélande", :flag => "nz" }
     ];
 
     static function getRandomCountries(count as Number) as Array<Dictionary> {

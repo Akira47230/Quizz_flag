@@ -1,0 +1,923 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var ad as ResourceId;
+        (:initialized) var ae as ResourceId;
+        (:initialized) var af as ResourceId;
+        (:initialized) var ag as ResourceId;
+        (:initialized) var ai as ResourceId;
+        (:initialized) var al as ResourceId;
+        (:initialized) var am as ResourceId;
+        (:initialized) var ao as ResourceId;
+        (:initialized) var aq as ResourceId;
+        (:initialized) var ar as ResourceId;
+        (:initialized) var as_samoa as ResourceId;
+        (:initialized) var at as ResourceId;
+        (:initialized) var au as ResourceId;
+        (:initialized) var aw as ResourceId;
+        (:initialized) var ax as ResourceId;
+        (:initialized) var az as ResourceId;
+        (:initialized) var ba as ResourceId;
+        (:initialized) var bb as ResourceId;
+        (:initialized) var bd as ResourceId;
+        (:initialized) var be as ResourceId;
+        (:initialized) var bf as ResourceId;
+        (:initialized) var bg as ResourceId;
+        (:initialized) var bh as ResourceId;
+        (:initialized) var bi as ResourceId;
+        (:initialized) var bj as ResourceId;
+        (:initialized) var bl as ResourceId;
+        (:initialized) var bm as ResourceId;
+        (:initialized) var bn as ResourceId;
+        (:initialized) var bo as ResourceId;
+        (:initialized) var bq as ResourceId;
+        (:initialized) var br as ResourceId;
+        (:initialized) var bs as ResourceId;
+        (:initialized) var bt as ResourceId;
+        (:initialized) var bv as ResourceId;
+        (:initialized) var bw as ResourceId;
+        (:initialized) var by as ResourceId;
+        (:initialized) var bz as ResourceId;
+        (:initialized) var ca as ResourceId;
+        (:initialized) var cc as ResourceId;
+        (:initialized) var cd as ResourceId;
+        (:initialized) var cf as ResourceId;
+        (:initialized) var cg as ResourceId;
+        (:initialized) var ch as ResourceId;
+        (:initialized) var ci as ResourceId;
+        (:initialized) var ck as ResourceId;
+        (:initialized) var cl as ResourceId;
+        (:initialized) var cm as ResourceId;
+        (:initialized) var cn as ResourceId;
+        (:initialized) var co as ResourceId;
+        (:initialized) var cr as ResourceId;
+        (:initialized) var cu as ResourceId;
+        (:initialized) var cv as ResourceId;
+        (:initialized) var cw as ResourceId;
+        (:initialized) var cx as ResourceId;
+        (:initialized) var cy as ResourceId;
+        (:initialized) var cz as ResourceId;
+        (:initialized) var de as ResourceId;
+        (:initialized) var dj as ResourceId;
+        (:initialized) var dk as ResourceId;
+        (:initialized) var dm as ResourceId;
+        (:initialized) var do_republic as ResourceId;
+        (:initialized) var dz as ResourceId;
+        (:initialized) var ec as ResourceId;
+        (:initialized) var ee as ResourceId;
+        (:initialized) var eg as ResourceId;
+        (:initialized) var eh as ResourceId;
+        (:initialized) var er as ResourceId;
+        (:initialized) var es as ResourceId;
+        (:initialized) var et as ResourceId;
+        (:initialized) var fi as ResourceId;
+        (:initialized) var fj as ResourceId;
+        (:initialized) var fk as ResourceId;
+        (:initialized) var fm as ResourceId;
+        (:initialized) var fo as ResourceId;
+        (:initialized) var fr as ResourceId;
+        (:initialized) var ga as ResourceId;
+        (:initialized) var gb_eng as ResourceId;
+        (:initialized) var gb_nir as ResourceId;
+        (:initialized) var gb_sct as ResourceId;
+        (:initialized) var gb_wls as ResourceId;
+        (:initialized) var gb as ResourceId;
+        (:initialized) var gd as ResourceId;
+        (:initialized) var ge as ResourceId;
+        (:initialized) var gf as ResourceId;
+        (:initialized) var gg as ResourceId;
+        (:initialized) var gh as ResourceId;
+        (:initialized) var gi as ResourceId;
+        (:initialized) var gl as ResourceId;
+        (:initialized) var gm as ResourceId;
+        (:initialized) var gn as ResourceId;
+        (:initialized) var gp as ResourceId;
+        (:initialized) var gq as ResourceId;
+        (:initialized) var gr as ResourceId;
+        (:initialized) var gs as ResourceId;
+        (:initialized) var gt as ResourceId;
+        (:initialized) var gu as ResourceId;
+        (:initialized) var gw as ResourceId;
+        (:initialized) var gy as ResourceId;
+        (:initialized) var hk as ResourceId;
+        (:initialized) var hm as ResourceId;
+        (:initialized) var hn as ResourceId;
+        (:initialized) var hr as ResourceId;
+        (:initialized) var ht as ResourceId;
+        (:initialized) var hu as ResourceId;
+        (:initialized) var id as ResourceId;
+        (:initialized) var ie as ResourceId;
+        (:initialized) var il as ResourceId;
+        (:initialized) var im as ResourceId;
+        (:initialized) var in as ResourceId;
+        (:initialized) var io as ResourceId;
+        (:initialized) var iq as ResourceId;
+        (:initialized) var ir as ResourceId;
+        (:initialized) var is as ResourceId;
+        (:initialized) var it as ResourceId;
+        (:initialized) var je as ResourceId;
+        (:initialized) var jm as ResourceId;
+        (:initialized) var jo as ResourceId;
+        (:initialized) var jp as ResourceId;
+        (:initialized) var ke as ResourceId;
+        (:initialized) var kg as ResourceId;
+        (:initialized) var kh as ResourceId;
+        (:initialized) var ki as ResourceId;
+        (:initialized) var km as ResourceId;
+        (:initialized) var kn as ResourceId;
+        (:initialized) var kp as ResourceId;
+        (:initialized) var kr as ResourceId;
+        (:initialized) var kw as ResourceId;
+        (:initialized) var ky as ResourceId;
+        (:initialized) var kz as ResourceId;
+        (:initialized) var la as ResourceId;
+        (:initialized) var lb as ResourceId;
+        (:initialized) var lc as ResourceId;
+        (:initialized) var li as ResourceId;
+        (:initialized) var lk as ResourceId;
+        (:initialized) var lr as ResourceId;
+        (:initialized) var ls as ResourceId;
+        (:initialized) var lt as ResourceId;
+        (:initialized) var lu as ResourceId;
+        (:initialized) var lv as ResourceId;
+        (:initialized) var ly as ResourceId;
+        (:initialized) var ma as ResourceId;
+        (:initialized) var mc as ResourceId;
+        (:initialized) var md as ResourceId;
+        (:initialized) var me_montenegro as ResourceId;
+        (:initialized) var mf as ResourceId;
+        (:initialized) var mg as ResourceId;
+        (:initialized) var mh as ResourceId;
+        (:initialized) var mk as ResourceId;
+        (:initialized) var ml as ResourceId;
+        (:initialized) var mm as ResourceId;
+        (:initialized) var mn as ResourceId;
+        (:initialized) var mo as ResourceId;
+        (:initialized) var mp as ResourceId;
+        (:initialized) var mq as ResourceId;
+        (:initialized) var mr as ResourceId;
+        (:initialized) var ms as ResourceId;
+        (:initialized) var mt as ResourceId;
+        (:initialized) var mu as ResourceId;
+        (:initialized) var mv as ResourceId;
+        (:initialized) var mw as ResourceId;
+        (:initialized) var mx as ResourceId;
+        (:initialized) var my as ResourceId;
+        (:initialized) var mz as ResourceId;
+        (:initialized) var na as ResourceId;
+        (:initialized) var nc as ResourceId;
+        (:initialized) var ne as ResourceId;
+        (:initialized) var nf as ResourceId;
+        (:initialized) var ng as ResourceId;
+        (:initialized) var ni as ResourceId;
+        (:initialized) var nl as ResourceId;
+        (:initialized) var no as ResourceId;
+        (:initialized) var np as ResourceId;
+        (:initialized) var nr as ResourceId;
+        (:initialized) var nu as ResourceId;
+        (:initialized) var nz as ResourceId;
+        (:initialized) var om as ResourceId;
+        (:initialized) var pa as ResourceId;
+        (:initialized) var pe as ResourceId;
+        (:initialized) var pf as ResourceId;
+        (:initialized) var pg as ResourceId;
+        (:initialized) var ph as ResourceId;
+        (:initialized) var pk as ResourceId;
+        (:initialized) var pl as ResourceId;
+        (:initialized) var pm as ResourceId;
+        (:initialized) var pn as ResourceId;
+        (:initialized) var pr as ResourceId;
+        (:initialized) var ps as ResourceId;
+        (:initialized) var pt as ResourceId;
+        (:initialized) var pw as ResourceId;
+        (:initialized) var py as ResourceId;
+        (:initialized) var qa as ResourceId;
+        (:initialized) var re as ResourceId;
+        (:initialized) var ro as ResourceId;
+        (:initialized) var rs as ResourceId;
+        (:initialized) var ru as ResourceId;
+        (:initialized) var rw as ResourceId;
+        (:initialized) var sa as ResourceId;
+        (:initialized) var sb as ResourceId;
+        (:initialized) var sc as ResourceId;
+        (:initialized) var sd as ResourceId;
+        (:initialized) var se as ResourceId;
+        (:initialized) var sg as ResourceId;
+        (:initialized) var sh as ResourceId;
+        (:initialized) var si as ResourceId;
+        (:initialized) var sj as ResourceId;
+        (:initialized) var sk as ResourceId;
+        (:initialized) var sl as ResourceId;
+        (:initialized) var sm as ResourceId;
+        (:initialized) var sn as ResourceId;
+        (:initialized) var so as ResourceId;
+        (:initialized) var sr as ResourceId;
+        (:initialized) var ss as ResourceId;
+        (:initialized) var st as ResourceId;
+        (:initialized) var sv as ResourceId;
+        (:initialized) var sx as ResourceId;
+        (:initialized) var sy as ResourceId;
+        (:initialized) var sz as ResourceId;
+        (:initialized) var tc as ResourceId;
+        (:initialized) var td as ResourceId;
+        (:initialized) var tf as ResourceId;
+        (:initialized) var tg as ResourceId;
+        (:initialized) var th as ResourceId;
+        (:initialized) var tj as ResourceId;
+        (:initialized) var tk as ResourceId;
+        (:initialized) var tl as ResourceId;
+        (:initialized) var tm as ResourceId;
+        (:initialized) var tn as ResourceId;
+        (:initialized) var to as ResourceId;
+        (:initialized) var tr as ResourceId;
+        (:initialized) var tt as ResourceId;
+        (:initialized) var tv as ResourceId;
+        (:initialized) var tw as ResourceId;
+        (:initialized) var tz as ResourceId;
+        (:initialized) var ua as ResourceId;
+        (:initialized) var ug as ResourceId;
+        (:initialized) var um as ResourceId;
+        (:initialized) var us as ResourceId;
+        (:initialized) var uy as ResourceId;
+        (:initialized) var uz as ResourceId;
+        (:initialized) var va as ResourceId;
+        (:initialized) var vc as ResourceId;
+        (:initialized) var ve as ResourceId;
+        (:initialized) var vg as ResourceId;
+        (:initialized) var vi as ResourceId;
+        (:initialized) var vn as ResourceId;
+        (:initialized) var vu as ResourceId;
+        (:initialized) var wf as ResourceId;
+        (:initialized) var ws as ResourceId;
+        (:initialized) var xk as ResourceId;
+        (:initialized) var ye as ResourceId;
+        (:initialized) var yt as ResourceId;
+        (:initialized) var za as ResourceId;
+        (:initialized) var zm as ResourceId;
+        (:initialized) var zw as ResourceId;
+        (:initialized) var id_monkey as ResourceId;
+        (:initialized) var LauncherIcon as ResourceId;
+    } // Drawables
+
+    module Layouts {
+        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_1193959466 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(260 * 0.5), :locY=>5, :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
+
+            var rez_cmp_local_bitmap_id_monkey = new WatchUi.Bitmap({:identifier=>"id_monkey", :rezId=>$.Rez.Drawables.id_monkey, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>30});
+            rez_cmp_local_bitmap_id_monkey.setLocation(((260 - rez_cmp_local_bitmap_id_monkey.width) * 0.5), rez_cmp_local_bitmap_id_monkey.locY);
+
+            return [rez_cmp_local_text_1193959466, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+        class MainMenu extends WatchUi.Menu {
+            function initialize() {
+                Menu.initialize();
+                addItem("Nouveau Quiz", :item_1);
+                addItem("Options", :item_2);
+            }
+        }
+    } // Menus
+
+    module Strings {
+        (:initialized) var new_game as ResourceId;
+        (:initialized) var continue_game as ResourceId;
+        (:initialized) var correct as ResourceId;
+        (:initialized) var incorrect as ResourceId;
+        (:initialized) var excellent as ResourceId;
+        (:initialized) var quit_game as ResourceId;
+        (:initialized) var very_good as ResourceId;
+        (:initialized) var AppName as ResourceId;
+        (:initialized) var final_score as ResourceId;
+        (:initialized) var practice_more as ResourceId;
+        (:initialized) var start_game as ResourceId;
+        (:initialized) var prompt as ResourceId;
+        (:initialized) var not_bad as ResourceId;
+    } // Strings
+
+    module Styles {
+        module prompt_font_enhanced_readability__body_with_title {
+            const exclude as Boolean = true;
+        } // prompt_font_enhanced_readability__body_with_title
+
+        module system_size__menu_header {
+            const width as Number = 260;
+            const height as Number = 81;
+        } // system_size__menu_header
+
+        module system_loc__hint_button_left_bottom {
+            const x as Number = 10;
+            const y as Number = 173;
+        } // system_loc__hint_button_left_bottom
+
+        module prompt_font_enhanced_readability__body_no_title {
+            const exclude as Boolean = true;
+        } // prompt_font_enhanced_readability__body_no_title
+
+        module prompt_loc__body_no_title {
+            const x as Number = 26;
+            const y as Number = 26;
+        } // prompt_loc__body_no_title
+
+        module system_icon_dark__about {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__about.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__about
+
+        module system_icon_light__question {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__question.svg";
+            const dithering as String = "none";
+        } // system_icon_light__question
+
+        module system_loc__hint_button_left_top {
+            const exclude as Boolean = true;
+        } // system_loc__hint_button_left_top
+
+        module prompt_font__title {
+            const justification = Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER;
+            const font = Graphics.FONT_XTINY;
+        } // prompt_font__title
+
+        module system_icon_dark__discard {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__discard.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__discard
+
+        module system_size__menu_item {
+            const width as Number = 260;
+            const height as Number = 68;
+        } // system_size__menu_item
+
+        module system_color_dark__text {
+            const color as Number = 0xFFFFFF;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // system_color_dark__text
+
+        module system_icon_destructive__discard {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__discard.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__discard
+
+        module system_icon_dark__hint_action_menu {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_action_menu
+
+        module prompt_size__title {
+            const width as Number = 208;
+            const height as Number = 48;
+        } // prompt_size__title
+
+        module confirmation_font__body {
+            const justification = Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER;
+            const font = Graphics.FONT_TINY;
+        } // confirmation_font__body
+
+        module system_color_dark__background {
+            const color as Number = 0x000000;
+            const background as Number = 0x000000;
+        } // system_color_dark__background
+
+        module system_icon_destructive__hint_button_left_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_left_top.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_button_left_top
+
+        module system_size__launch_icon {
+            const scaleX as Number = 40;
+            const scaleY as Number = 40;
+            const scaleRelativeTo as String = "screen";
+        } // system_size__launch_icon
+
+        module confirmation_input__confirm {
+            const button = WatchUi.KEY_ENTER;
+        } // confirmation_input__confirm
+
+        module prompt_font__body_with_title {
+            const justification = Graphics.TEXT_JUSTIFY_CENTER;
+            const font = Graphics.FONT_TINY;
+        } // prompt_font__body_with_title
+
+        module confirmation_loc__body {
+            const x as Number = 52;
+            const y as Number = 52;
+        } // confirmation_loc__body
+
+        module system_icon_destructive__hint_button_left_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_left_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_button_left_bottom
+
+        module prompt_color_dark__background {
+            const color as Number = 0x000000;
+            const background as Number = 0x000000;
+        } // prompt_color_dark__background
+
+        module system_icon_destructive__hint_action_menu {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_action_menu
+
+        module system_loc__hint_action_menu {
+            const x as Number = 227;
+            const y as Number = 53;
+        } // system_loc__hint_action_menu
+
+        module confirmation_icon__hint_confirm {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_completion.svg";
+            const dithering as String = "none";
+        } // confirmation_icon__hint_confirm
+
+        module system_loc__hint_button_left_middle {
+            const x as Number = 1;
+            const y as Number = 109;
+        } // system_loc__hint_button_left_middle
+
+        module prompt_size__body_no_title {
+            const width as Number = 208;
+            const height as Number = 208;
+        } // prompt_size__body_no_title
+
+        module system_icon_light__hint_button_left_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_left_top.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_button_left_top
+
+        module prompt_color_light__background {
+            const color as Number = 0xFFFFFF;
+            const background as Number = 0xFFFFFF;
+        } // prompt_color_light__background
+
+        module confirmation_input__delete {
+            const button = WatchUi.KEY_ENTER;
+        } // confirmation_input__delete
+
+        module system_icon_dark__hint_button_left_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_left_top.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_button_left_top
+
+        module system_input__action_menu {
+            const button = WatchUi.KEY_ENTER;
+        } // system_input__action_menu
+
+        module system_icon_light__save {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__save.svg";
+            const dithering as String = "none";
+        } // system_icon_light__save
+
+        module prompt_color_light__body {
+            const color as Number = 0x000000;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // prompt_color_light__body
+
+        module system_loc__subwindow {
+            const exclude as Boolean = true;
+        } // system_loc__subwindow
+
+        module system_icon_light__warning {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__warning.svg";
+            const dithering as String = "none";
+        } // system_icon_light__warning
+
+        module confirmation_color_light__body {
+            const color as Number = 0x000000;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // confirmation_color_light__body
+
+        module confirmation_icon_light__hint_keep {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_keep.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_light__hint_keep
+
+        module activity_color_light__background {
+            const color as Number = 0xFFFFFF;
+            const background as Number = 0xFFFFFF;
+        } // activity_color_light__background
+
+        module system_icon_positive__hint_button_right_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_button_right_top
+
+        module system_size__screen {
+            const width as Number = 260;
+            const height as Number = 260;
+        } // system_size__screen
+
+        module system_icon_destructive__hint_button_right_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_right_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_button_right_bottom
+
+        module system_color_light__background {
+            const color as Number = 0xFFFFFF;
+            const background as Number = 0xFFFFFF;
+        } // system_color_light__background
+
+        module system_icon_destructive__hint_button_right_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_button_right_top
+
+        module confirmation_loc__hint_confirm {
+            const x as Number = 205;
+            const y as Number = 50;
+        } // confirmation_loc__hint_confirm
+
+        module activity_color_dark__text {
+            const color as Number = 0xFFFFFF;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // activity_color_dark__text
+
+        module confirmation_input__keep {
+            const button = WatchUi.KEY_DOWN;
+        } // confirmation_input__keep
+
+        module prompt_loc__body_with_title {
+            const x as Number = 26;
+            const y as Number = 78;
+        } // prompt_loc__body_with_title
+
+        module system_icon_dark__search {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__search.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__search
+
+        module activity_color_light__text {
+            const color as Number = 0x000000;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // activity_color_light__text
+
+        module confirmation_icon__hint_keep {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_keep.svg";
+            const dithering as String = "none";
+        } // confirmation_icon__hint_keep
+
+        module system_icon_dark__save {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__save.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__save
+
+        module system_icon_destructive__hint_button_left_middle {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__hint_button_left_middle.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__hint_button_left_middle
+
+        module system_icon_light__search {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__search.svg";
+            const dithering as String = "none";
+        } // system_icon_light__search
+
+        module system_icon_dark__hint_button_left_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_left_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_button_left_bottom
+
+        module system_icon_positive__hint_button_left_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_left_top.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_button_left_top
+
+        module system_loc__hint_button_right_bottom {
+            const x as Number = 224;
+            const y as Number = 172;
+        } // system_loc__hint_button_right_bottom
+
+        module confirmation_icon_dark__hint_reject {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_reject.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_dark__hint_reject
+
+        module confirmation_color_dark__body {
+            const color as Number = 0xFFFFFF;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // confirmation_color_dark__body
+
+        module confirmation_icon_light__hint_confirm {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_completion.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_light__hint_confirm
+
+        module prompt_color_dark__title {
+            const color as Number = 0xFFFFFF;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // prompt_color_dark__title
+
+        module system_icon_destructive__cancel {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__cancel.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__cancel
+
+        module system_icon_light__hint_button_right_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_right_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_button_right_bottom
+
+        module prompt_loc__title {
+            const x as Number = 26;
+            const y as Number = 19;
+        } // prompt_loc__title
+
+        module confirmation_font_enhanced_readability__body {
+            const exclude as Boolean = true;
+        } // confirmation_font_enhanced_readability__body
+
+        module prompt_color_light__title {
+            const color as Number = 0x000000;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // prompt_color_light__title
+
+        module system_icon_dark__hint_button_right_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_button_right_top
+
+        module system_icon_dark__hint_button_left_middle {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_left_middle.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_button_left_middle
+
+        module confirmation_icon_dark__hint_keep {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_keep.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_dark__hint_keep
+
+        module system_icon_light__cancel {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__cancel.svg";
+            const dithering as String = "none";
+        } // system_icon_light__cancel
+
+        module confirmation_icon_light__hint_reject {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_reject.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_light__hint_reject
+
+        module system_icon_light__about {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__about.svg";
+            const dithering as String = "none";
+        } // system_icon_light__about
+
+        module system_size__toast_icon {
+            const scaleX as Number = 21;
+            const scaleY as Number = 21;
+            const scaleRelativeTo as String = "screen";
+        } // system_size__toast_icon
+
+        module system_icon_dark__hint_button_right_middle {
+            const exclude as Boolean = true;
+        } // system_icon_dark__hint_button_right_middle
+
+        module confirmation_icon__hint_reject {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_reject.svg";
+            const dithering as String = "none";
+        } // confirmation_icon__hint_reject
+
+        module system_icon_light__hint_action_menu {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_action_menu
+
+        module system_icon_light__hint_button_right_middle {
+            const exclude as Boolean = true;
+        } // system_icon_light__hint_button_right_middle
+
+        module system_icon_destructive__hint_button_right_middle {
+            const exclude as Boolean = true;
+        } // system_icon_destructive__hint_button_right_middle
+
+        module confirmation_loc__hint_reject {
+            const x as Number = 13;
+            const y as Number = 174;
+            const horizontalJustification as String = "left";
+        } // confirmation_loc__hint_reject
+
+        module confirmation_icon_dark__hint_delete {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_delete.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_dark__hint_delete
+
+        module activity_color_dark__background {
+            const color as Number = 0x000000;
+            const background as Number = 0x000000;
+        } // activity_color_dark__background
+
+        module system_icon_light__hint_button_left_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_left_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_button_left_bottom
+
+        module system_icon_positive__hint_button_left_middle {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_left_middle.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_button_left_middle
+
+        module system_size__menu_icon {
+            const scaleX as Number = 40;
+            const scaleY as Number = 40;
+            const scaleRelativeTo as String = "screen";
+        } // system_size__menu_icon
+
+        module system_icon_destructive__warning {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_destructive__warning.svg";
+            const dithering as String = "none";
+        } // system_icon_destructive__warning
+
+        module system_loc__hint_button_right_middle {
+            const exclude as Boolean = true;
+        } // system_loc__hint_button_right_middle
+
+        module system_icon_dark__cancel {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__cancel.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__cancel
+
+        module prompt_size__body_with_title {
+            const width as Number = 208;
+            const height as Number = 156;
+        } // prompt_size__body_with_title
+
+        module system_loc__hint_button_right_top {
+            const x as Number = 224;
+            const y as Number = 50;
+        } // system_loc__hint_button_right_top
+
+        module system_color_light__text {
+            const color as Number = 0x000000;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // system_color_light__text
+
+        module system_icon_light__check {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__check.svg";
+            const dithering as String = "none";
+        } // system_icon_light__check
+
+        module confirmation_input__reject {
+            const button = WatchUi.KEY_DOWN;
+        } // confirmation_input__reject
+
+        module system_icon_light__revert {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__revert.svg";
+            const dithering as String = "none";
+        } // system_icon_light__revert
+
+        module system_size__subwindow {
+            const exclude as Boolean = true;
+        } // system_size__subwindow
+
+        module system_icon_positive__hint_button_left_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_left_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_button_left_bottom
+
+        module system_icon_dark__check {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__check.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__check
+
+        module confirmation_loc__hint_keep {
+            const x as Number = 13;
+            const y as Number = 174;
+            const horizontalJustification as String = "left";
+        } // confirmation_loc__hint_keep
+
+        module confirmation_loc__hint_delete {
+            const x as Number = 208;
+            const y as Number = 50;
+        } // confirmation_loc__hint_delete
+
+        module system_icon_positive__hint_action_menu {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_action_menu
+
+        module system_icon_positive__hint_button_right_middle {
+            const exclude as Boolean = true;
+        } // system_icon_positive__hint_button_right_middle
+
+        module system_icon_light__hint_button_left_middle {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_left_middle.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_button_left_middle
+
+        module system_icon_dark__hint_button_right_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__hint_button_right_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_dark__hint_button_right_bottom
+
+        module system_icon_positive__hint_button_right_bottom {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__hint_button_right_bottom.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__hint_button_right_bottom
+
+        module system_icon_dark__revert {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__revert.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__revert
+
+        module confirmation_icon_light__hint_delete {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_delete.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_light__hint_delete
+
+        module system_icon_dark__question {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__question.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__question
+
+        module system_icon_light__discard {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__discard.svg";
+            const dithering as String = "none";
+        } // system_icon_light__discard
+
+        module device_info {
+            const screenWidth as Number = 260;
+            const screenShape = Toybox.System.SCREEN_SHAPE_ROUND;
+            const hasNightMode as Boolean = false;
+            const hasGpu as Boolean = false;
+            const screenHeight as Number = 260;
+            const hasTouchScreen as Boolean = true;
+            const hasEnhancedReadabilityMode as Boolean = false;
+        } // device_info
+
+        module confirmation_icon_dark__hint_confirm {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_completion.svg";
+            const dithering as String = "none";
+        } // confirmation_icon_dark__hint_confirm
+
+        module prompt_font__body_no_title {
+            const justification = Graphics.TEXT_JUSTIFY_CENTER|Graphics.TEXT_JUSTIFY_VCENTER;
+            const font = Graphics.FONT_TINY;
+        } // prompt_font__body_no_title
+
+        module prompt_size__title_icon {
+            const scaleX as Float = 0.1539;
+            const scaleRelativeTo as String = "screen";
+        } // prompt_size__title_icon
+
+        module system_icon_dark__warning {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_dark__warning.svg";
+            const compress as String = "true";
+            const dithering as String = "none";
+            const automaticPalette as String = "true";
+        } // system_icon_dark__warning
+
+        module prompt_loc__title_icon {
+            const x as Number = 130;
+            const y as Number = 39;
+            const horizontalJustification as String = "center";
+            const verticalJustification as String = "center";
+        } // prompt_loc__title_icon
+
+        module prompt_font_enhanced_readability__title {
+            const exclude as Boolean = true;
+        } // prompt_font_enhanced_readability__title
+
+        module prompt_color_dark__body {
+            const color as Number = 0xFFFFFF;
+            const background = Graphics.COLOR_TRANSPARENT;
+        } // prompt_color_dark__body
+
+        module confirmation_icon__hint_delete {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\confirmation_icon__hint_delete.svg";
+            const dithering as String = "none";
+        } // confirmation_icon__hint_delete
+
+        module system_icon_light__hint_button_right_top {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_light__hint_button_right_top.svg";
+            const dithering as String = "none";
+        } // system_icon_light__hint_button_right_top
+
+        module confirmation_size__body {
+            const width as Number = 156;
+            const height as Number = 156;
+        } // confirmation_size__body
+
+        module system_icon_positive__check {
+            const filename as String = "C:\\Garmin\\ConnectIQ\\Devices\\fr255m\\system_icon_positive__check.svg";
+            const dithering as String = "none";
+        } // system_icon_positive__check
+    } // Styles
+} // Rez
