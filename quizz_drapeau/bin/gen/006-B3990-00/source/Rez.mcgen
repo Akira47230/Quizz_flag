@@ -260,20 +260,8 @@ module Rez {
         (:initialized) var za as ResourceId;
         (:initialized) var zm as ResourceId;
         (:initialized) var zw as ResourceId;
-        (:initialized) var id_monkey as ResourceId;
         (:initialized) var LauncherIcon as ResourceId;
     } // Drawables
-
-    module Layouts {
-        function MainLayout(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_1193959466 = new WatchUi.Text({:color=>Graphics.COLOR_WHITE, :locX=>(260 * 0.5), :locY=>5, :text=>$.Rez.Strings.prompt, :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_MEDIUM});
-
-            var rez_cmp_local_bitmap_id_monkey = new WatchUi.Bitmap({:identifier=>"id_monkey", :rezId=>$.Rez.Drawables.id_monkey, :locX=>WatchUi.LAYOUT_HALIGN_CENTER, :locY=>30});
-            rez_cmp_local_bitmap_id_monkey.setLocation(((260 - rez_cmp_local_bitmap_id_monkey.width) * 0.5), rez_cmp_local_bitmap_id_monkey.locY);
-
-            return [rez_cmp_local_text_1193959466, rez_cmp_local_bitmap_id_monkey] as Array<WatchUi.Drawable>;
-        }
-    } // Layouts
 
     module Menus {
         class MainMenu extends WatchUi.Menu {
@@ -286,19 +274,26 @@ module Rez {
     } // Menus
 
     module Strings {
-        (:initialized) var new_game as ResourceId;
-        (:initialized) var continue_game as ResourceId;
-        (:initialized) var correct as ResourceId;
-        (:initialized) var incorrect as ResourceId;
-        (:initialized) var excellent as ResourceId;
-        (:initialized) var quit_game as ResourceId;
-        (:initialized) var very_good as ResourceId;
+        (:initialized) var BackToMenu as ResourceId;
+        (:initialized) var MenuTitle as ResourceId;
+        (:initialized) var Practice as ResourceId;
+        (:initialized) var MenuStart as ResourceId;
+        (:initialized) var Continue as ResourceId;
+        (:initialized) var Correct as ResourceId;
+        (:initialized) var QuizFinished as ResourceId;
         (:initialized) var AppName as ResourceId;
-        (:initialized) var final_score as ResourceId;
-        (:initialized) var practice_more as ResourceId;
-        (:initialized) var start_game as ResourceId;
+        (:initialized) var ShowFinalScore as ResourceId;
+        (:initialized) var MenuQuit as ResourceId;
+        (:initialized) var Score as ResourceId;
+        (:initialized) var FinalScore as ResourceId;
+        (:initialized) var Excellent as ResourceId;
+        (:initialized) var Incorrect as ResourceId;
+        (:initialized) var NotBad as ResourceId;
+        (:initialized) var Navigate as ResourceId;
+        (:initialized) var NewGame as ResourceId;
         (:initialized) var prompt as ResourceId;
-        (:initialized) var not_bad as ResourceId;
+        (:initialized) var VeryGood as ResourceId;
+        (:initialized) var MenuSubtitle as ResourceId;
     } // Strings
 
     module Styles {

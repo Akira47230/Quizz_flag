@@ -1,4 +1,4 @@
-// source/quizz_drapeauDelegate.mc - Version finale
+// source/quizz_drapeauDelegate.mc - Version corrigée sans forward reference
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;
@@ -30,7 +30,8 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
             case :playing:
                 // Sauvegarder la question actuelle avant de répondre
                 var currentQuestion = quizManager.getCurrentQuestion();
-                var correctAnswer = (currentQuestion != null) ? currentQuestion[:correctAnswer] : "";
+                var correctAnswer = (currentQuestion != null) ? 
+                    (currentQuestion[:correctAnswer] as String) : "";
                 
                 // Répondre à la question
                 var isCorrect = quizManager.answerQuestion(_selectedAnswerIndex);
@@ -122,12 +123,12 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
         if (gameState == :menu) {
             // Quitter l'application
             System.exit();
-            return true;
         } else {
             // Retour au menu principal
             _view.setGameState(:menu);
-            return true;
         }
+        
+        return true;
     }
 
     // Getter pour l'index de réponse sélectionnée (pour l'affichage)

@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Version avec sélection visuelle
+// source/quizz_drapeauView.mc - Version avec chargement correct des drapeaux
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -6,16 +6,18 @@ import Toybox.Lang;
 class quizz_drapeauView extends WatchUi.View {
     private var _quizManager as QuizManager;
     private var _gameState as Symbol; // :menu, :playing, :result, :finalScore
-    private var _delegate as quizz_drapeauDelegate;
+    private var _delegate as Object or Null;
+    private var _lastResultTitle as String;
 
     function initialize() {
         View.initialize();
         _quizManager = new QuizManager();
         _gameState = :menu;
         _delegate = null;
+        _lastResultTitle = "";
     }
 
-    function setDelegate(delegate as quizz_drapeauDelegate) as Void {
+    function setDelegate(delegate as Object) as Void {
         _delegate = delegate;
     }
 
@@ -84,37 +86,52 @@ class quizz_drapeauView extends WatchUi.View {
                           " - Score: " + _quizManager.getScore();
         dc.drawText(centerX, 10, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Zone pour le drapeau - ici vous placerez votre bitmap du drapeau
+        // Zone pour le drapeau
         var flagX = centerX - 40;
         var flagY = 30;
         var flagWidth = 80;
         var flagHeight = 50;
         
-        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+        // Arrière-plan pour le drapeau
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.fillRectangle(flagX, flagY, flagWidth, flagHeight);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawRectangle(flagX, flagY, flagWidth, flagHeight);
         
-        // Tentative d'affichage du drapeau (si disponible)
+        // Chargement et affichage du drapeau
+        var flagLoaded = false;
+        var flagId = question[:flag] as String;
+        
         try {
-            var flagBitmap = WatchUi.loadResource(Rez.Drawables[question[:flag]]);
-            if (flagBitmap != null) {
-                dc.drawBitmap(flagX, flagY, flagBitmap);
-            } else {
-                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(centerX, flagY + 20, Graphics.FONT_XTINY, 
-                           question[:flag], Graphics.TEXT_JUSTIFY_CENTER);
+            var flagResource = getFlagResource(flagId);
+            if (flagResource != null) {
+                var flagBitmap = WatchUi.loadResource(flagResource);
+                if (flagBitmap != null) {
+                    // Calculer la position pour centrer l'image dans la zone
+                    var imgX = flagX + (flagWidth - flagBitmap.getWidth()) / 2;
+                    var imgY = flagY + (flagHeight - flagBitmap.getHeight()) / 2;
+                    dc.drawBitmap(imgX, imgY, flagBitmap);
+                    flagLoaded = true;
+                }
             }
         } catch (e) {
-            // Si le drapeau n'est pas trouvé, afficher le nom du fichier
+            // Erreur de chargement
+        }
+        
+        // Si le chargement a échoué, afficher un placeholder
+        if (!flagLoaded) {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX, flagY + 20, Graphics.FONT_XTINY, 
-                       question[:flag], Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(centerX, flagY + 15, Graphics.FONT_XTINY, 
+                       "Drapeau:", Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(centerX, flagY + 30, Graphics.FONT_SMALL, 
+                       flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
         // Options de réponse avec sélection
         var answers = question[:answers] as Array;
         var startY = flagY + flagHeight + 15;
         var buttonHeight = 22;
-        var selectedIndex = (_delegate != null) ? _delegate.getSelectedAnswerIndex() : 0;
+        var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
             var y = startY + (i * buttonHeight);
@@ -128,13 +145,51 @@ class quizz_drapeauView extends WatchUi.View {
             dc.fillRoundedRectangle(10, y, width - 20, buttonHeight - 2, 3);
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-            var buttonText = (i + 1) + ". " + answers[i];
+            var answerText = answers[i] as String;
+            var buttonText = (i + 1) + ". " + answerText;
             dc.drawText(centerX, y + 4, Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
         }
         
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawText(centerX, height - 15, Graphics.FONT_XTINY, 
                    "UP/DOWN: naviguer, SELECT: répondre", Graphics.TEXT_JUSTIFY_CENTER);
+    }
+
+    // Fonction pour mapper les IDs de drapeaux aux ressources
+    private function getFlagResource(flagId as String) as ResourceId or Null {
+        switch (flagId) {
+            case "fr": return Rez.Drawables.fr;
+            case "de": return Rez.Drawables.de;
+            case "es": return Rez.Drawables.es;
+            case "it": return Rez.Drawables.it;
+            case "gb": return Rez.Drawables.gb;
+            case "us": return Rez.Drawables.us;
+            case "ca": return Rez.Drawables.ca;
+            case "jp": return Rez.Drawables.jp;
+            case "cn": return Rez.Drawables.cn;
+            case "br": return Rez.Drawables.br;
+            case "ar": return Rez.Drawables.ar;
+            case "au": return Rez.Drawables.au;
+            case "ru": return Rez.Drawables.ru;
+            case "in": return Rez.Drawables.in;
+            case "mx": return Rez.Drawables.mx;
+            case "se": return Rez.Drawables.se;
+            case "no": return Rez.Drawables.no;
+            case "nl": return Rez.Drawables.nl;
+            case "ch": return Rez.Drawables.ch;
+            case "be": return Rez.Drawables.be;
+            case "pt": return Rez.Drawables.pt;
+            case "gr": return Rez.Drawables.gr;
+            case "tr": return Rez.Drawables.tr;
+            case "eg": return Rez.Drawables.eg;
+            case "za": return Rez.Drawables.za;
+            case "kr": return Rez.Drawables.kr;
+            case "th": return Rez.Drawables.th;
+            case "vn": return Rez.Drawables.vn;
+            case "sg": return Rez.Drawables.sg;
+            case "nz": return Rez.Drawables.nz;
+            default: return null;
+        }
     }
 
     function drawResult(dc as Dc) as Void {
@@ -145,9 +200,9 @@ class quizz_drapeauView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Titre de résultat sera défini par le delegate
+        // Titre de résultat
         dc.drawText(centerX, centerY - 30, Graphics.FONT_MEDIUM, 
-                   getResultTitle(), Graphics.TEXT_JUSTIFY_CENTER);
+                   _lastResultTitle, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Score actuel
         var scoreText = "Score: " + _quizManager.getScore() + "/" + 
@@ -205,7 +260,7 @@ class quizz_drapeauView extends WatchUi.View {
                    "BACK: Menu principal", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
-    // Getters pour le delegate
+    // Méthodes publiques pour le delegate
     function getQuizManager() as QuizManager {
         return _quizManager;
     }
@@ -219,15 +274,16 @@ class quizz_drapeauView extends WatchUi.View {
         WatchUi.requestUpdate();
     }
 
-    // Variables pour stocker le résultat temporaire
-    private var _lastResultTitle as String = "";
-    
     function setResultTitle(title as String) as Void {
         _lastResultTitle = title;
     }
-    
-    function getResultTitle() as String {
-        return _lastResultTitle;
+
+    function getSelectedAnswerIndex() as Number {
+        // Appel sécurisé au delegate
+        if (_delegate != null && _delegate has :getSelectedAnswerIndex) {
+            return _delegate.getSelectedAnswerIndex();
+        }
+        return 0;
     }
 
     function onHide() as Void {

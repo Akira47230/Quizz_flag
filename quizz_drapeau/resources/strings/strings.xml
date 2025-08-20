@@ -1,16 +1,22 @@
 <!-- resources/strings/strings.xml -->
-<strings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
+<strings>
     <string id="AppName">Quiz Drapeaux</string>
-    <string id="prompt">Quiz des Drapeaux du Monde</string>
-    <string id="start_game">Commencer le Quiz</string>
-    <string id="quit_game">Quitter</string>
-    <string id="continue_game">Continuer</string>
-    <string id="new_game">Nouveau Jeu</string>
-    <string id="final_score">Score Final</string>
-    <string id="correct">Correct!</string>
-    <string id="incorrect">Incorrect!</string>
-    <string id="excellent">Excellent!</string>
-    <string id="very_good">Très bien!</string>
-    <string id="not_bad">Pas mal!</string>
-    <string id="practice_more">Entraînez-vous!</string>
+    <string id="MenuTitle">Quiz Drapeaux</string>
+    <string id="MenuSubtitle">20 questions</string>
+    <string id="MenuStart">SELECT pour commencer</string>
+    <string id="MenuQuit">MENU pour quitter</string>
+    <string id="Score">Score</string>
+    <string id="Correct">✓ Correct!</string>
+    <string id="Incorrect">✗ Incorrect -</string>
+    <string id="QuizFinished">Quiz Terminé!</string>
+    <string id="FinalScore">Score Final:</string>
+    <string id="Excellent">Excellent!</string>
+    <string id="VeryGood">Très bien!</string>
+    <string id="NotBad">Pas mal!</string>
+    <string id="Practice">Entraînez-vous!</string>
+    <string id="NewGame">SELECT: Nouveau jeu</string>
+    <string id="BackToMenu">BACK: Menu principal</string>
+    <string id="Navigate">UP/DOWN: naviguer, SELECT: répondre</string>
+    <string id="Continue">SELECT pour continuer</string>
+    <string id="ShowFinalScore">SELECT pour le score final</string>
 </strings>

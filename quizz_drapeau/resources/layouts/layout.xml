@@ -1,4 +1,23 @@
-<layout id="MainLayout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
-    <label x="center" y="5" text="@Strings.prompt" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_CENTER" />
-    <bitmap id="id_monkey" x="center" y="30" filename="../drawables/monkey.png" />
-</layout>
+<!-- resources/strings/strings.xml -->
+<strings>
+    <string id="AppName">Quiz Drapeaux</string>
+    <string id="prompt">Quel est ce drapeau?</string>
+    <string id="MenuTitle">Quiz Drapeaux</string>
+    <string id="MenuSubtitle">20 questions</string>
+    <string id="MenuStart">SELECT pour commencer</string>
+    <string id="MenuQuit">MENU pour quitter</string>
+    <string id="Score">Score</string>
+    <string id="Correct">✓ Correct!</string>
+    <string id="Incorrect">✗ Incorrect -</string>
+    <string id="QuizFinished">Quiz Terminé!</string>
+    <string id="FinalScore">Score Final:</string>
+    <string id="Excellent">Excellent!</string>
+    <string id="VeryGood">Très bien!</string>
+    <string id="NotBad">Pas mal!</string>
+    <string id="Practice">Entraînez-vous!</string>
+    <string id="NewGame">SELECT: Nouveau jeu</string>
+    <string id="BackToMenu">BACK: Menu principal</string>
+    <string id="Navigate">UP/DOWN: naviguer, SELECT: répondre</string>
+    <string id="Continue">SELECT pour continuer</string>
+    <string id="ShowFinalScore">SELECT pour le score final</string>
+</strings>

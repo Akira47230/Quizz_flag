@@ -1,4 +1,4 @@
-// source/quizz_drapeauApp.mc
+// source/quizz_drapeauApp.mc - Version corrigée
 import Toybox.Application;
 import Toybox.Lang;
 import Toybox.WatchUi;
@@ -23,7 +23,6 @@ class quizz_drapeauApp extends Application.AppBase {
         var delegate = new quizz_drapeauDelegate(view);
         return [ view, delegate ];
     }
-
 }
 
 function getApp() as quizz_drapeauApp {
