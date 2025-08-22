@@ -1,0 +1,7 @@
+{
+  "monkeyC.sdkPath": "C:\\Garmin\\ConnectIQ\\Sdks\\connectiq-sdk-win-8.2.3-2025-08-11-cac5b3b21",
+  "monkeyC.javaPath": "C:\\Program Files\\Eclipse Adoptium\\jdk-21.0.8.9-hotspot\\bin\\java.exe",
+  "monkeyC.developerKeyPath": "C:\\Users\\zakaria\\AppData\\Roaming\\Garmin\\ConnectIQ\\developer_key",
+  "monkeyC.jungleFiles": "C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\monkey.jungle",
+  "monkeyC.testDevices": ["fr255m"]
+}

@@ -1,7 +1,7 @@
-project.manifest = manifest.xml
-base.sourcePath = source
-base.resourcePath = resources
+project.manifest = "manifest.xml"
 
-# Spécifie le target explicitement
-fr255m.sourcePath = source
-fr255m.resourcePath = resources
+base.sourcePath = "source"
+base.resourcePath = "resources"
+
+fr255m.sourcePath = "source"
+fr255m.resourcePath = "resources"
