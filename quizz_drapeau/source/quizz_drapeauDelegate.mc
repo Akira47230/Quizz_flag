@@ -1,4 +1,4 @@
-// source/quizz_drapeauDelegate.mc - Version corrigée sans forward reference
+// source/quizz_drapeauDelegate.mc - Modifié pour transition automatique et 3 réponses
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;
@@ -43,18 +43,15 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
                     _view.setResultTitle("✗ Incorrect - " + correctAnswer);
                 }
                 
+                // CHANGEMENT: Plus de gestion manuelle de SELECT pour continuer
+                // Le timer automatique dans la vue s'en charge
                 _view.setGameState(:result);
                 return true;
                 
             case :result:
-                // Continuer vers la prochaine question ou afficher le score final
-                if (quizManager.isGameFinished()) {
-                    _view.setGameState(:finalScore);
-                } else {
-                    _view.setGameState(:playing);
-                    _selectedAnswerIndex = 0;
-                }
-                return true;
+                // SUPPRIMÉ: Plus de gestion manuelle ici
+                // Le timer automatique gère la transition
+                return false;
                 
             case :finalScore:
                 // Commencer un nouveau jeu
@@ -101,7 +98,7 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
                 var answers = question[:answers] as Array;
                 var newIndex = _selectedAnswerIndex + direction;
                 
-                // Gestion circulaire des réponses
+                // Gestion circulaire des réponses (maintenant pour 3 réponses au lieu de 4)
                 if (newIndex >= answers.size()) {
                     newIndex = 0;
                 } else if (newIndex < 0) {
@@ -134,5 +131,10 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
     // Getter pour l'index de réponse sélectionnée (pour l'affichage)
     function getSelectedAnswerIndex() as Number {
         return _selectedAnswerIndex;
+    }
+
+    // NOUVELLE MÉTHODE: Réinitialiser la sélection pour la question suivante
+    function resetSelectedAnswerIndex() as Void {
+        _selectedAnswerIndex = 0;
     }
 }

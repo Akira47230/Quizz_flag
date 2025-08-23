@@ -151,459 +151,459 @@ C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_27_
     }
     [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 37; @symbol_functiondef = [generateQuestion,37,13,29]; @symbol_param<0> = [correctCountry,37,30,44]; @symbol_param<0>_type<0> = [Dictionary,37,48,58]; @symbol_return<0> = [Dictionary,37,63,73]; ]
     function generateQuestion(correctCountry as Dictionary) as Dictionary {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 38 8 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_stop" ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 39 8 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_stop" ]
         %wrongAnswers.1 = local;
-        symbol [ wrongAnswers %wrongAnswers.1 38 12 24 ];
-        symbol [ FlagData %tmp.2 38 27 35 ];
+        symbol [ wrongAnswers %wrongAnswers.1 39 12 24 ];
+        symbol [ FlagData %tmp.2 39 27 35 ];
         %tmp.2 = getv ? :FlagData;
-        symbol [ generateWrongAnswers %tmp.3 38 36 56 ];
+        symbol [ generateWrongAnswers %tmp.3 39 36 56 ];
         %tmp.3 = getv function %tmp.2 :generateWrongAnswers;
         %tmp.4 = lgetv %correctCountry;
-        symbol [ correctCountry %tmp.4 38 57 71 ];
-        %tmp.5 = 3;
+        symbol [ correctCountry %tmp.4 39 57 71 ];
+        %tmp.5 = 2;
         %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
         lputv %wrongAnswers.1 %tmp.6;
-        symbol [ wrongAnswers %wrongAnswers.1 38 12 24 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 39 8 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_stop" ]
+        symbol [ wrongAnswers %wrongAnswers.1 39 12 24 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 40 8 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_stop" ]
         %allAnswers.2 = local;
-        symbol [ allAnswers %allAnswers.2 39 12 22 ];
+        symbol [ allAnswers %allAnswers.2 40 12 22 ];
         %tmp.7 = newa 1;
         %tmp.8 = lgetv %correctCountry;
-        symbol [ correctCountry %tmp.8 39 26 40 ];
+        symbol [ correctCountry %tmp.8 40 26 40 ];
         %tmp.10 = const :name;
-        symbol [ name %tmp.10 39 42 46 const ];
+        symbol [ name %tmp.10 40 42 46 const ];
         %tmp.11 = agetv %tmp.8 %tmp.10;
         %tmp.12 = dup %tmp.7;
         %tmp.13 = aputv %tmp.12 0 %tmp.11;
         lputv %allAnswers.2 %tmp.13;
-        symbol [ allAnswers %allAnswers.2 39 12 22 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 42 8 ]
-        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_init:
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_end" ]
+        symbol [ allAnswers %allAnswers.2 40 12 22 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 43 8 ]
+        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_init:
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_end" ]
         %i.3 = local;
-        symbol [ i %i.3 42 17 18 ];
+        symbol [ i %i.3 43 17 18 ];
         %tmp.14 = 0;
         lputv %i.3 %tmp.14;
-        symbol [ i %i.3 42 17 18 ];
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_test:
+        symbol [ i %i.3 43 17 18 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_test:
         %tmp.15 = lgetv %i.3;
-        symbol [ i %tmp.15 42 24 25 ];
+        symbol [ i %tmp.15 43 24 25 ];
         %tmp.16 = lgetv %wrongAnswers.1;
-        symbol [ wrongAnswers %tmp.16 42 28 40 ];
-        symbol [ size %tmp.17 42 41 45 ];
+        symbol [ wrongAnswers %tmp.16 43 28 40 ];
+        symbol [ size %tmp.17 43 41 45 ];
         %tmp.17 = getv function %tmp.16 :size;
         %tmp.18 = invoke %tmp.16 %tmp.17();
         %tmp.19 = lt %tmp.15 %tmp.18;
-        bf %tmp.19 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_begin:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_54_44_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 43 12 ]
+        bf %tmp.19 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_begin:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_54_45_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 44 12 ]
         %tmp.20 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.20 43 12 22 ];
-        symbol [ add %tmp.21 43 23 26 ];
+        symbol [ allAnswers %tmp.20 44 12 22 ];
+        symbol [ add %tmp.21 44 23 26 ];
         %tmp.21 = getv function %tmp.20 :add;
         %tmp.22 = lgetv %wrongAnswers.1;
-        symbol [ wrongAnswers %tmp.22 43 27 39 ];
+        symbol [ wrongAnswers %tmp.22 44 27 39 ];
         %tmp.23 = lgetv %i.3;
-        symbol [ i %tmp.23 43 40 41 ];
+        symbol [ i %tmp.23 44 40 41 ];
         %tmp.24 = agetv %tmp.22 %tmp.23;
         invoke %tmp.20 %tmp.21(%tmp.24);
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_54_44_8_stop:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_incr:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 42 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_54_45_8_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_incr:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 43 ]
         %tmp.27 = lgetv %i.3;
-        symbol [ i %tmp.27 42 49 50 ];
+        symbol [ i %tmp.27 43 49 50 ];
         %tmp.28 = add %tmp.27 1;
         lputv %i.3 %tmp.28;
-        symbol [ i %i.3 42 49 50 ];
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_test;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_42_8_44_8_for_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 47 8 ]
-        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_init:
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_end" ]
+        symbol [ i %i.3 43 49 50 ];
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_test;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_43_8_45_8_for_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 48 8 ]
+        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_init:
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_end" ]
         %i.4 = local;
-        symbol [ i %i.4 47 17 18 ];
+        symbol [ i %i.4 48 17 18 ];
         %tmp.29 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.29 47 21 31 ];
-        symbol [ size %tmp.30 47 32 36 ];
+        symbol [ allAnswers %tmp.29 48 21 31 ];
+        symbol [ size %tmp.30 48 32 36 ];
         %tmp.30 = getv function %tmp.29 :size;
         %tmp.31 = invoke %tmp.29 %tmp.30();
         %tmp.32 = 1;
         %tmp.33 = sub %tmp.31 %tmp.32;
         lputv %i.4 %tmp.33;
-        symbol [ i %i.4 47 17 18 ];
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_test:
+        symbol [ i %i.4 48 17 18 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_test:
         %tmp.34 = lgetv %i.4;
-        symbol [ i %tmp.34 47 44 45 ];
+        symbol [ i %tmp.34 48 44 45 ];
         %tmp.35 = 0;
         %tmp.36 = gt %tmp.34 %tmp.35;
-        bf %tmp.36 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_begin:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 48 12 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_stop" ]
+        bf %tmp.36 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_begin:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 49 12 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_stop" ]
         %j.5 = local;
-        symbol [ j %j.5 48 16 17 ];
-        symbol [ Math %tmp.37 48 20 24 ];
+        symbol [ j %j.5 49 16 17 ];
+        symbol [ Math %tmp.37 49 20 24 ];
         %tmp.37 = getm $.Toybox.Math;
-        symbol [ rand %tmp.38 48 25 29 ];
+        symbol [ rand %tmp.38 49 25 29 ];
         %tmp.38 = getv function %tmp.37 :rand;
         %tmp.39 = invoke %tmp.37 %tmp.38();
         %tmp.40 = lgetv %i.4;
-        symbol [ i %tmp.40 48 35 36 ];
+        symbol [ i %tmp.40 49 35 36 ];
         %tmp.41 = 1;
         %tmp.42 = add %tmp.40 %tmp.41;
         %tmp.43 = mod %tmp.39 %tmp.42;
         lputv %j.5 %tmp.43;
-        symbol [ j %j.5 48 16 17 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 49 12 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_stop" ]
+        symbol [ j %j.5 49 16 17 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 50 12 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_stop" ]
         %temp.6 = local;
-        symbol [ temp %temp.6 49 16 20 ];
+        symbol [ temp %temp.6 50 16 20 ];
         %tmp.44 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.44 49 23 33 ];
+        symbol [ allAnswers %tmp.44 50 23 33 ];
         %tmp.45 = lgetv %i.4;
-        symbol [ i %tmp.45 49 34 35 ];
+        symbol [ i %tmp.45 50 34 35 ];
         %tmp.46 = agetv %tmp.44 %tmp.45;
         lputv %temp.6 %tmp.46;
-        symbol [ temp %temp.6 49 16 20 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 50 12 ]
+        symbol [ temp %temp.6 50 16 20 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 51 12 ]
         %tmp.47 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.47 50 12 22 ];
+        symbol [ allAnswers %tmp.47 51 12 22 ];
         %tmp.48 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.48 50 28 38 ];
+        symbol [ allAnswers %tmp.48 51 28 38 ];
         %tmp.49 = lgetv %j.5;
-        symbol [ j %tmp.49 50 39 40 ];
+        symbol [ j %tmp.49 51 39 40 ];
         %tmp.50 = agetv %tmp.48 %tmp.49;
         %tmp.51 = lgetv %i.4;
-        symbol [ i %tmp.51 50 23 24 ];
+        symbol [ i %tmp.51 51 23 24 ];
         aputv %tmp.47 %tmp.51 %tmp.50;
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 51 12 ]
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 52 12 ]
         %tmp.52 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.52 51 12 22 ];
+        symbol [ allAnswers %tmp.52 52 12 22 ];
         %tmp.53 = lgetv %temp.6;
-        symbol [ temp %tmp.53 51 28 32 ];
+        symbol [ temp %tmp.53 52 28 32 ];
         %tmp.54 = lgetv %j.5;
-        symbol [ j %tmp.54 51 23 24 ];
+        symbol [ j %tmp.54 52 23 24 ];
         aputv %tmp.52 %tmp.54 %tmp.53;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_56_52_8_stop:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_incr:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 47 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_56_53_8_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_incr:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 48 ]
         %tmp.57 = lgetv %i.4;
-        symbol [ i %tmp.57 47 51 52 ];
+        symbol [ i %tmp.57 48 51 52 ];
         %tmp.58 = sub %tmp.57 1;
         lputv %i.4 %tmp.58;
-        symbol [ i %i.4 47 51 52 ];
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_test;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_47_8_52_8_for_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 55 8 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_stop" ]
+        symbol [ i %i.4 48 51 52 ];
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_test;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_48_8_53_8_for_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 56 8 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_stop" ]
         %correctIndex.7 = local;
-        symbol [ correctIndex %correctIndex.7 55 12 24 ];
+        symbol [ correctIndex %correctIndex.7 56 12 24 ];
         %tmp.59 = 0;
         lputv %correctIndex.7 %tmp.59;
-        symbol [ correctIndex %correctIndex.7 55 12 24 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 56 8 ]
-        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_init:
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_end" ]
+        symbol [ correctIndex %correctIndex.7 56 12 24 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 57 8 ]
+        for @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_test @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_incr @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_init:
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_begin" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_end" ]
         %i.8 = local;
-        symbol [ i %i.8 56 17 18 ];
+        symbol [ i %i.8 57 17 18 ];
         %tmp.60 = 0;
         lputv %i.8 %tmp.60;
-        symbol [ i %i.8 56 17 18 ];
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_test:
+        symbol [ i %i.8 57 17 18 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_test:
         %tmp.61 = lgetv %i.8;
-        symbol [ i %tmp.61 56 24 25 ];
+        symbol [ i %tmp.61 57 24 25 ];
         %tmp.62 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.62 56 28 38 ];
-        symbol [ size %tmp.63 56 39 43 ];
+        symbol [ allAnswers %tmp.62 57 28 38 ];
+        symbol [ size %tmp.63 57 39 43 ];
         %tmp.63 = getv function %tmp.62 :size;
         %tmp.64 = invoke %tmp.62 %tmp.63();
         %tmp.65 = lt %tmp.61 %tmp.64;
-        bf %tmp.65 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_begin:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_52_61_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 57 12 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_12_60_12_if_stmt:
+        bf %tmp.65 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_begin:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_52_62_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 58 12 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_12_61_12_if_stmt:
         %tmp.66 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.66 57 16 26 ];
+        symbol [ allAnswers %tmp.66 58 16 26 ];
         %tmp.67 = lgetv %i.8;
-        symbol [ i %tmp.67 57 27 28 ];
+        symbol [ i %tmp.67 58 27 28 ];
         %tmp.68 = agetv %tmp.66 %tmp.67;
-        symbol [ equals %tmp.69 57 30 36 ];
+        symbol [ equals %tmp.69 58 30 36 ];
         %tmp.69 = getv function %tmp.68 :equals;
         %tmp.70 = lgetv %correctCountry;
-        symbol [ correctCountry %tmp.70 57 37 51 ];
+        symbol [ correctCountry %tmp.70 58 37 51 ];
         %tmp.72 = const :name;
-        symbol [ name %tmp.72 57 53 57 const ];
+        symbol [ name %tmp.72 58 53 57 const ];
         %tmp.73 = agetv %tmp.70 %tmp.72;
         %tmp.74 = invoke %tmp.68 %tmp.69(%tmp.73);
-        bf %tmp.74 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_12_60_12_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_12_60_12_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_61_60_12_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 58 16 ]
-        %tmp.75 = lgetv %i.8;
-        symbol [ i %tmp.75 58 31 32 ];
-        lputv %correctIndex.7 %tmp.75;
-        symbol [ correctIndex %correctIndex.7 58 16 28 ];
+        bf %tmp.74 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_12_61_12_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_12_61_12_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_61_61_12_start:
 [ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 59 16 ]
-        goto break @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_61_60_12_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_12_60_12_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_12_60_12_if_end:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_52_61_8_stop:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_incr:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 56 ]
+        %tmp.75 = lgetv %i.8;
+        symbol [ i %tmp.75 59 31 32 ];
+        lputv %correctIndex.7 %tmp.75;
+        symbol [ correctIndex %correctIndex.7 59 16 28 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 60 16 ]
+        goto break @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_61_61_12_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_12_61_12_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_58_12_61_12_if_end:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_52_62_8_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_incr:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 57 ]
         %tmp.78 = lgetv %i.8;
-        symbol [ i %tmp.78 56 47 48 ];
+        symbol [ i %tmp.78 57 47 48 ];
         %tmp.79 = add %tmp.78 1;
         lputv %i.8 %tmp.79;
-        symbol [ i %i.8 56 47 48 ];
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_test;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_56_8_61_8_for_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 63 8 ]
+        symbol [ i %i.8 57 47 48 ];
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_test;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_57_8_62_8_for_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 64 8 ]
         %tmp.80 = newd 4;
         %tmp.82 = const :flag;
-        symbol [ flag %tmp.82 64 13 17 const ];
+        symbol [ flag %tmp.82 65 13 17 const ];
         %tmp.83 = lgetv %correctCountry;
-        symbol [ correctCountry %tmp.83 64 21 35 ];
+        symbol [ correctCountry %tmp.83 65 21 35 ];
         %tmp.85 = const :flag;
-        symbol [ flag %tmp.85 64 37 41 const ];
+        symbol [ flag %tmp.85 65 37 41 const ];
         %tmp.86 = agetv %tmp.83 %tmp.85;
         %tmp.87 = dup %tmp.80;
         %tmp.88 = aputv %tmp.87 %tmp.82 %tmp.86;
         %tmp.90 = const :correctAnswer;
-        symbol [ correctAnswer %tmp.90 65 13 26 const ];
+        symbol [ correctAnswer %tmp.90 66 13 26 const ];
         %tmp.91 = lgetv %correctCountry;
-        symbol [ correctCountry %tmp.91 65 30 44 ];
+        symbol [ correctCountry %tmp.91 66 30 44 ];
         %tmp.93 = const :name;
-        symbol [ name %tmp.93 65 46 50 const ];
+        symbol [ name %tmp.93 66 46 50 const ];
         %tmp.94 = agetv %tmp.91 %tmp.93;
         %tmp.95 = dup %tmp.88;
         %tmp.96 = aputv %tmp.95 %tmp.90 %tmp.94;
         %tmp.98 = const :answers;
-        symbol [ answers %tmp.98 66 13 20 const ];
+        symbol [ answers %tmp.98 67 13 20 const ];
         %tmp.99 = lgetv %allAnswers.2;
-        symbol [ allAnswers %tmp.99 66 24 34 ];
+        symbol [ allAnswers %tmp.99 67 24 34 ];
         %tmp.100 = dup %tmp.96;
         %tmp.101 = aputv %tmp.100 %tmp.98 %tmp.99;
         %tmp.103 = const :correctIndex;
-        symbol [ correctIndex %tmp.103 67 13 25 const ];
+        symbol [ correctIndex %tmp.103 68 13 25 const ];
         %tmp.104 = lgetv %correctIndex.7;
-        symbol [ correctIndex %tmp.104 67 29 41 ];
+        symbol [ correctIndex %tmp.104 68 29 41 ];
         %tmp.105 = dup %tmp.101;
         %tmp.106 = aputv %tmp.105 %tmp.103 %tmp.104;
         ret %tmp.106;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_69_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_37_74_70_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 71; @symbol_functiondef = [getCurrentQuestion,71,13,31]; @symbol_return<0> = [Dictionary,71,37,47]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 72; @symbol_functiondef = [getCurrentQuestion,72,13,31]; @symbol_return<0> = [Dictionary,72,37,47]; ]
     function getCurrentQuestion() as Dictionary or Null {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_71_56_76_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 72 8 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_8_74_8_if_stmt:
-        symbol [ _currentQuestionIndex %tmp.2 72 12 33 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_56_77_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 73 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_8_75_8_if_stmt:
+        symbol [ _currentQuestionIndex %tmp.2 73 12 33 ];
         %tmp.2 = getv ? :_currentQuestionIndex;
-        symbol [ _questions %tmp.4 72 36 46 ];
+        symbol [ _questions %tmp.4 73 36 46 ];
         %tmp.4 = getv ? :_questions;
-        symbol [ size %tmp.5 72 47 51 ];
+        symbol [ size %tmp.5 73 47 51 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = lt %tmp.2 %tmp.6;
-        bf %tmp.7 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_8_74_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_8_74_8_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_55_74_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 73 12 ]
-        symbol [ _questions %tmp.9 73 19 29 ];
+        bf %tmp.7 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_8_75_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_8_75_8_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_55_75_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 74 12 ]
+        symbol [ _questions %tmp.9 74 19 29 ];
         %tmp.9 = getv ? :_questions;
-        symbol [ _currentQuestionIndex %tmp.11 73 30 51 ];
+        symbol [ _currentQuestionIndex %tmp.11 74 30 51 ];
         %tmp.11 = getv ? :_currentQuestionIndex;
         %tmp.12 = agetv %tmp.9 %tmp.11;
         ret %tmp.12;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_55_74_8_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_8_74_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_8_74_8_if_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 75 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_55_75_8_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_8_75_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_73_8_75_8_if_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 76 8 ]
         %tmp.13 = null;
         ret %tmp.13;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_71_56_76_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_72_56_77_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 78; @symbol_functiondef = [answerQuestion,78,13,27]; @symbol_param<0> = [selectedIndex,78,28,41]; @symbol_param<0>_type<0> = [Number,78,45,51]; @symbol_return<0> = [Boolean,78,56,63]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 79; @symbol_functiondef = [answerQuestion,79,13,27]; @symbol_param<0> = [selectedIndex,79,28,41]; @symbol_param<0>_type<0> = [Number,79,45,51]; @symbol_return<0> = [Boolean,79,56,63]; ]
     function answerQuestion(selectedIndex as Number) as Boolean {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 79 8 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_stop" ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 80 8 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_stop" ]
         %currentQuestion.1 = local;
-        symbol [ currentQuestion %currentQuestion.1 79 12 27 ];
+        symbol [ currentQuestion %currentQuestion.1 80 12 27 ];
         %tmp.1 = self;
-        symbol [ getCurrentQuestion %tmp.2 79 30 48 ];
+        symbol [ getCurrentQuestion %tmp.2 80 30 48 ];
         %tmp.2 = getv function %tmp.1 :getCurrentQuestion;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %currentQuestion.1 %tmp.3;
-        symbol [ currentQuestion %currentQuestion.1 79 12 27 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 80 8 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_8_82_8_if_stmt:
+        symbol [ currentQuestion %currentQuestion.1 80 12 27 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 81 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_8_83_8_if_stmt:
         %tmp.4 = lgetv %currentQuestion.1;
-        symbol [ currentQuestion %tmp.4 80 12 27 ];
+        symbol [ currentQuestion %tmp.4 81 12 27 ];
         %tmp.5 = null;
         %tmp.6 = eq %tmp.4 %tmp.5;
-        bf %tmp.6 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_8_82_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_8_82_8_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_37_82_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 81 12 ]
+        bf %tmp.6 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_8_83_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_8_83_8_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_37_83_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 82 12 ]
         %tmp.7 = false;
         ret %tmp.7;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_37_82_8_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_8_82_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_80_8_82_8_if_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 84 8 ]
-        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_stop" ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_37_83_8_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_8_83_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_81_8_83_8_if_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 85 8 ]
+        [ "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_start" "C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_stop" ]
         %isCorrect.2 = local;
-        symbol [ isCorrect %isCorrect.2 84 12 21 ];
+        symbol [ isCorrect %isCorrect.2 85 12 21 ];
         %tmp.8 = lgetv %selectedIndex;
-        symbol [ selectedIndex %tmp.8 84 25 38 ];
+        symbol [ selectedIndex %tmp.8 85 25 38 ];
         %tmp.9 = lgetv %currentQuestion.1;
-        symbol [ currentQuestion %tmp.9 84 42 57 ];
+        symbol [ currentQuestion %tmp.9 85 42 57 ];
         %tmp.11 = const :correctIndex;
-        symbol [ correctIndex %tmp.11 84 59 71 const ];
+        symbol [ correctIndex %tmp.11 85 59 71 const ];
         %tmp.12 = agetv %tmp.9 %tmp.11;
         %tmp.13 = eq %tmp.8 %tmp.12;
         lputv %isCorrect.2 %tmp.13;
-        symbol [ isCorrect %isCorrect.2 84 12 21 ];
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 86 8 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_8_88_8_if_stmt:
+        symbol [ isCorrect %isCorrect.2 85 12 21 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 87 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_8_89_8_if_stmt:
         %tmp.14 = lgetv %isCorrect.2;
-        symbol [ isCorrect %tmp.14 86 12 21 ];
-        bf %tmp.14 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_8_88_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_8_88_8_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_23_88_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 87 12 ]
-        symbol [ _score %tmp.17 87 12 18 ];
+        symbol [ isCorrect %tmp.14 87 12 21 ];
+        bf %tmp.14 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_8_89_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_8_89_8_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_23_89_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 88 12 ]
+        symbol [ _score %tmp.17 88 12 18 ];
         %tmp.17 = getv ? :_score;
         %tmp.18 = add %tmp.17 1;
-        symbol [ _score ? 87 12 18 ];
+        symbol [ _score ? 88 12 18 ];
         putv self :_score dup %tmp.18;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_23_88_8_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_8_88_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_86_8_88_8_if_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 90 8 ]
-        symbol [ _currentQuestionIndex %tmp.21 90 8 29 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_23_89_8_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_8_89_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_87_8_89_8_if_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 91 8 ]
+        symbol [ _currentQuestionIndex %tmp.21 91 8 29 ];
         %tmp.21 = getv ? :_currentQuestionIndex;
         %tmp.22 = add %tmp.21 1;
-        symbol [ _currentQuestionIndex ? 90 8 29 ];
+        symbol [ _currentQuestionIndex ? 91 8 29 ];
         putv self :_currentQuestionIndex dup %tmp.22;
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 92 8 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_8_94_8_if_stmt:
-        symbol [ _currentQuestionIndex %tmp.24 92 12 33 ];
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 93 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_8_95_8_if_stmt:
+        symbol [ _currentQuestionIndex %tmp.24 93 12 33 ];
         %tmp.24 = getv ? :_currentQuestionIndex;
-        symbol [ _questions %tmp.26 92 37 47 ];
+        symbol [ _questions %tmp.26 93 37 47 ];
         %tmp.26 = getv ? :_questions;
-        symbol [ size %tmp.27 92 48 52 ];
+        symbol [ size %tmp.27 93 48 52 ];
         %tmp.27 = getv function %tmp.26 :size;
         %tmp.28 = invoke %tmp.26 %tmp.27();
         %tmp.29 = gte %tmp.24 %tmp.28;
-        bf %tmp.29 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_8_94_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_8_94_8_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_56_94_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 93 12 ]
+        bf %tmp.29 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_8_95_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_8_95_8_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_56_95_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 94 12 ]
         %tmp.30 = false;
-        symbol [ _isGameActive ? 93 12 25 ];
+        symbol [ _isGameActive ? 94 12 25 ];
         putv self :_isGameActive %tmp.30;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_56_94_8_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_8_94_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_92_8_94_8_if_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 96 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_56_95_8_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_8_95_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_93_8_95_8_if_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 97 8 ]
         %tmp.31 = lgetv %isCorrect.2;
-        symbol [ isCorrect %tmp.31 96 15 24 ];
+        symbol [ isCorrect %tmp.31 97 15 24 ];
         ret %tmp.31;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_78_64_97_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_79_64_98_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 99; @symbol_functiondef = [isGameActive,99,13,25]; @symbol_return<0> = [Boolean,99,31,38]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 100; @symbol_functiondef = [isGameActive,100,13,25]; @symbol_return<0> = [Boolean,100,31,38]; ]
     function isGameActive() as Boolean {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_99_39_101_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 100 8 ]
-        symbol [ _isGameActive %tmp.2 100 15 28 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_100_39_102_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 101 8 ]
+        symbol [ _isGameActive %tmp.2 101 15 28 ];
         %tmp.2 = getv ? :_isGameActive;
         ret %tmp.2;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_99_39_101_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_100_39_102_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 103; @symbol_functiondef = [getCurrentQuestionNumber,103,13,37]; @symbol_return<0> = [Number,103,43,49]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 104; @symbol_functiondef = [getCurrentQuestionNumber,104,13,37]; @symbol_return<0> = [Number,104,43,49]; ]
     function getCurrentQuestionNumber() as Number {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_103_50_105_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 104 8 ]
-        symbol [ _currentQuestionIndex %tmp.2 104 15 36 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_104_50_106_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 105 8 ]
+        symbol [ _currentQuestionIndex %tmp.2 105 15 36 ];
         %tmp.2 = getv ? :_currentQuestionIndex;
         %tmp.3 = 1;
         %tmp.4 = add %tmp.2 %tmp.3;
         ret %tmp.4;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_103_50_105_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_104_50_106_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 107; @symbol_functiondef = [getTotalQuestions,107,13,30]; @symbol_return<0> = [Number,107,36,42]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 108; @symbol_functiondef = [getTotalQuestions,108,13,30]; @symbol_return<0> = [Number,108,36,42]; ]
     function getTotalQuestions() as Number {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_107_43_109_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 108 8 ]
-        symbol [ _totalQuestions %tmp.2 108 15 30 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_108_43_110_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 109 8 ]
+        symbol [ _totalQuestions %tmp.2 109 15 30 ];
         %tmp.2 = getv ? :_totalQuestions;
         ret %tmp.2;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_107_43_109_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_108_43_110_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 111; @symbol_functiondef = [getScore,111,13,21]; @symbol_return<0> = [Number,111,27,33]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 112; @symbol_functiondef = [getScore,112,13,21]; @symbol_return<0> = [Number,112,27,33]; ]
     function getScore() as Number {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_111_34_113_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 112 8 ]
-        symbol [ _score %tmp.2 112 15 21 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_112_34_114_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 113 8 ]
+        symbol [ _score %tmp.2 113 15 21 ];
         %tmp.2 = getv ? :_score;
         ret %tmp.2;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_111_34_113_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_112_34_114_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 115; @symbol_functiondef = [getScorePercentage,115,13,31]; @symbol_return<0> = [Number,115,37,43]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 116; @symbol_functiondef = [getScorePercentage,116,13,31]; @symbol_return<0> = [Number,116,37,43]; ]
     function getScorePercentage() as Number {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_115_44_120_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 116 8 ]
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_8_118_8_if_stmt:
-        symbol [ _totalQuestions %tmp.2 116 12 27 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_44_121_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 117 8 ]
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_8_119_8_if_stmt:
+        symbol [ _totalQuestions %tmp.2 117 12 27 ];
         %tmp.2 = getv ? :_totalQuestions;
         %tmp.3 = 0;
         %tmp.4 = eq %tmp.2 %tmp.3;
-        bf %tmp.4 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_8_118_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_8_118_8_if_true:
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_34_118_8_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 117 12 ]
+        bf %tmp.4 @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_8_119_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_8_119_8_if_true:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_34_119_8_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 118 12 ]
         %tmp.5 = 0;
         ret %tmp.5;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_34_118_8_stop:
-        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_8_118_8_if_end;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_8_118_8_if_end:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 119 8 ]
-        symbol [ _score %tmp.7 119 16 22 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_34_119_8_stop:
+        goto @C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_8_119_8_if_end;
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_117_8_119_8_if_end:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 120 8 ]
+        symbol [ _score %tmp.7 120 16 22 ];
         %tmp.7 = getv ? :_score;
         %tmp.8 = 100;
         %tmp.9 = mul %tmp.7 %tmp.8;
-        symbol [ _totalQuestions %tmp.11 119 32 47 ];
+        symbol [ _totalQuestions %tmp.11 120 32 47 ];
         %tmp.11 = getv ? :_totalQuestions;
         %tmp.12 = div %tmp.9 %tmp.11;
         ret %tmp.12;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_115_44_120_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_116_44_121_4_stop:
     }
-    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 122; @symbol_functiondef = [isGameFinished,122,13,27]; @symbol_return<0> = [Boolean,122,33,40]; ]
+    [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 123; @symbol_functiondef = [isGameFinished,123,13,27]; @symbol_return<0> = [Boolean,123,33,40]; ]
     function isGameFinished() as Boolean {
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_122_41_124_4_start:
-[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 123 8 ]
-        symbol [ _currentQuestionIndex %tmp.2 123 15 36 ];
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_123_41_125_4_start:
+[ "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc" 124 8 ]
+        symbol [ _currentQuestionIndex %tmp.2 124 15 36 ];
         %tmp.2 = getv ? :_currentQuestionIndex;
-        symbol [ _questions %tmp.4 123 40 50 ];
+        symbol [ _questions %tmp.4 124 40 50 ];
         %tmp.4 = getv ? :_questions;
-        symbol [ size %tmp.5 123 51 55 ];
+        symbol [ size %tmp.5 124 51 55 ];
         %tmp.5 = getv function %tmp.4 :size;
         %tmp.6 = invoke %tmp.4 %tmp.5();
         %tmp.7 = gte %tmp.2 %tmp.6;
         ret %tmp.7;
-C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_122_41_124_4_stop:
+C__Applications_Projet_garmin_Quizz_flag_quizz_drapeau_source_QuizManager_mc_123_41_125_4_stop:
     }
 }
 [ @file = "C:\Applications\Projet_garmin\Quizz_flag\quizz_drapeau\source\QuizManager.mc"; @line = 2; ]

@@ -1,4 +1,4 @@
-// source/FlagData.mc - Improved version with type safety
+// source/FlagData.mc - Modifié pour générer seulement 2 mauvaises réponses
 import Toybox.Lang;
 import Toybox.Math;
 
@@ -38,40 +38,40 @@ class FlagData {
     ];
 
     static function getFlagResource(flagId as String) as ResourceId or Null {
-    switch (flagId) {
-        case "fr": return Rez.Drawables.fr;
-        case "de": return Rez.Drawables.de;
-        case "es": return Rez.Drawables.es;
-        case "it": return Rez.Drawables.it;
-        case "gb": return Rez.Drawables.gb;
-        case "us": return Rez.Drawables.us;
-        case "ca": return Rez.Drawables.ca;
-        case "jp": return Rez.Drawables.jp;
-        case "cn": return Rez.Drawables.cn;
-        case "br": return Rez.Drawables.br;
-        case "ar": return Rez.Drawables.ar;
-        case "au": return Rez.Drawables.au;
-        case "ru": return Rez.Drawables.ru;
-        case "in": return Rez.Drawables.in;
-        case "mx": return Rez.Drawables.mx;
-        case "se": return Rez.Drawables.se;
-        case "no": return Rez.Drawables.no;
-        case "nl": return Rez.Drawables.nl;
-        case "ch": return Rez.Drawables.ch;
-        case "be": return Rez.Drawables.be;
-        case "pt": return Rez.Drawables.pt;
-        case "gr": return Rez.Drawables.gr;
-        case "tr": return Rez.Drawables.tr;
-        case "eg": return Rez.Drawables.eg;
-        case "za": return Rez.Drawables.za;
-        case "kr": return Rez.Drawables.kr;
-        case "th": return Rez.Drawables.th;
-        case "vn": return Rez.Drawables.vn;
-        case "sg": return Rez.Drawables.sg;
-        case "nz": return Rez.Drawables.nz;
-        default: return null;
+        switch (flagId) {
+            case "fr": return Rez.Drawables.fr;
+            case "de": return Rez.Drawables.de;
+            case "es": return Rez.Drawables.es;
+            case "it": return Rez.Drawables.it;
+            case "gb": return Rez.Drawables.gb;
+            case "us": return Rez.Drawables.us;
+            case "ca": return Rez.Drawables.ca;
+            case "jp": return Rez.Drawables.jp;
+            case "cn": return Rez.Drawables.cn;
+            case "br": return Rez.Drawables.br;
+            case "ar": return Rez.Drawables.ar;
+            case "au": return Rez.Drawables.au;
+            case "ru": return Rez.Drawables.ru;
+            case "in": return Rez.Drawables.in;
+            case "mx": return Rez.Drawables.mx;
+            case "se": return Rez.Drawables.se;
+            case "no": return Rez.Drawables.no;
+            case "nl": return Rez.Drawables.nl;
+            case "ch": return Rez.Drawables.ch;
+            case "be": return Rez.Drawables.be;
+            case "pt": return Rez.Drawables.pt;
+            case "gr": return Rez.Drawables.gr;
+            case "tr": return Rez.Drawables.tr;
+            case "eg": return Rez.Drawables.eg;
+            case "za": return Rez.Drawables.za;
+            case "kr": return Rez.Drawables.kr;
+            case "th": return Rez.Drawables.th;
+            case "vn": return Rez.Drawables.vn;
+            case "sg": return Rez.Drawables.sg;
+            case "nz": return Rez.Drawables.nz;
+            default: return null;
+        }
     }
-}
 
     static function getRandomCountries(count as Number) as Array<Dictionary> {
         var shuffled = [] as Array<Dictionary>;
@@ -99,6 +99,7 @@ class FlagData {
         return shuffled;
     }
 
+    // Modifié pour accepter le nombre de mauvaises réponses demandées (maintenant 2)
     static function generateWrongAnswers(correctCountry as Dictionary, count as Number) as Array<String> {
         var wrongAnswers = [] as Array<String>;
         var availableCountries = [] as Array<String>;
@@ -120,13 +121,12 @@ class FlagData {
             availableCountries[j] = temp;
         }
         
-        // Prendre les premières mauvaises réponses
+        // Prendre les premières mauvaises réponses (maintenant limité par count = 2)
         var maxCount = count < availableCountries.size() ? count : availableCountries.size();
         for (var i = 0; i < maxCount; i++) {
             wrongAnswers.add(availableCountries[i]);
         }
         
         return wrongAnswers;
-        
     }
 }

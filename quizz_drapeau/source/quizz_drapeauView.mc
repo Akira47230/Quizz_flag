@@ -1,13 +1,15 @@
-// source/quizz_drapeauView.mc - Version avec chargement correct des drapeaux
+// source/quizz_drapeauView.mc - Modifié avec drapeau plus grand et transition automatique
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
+import Toybox.Timer;
 
 class quizz_drapeauView extends WatchUi.View {
     private var _quizManager as QuizManager;
     private var _gameState as Symbol; // :menu, :playing, :result, :finalScore
     private var _delegate as Object or Null;
     private var _lastResultTitle as String;
+    private var _resultTimer as Timer.Timer or Null;
 
     function initialize() {
         View.initialize();
@@ -15,6 +17,7 @@ class quizz_drapeauView extends WatchUi.View {
         _gameState = :menu;
         _delegate = null;
         _lastResultTitle = "";
+        _resultTimer = null;
     }
 
     function setDelegate(delegate as Object) as Void {
@@ -86,11 +89,11 @@ class quizz_drapeauView extends WatchUi.View {
                           " - Score: " + _quizManager.getScore();
         dc.drawText(centerX, 10, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Zone pour le drapeau
-        var flagX = centerX - 40;
+        // Zone pour le drapeau - AUGMENTÉE
+        var flagX = centerX - 60;  // Augmenté de 40 à 60
         var flagY = 30;
-        var flagWidth = 80;
-        var flagHeight = 50;
+        var flagWidth = 120;       // Augmenté de 80 à 120
+        var flagHeight = 75;       // Augmenté de 50 à 75
         
         // Arrière-plan pour le drapeau
         dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -98,39 +101,68 @@ class quizz_drapeauView extends WatchUi.View {
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         dc.drawRectangle(flagX, flagY, flagWidth, flagHeight);
         
-        // Chargement et affichage du drapeau
-        var flagLoaded = false;
-        var flagId = question[:flag] as String;
-        
-        try {
-            var flagResource = getFlagResource(flagId);
-            if (flagResource != null) {
-                var flagBitmap = WatchUi.loadResource(flagResource);
-                if (flagBitmap != null) {
-                    // Calculer la position pour centrer l'image dans la zone
-                    var imgX = flagX + (flagWidth - flagBitmap.getWidth()) / 2;
-                    var imgY = flagY + (flagHeight - flagBitmap.getHeight()) / 2;
-                    dc.drawBitmap(imgX, imgY, flagBitmap);
-                    flagLoaded = true;
-                }
-            }
-        } catch (e) {
-            // Erreur de chargement
+// Alternative si drawBitmap2() n'est pas disponible
+// Remplacer la section de chargement du drapeau par ceci :
+
+// Chargement et affichage du drapeau - SOLUTION ALTERNATIVE
+var flagLoaded = false;
+var flagId = question[:flag] as String;
+
+try {
+    var flagResource = getFlagResource(flagId);
+    if (flagResource != null) {
+        var flagBitmap = WatchUi.loadResource(flagResource);
+        if (flagBitmap != null) {
+            
+            // Vérifier la taille native de l'image
+            var bw = flagBitmap.getWidth().toNumber();
+            var bh = flagBitmap.getHeight().toNumber();
+
+            // drawBitmap ne redimensionne pas dans la plupart des SDK :
+            // on centre l'image dans la zone définie.
+            var imgX = flagX + (flagWidth - bw) / 2;
+            var imgY = flagY + (flagHeight - bh) / 2;
+            dc.drawBitmap(imgX, imgY, flagBitmap);
+
+            // Afficher la taille native pour debug (utile pour vérifier si
+            // vos PNG sont trop petits pour l'affichage souhaité)
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(flagX + (flagWidth / 2), flagY + flagHeight - 6, Graphics.FONT_XTINY,
+                        bw.toString() + "x" + bh.toString(), Graphics.TEXT_JUSTIFY_CENTER);
+            flagLoaded = true;
+            
+            // OPTION 2: Dessiner l'image plusieurs fois pour simuler un agrandissement
+            // (moins propre mais fonctionne toujours)
+            /*
+            var imgX = flagX + (flagWidth - flagBitmap.getWidth()) / 2;
+            var imgY = flagY + (flagHeight - flagBitmap.getHeight()) / 2;
+            
+            // Dessiner l'image plusieurs fois légèrement décalée pour un effet "gras"
+            dc.drawBitmap(imgX, imgY, flagBitmap);
+            dc.drawBitmap(imgX + 1, imgY, flagBitmap);
+            dc.drawBitmap(imgX, imgY + 1, flagBitmap);
+            dc.drawBitmap(imgX + 1, imgY + 1, flagBitmap);
+            flagLoaded = true;
+            */
         }
+    }
+} catch (e) {
+    // Erreur de chargement
+}
         
         // Si le chargement a échoué, afficher un placeholder
         if (!flagLoaded) {
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX, flagY + 15, Graphics.FONT_XTINY, 
+            dc.drawText(centerX, flagY + 25, Graphics.FONT_XTINY, 
                        "Drapeau:", Graphics.TEXT_JUSTIFY_CENTER);
-            dc.drawText(centerX, flagY + 30, Graphics.FONT_SMALL, 
+            dc.drawText(centerX, flagY + 45, Graphics.FONT_SMALL, 
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse avec sélection
+        // Options de réponse avec sélection - MAINTENANT SEULEMENT 3 RÉPONSES
         var answers = question[:answers] as Array;
         var startY = flagY + flagHeight + 15;
-        var buttonHeight = 22;
+        var buttonHeight = 25;  // Légèrement augmenté pour compenser l'espace libéré
         var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
@@ -147,7 +179,7 @@ class quizz_drapeauView extends WatchUi.View {
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
             var answerText = answers[i] as String;
             var buttonText = (i + 1) + ". " + answerText;
-            dc.drawText(centerX, y + 4, Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(centerX, y + 6, Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
         }
         
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
@@ -209,12 +241,13 @@ class quizz_drapeauView extends WatchUi.View {
                        _quizManager.getCurrentQuestionNumber();
         dc.drawText(centerX, centerY, Graphics.FONT_SMALL, scoreText, Graphics.TEXT_JUSTIFY_CENTER);
 
+        // Message automatique - plus de SELECT pour continuer
         if (_quizManager.isGameFinished()) {
             dc.drawText(centerX, centerY + 25, Graphics.FONT_TINY, 
-                       "SELECT pour le score final", Graphics.TEXT_JUSTIFY_CENTER);
+                       "Affichage du score final...", Graphics.TEXT_JUSTIFY_CENTER);
         } else {
             dc.drawText(centerX, centerY + 25, Graphics.FONT_TINY, 
-                       "SELECT pour continuer", Graphics.TEXT_JUSTIFY_CENTER);
+                       "Question suivante...", Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
@@ -271,6 +304,14 @@ class quizz_drapeauView extends WatchUi.View {
 
     function setGameState(state as Symbol) as Void {
         _gameState = state;
+        
+        // NOUVELLE LOGIQUE: Démarrer le timer automatique pour l'écran de résultat
+        if (state == :result) {
+            startResultTimer();
+        } else {
+            stopResultTimer();
+        }
+        
         WatchUi.requestUpdate();
     }
 
@@ -286,6 +327,37 @@ class quizz_drapeauView extends WatchUi.View {
         return 0;
     }
 
+    // NOUVELLES MÉTHODES pour la gestion automatique
+    private function startResultTimer() as Void {
+        stopResultTimer(); // Arrêter tout timer existant
+        
+        _resultTimer = new Timer.Timer();
+        _resultTimer.start(method(:onResultTimerCallback), 2000, false); // 2 secondes
+    }
+
+    private function stopResultTimer() as Void {
+        if (_resultTimer != null) {
+            _resultTimer.stop();
+            _resultTimer = null;
+        }
+    }
+
+    function onResultTimerCallback() as Void {
+        // Transition automatique après affichage du résultat
+        if (_gameState == :result) {
+            if (_quizManager.isGameFinished()) {
+                setGameState(:finalScore);
+            } else {
+                setGameState(:playing);
+                // Réinitialiser la sélection pour la prochaine question
+                if (_delegate != null && _delegate has :resetSelectedAnswerIndex) {
+                    _delegate.resetSelectedAnswerIndex();
+                }
+            }
+        }
+    }
+
     function onHide() as Void {
+        stopResultTimer();
     }
 }

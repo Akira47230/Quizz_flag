@@ -1,4 +1,4 @@
-// source/QuizManager.mc
+// source/QuizManager.mc - Modifié pour 3 réponses au lieu de 4
 import Toybox.Lang;
 import Toybox.Math;
 
@@ -35,7 +35,8 @@ class QuizManager {
     }
 
     function generateQuestion(correctCountry as Dictionary) as Dictionary {
-        var wrongAnswers = FlagData.generateWrongAnswers(correctCountry, 3);
+        // Génération de seulement 2 mauvaises réponses au lieu de 3
+        var wrongAnswers = FlagData.generateWrongAnswers(correctCountry, 2);
         var allAnswers = [correctCountry[:name]];
         
         // Ajouter les mauvaises réponses
