@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Modifié avec drapeau plus grand et transition automatique
+// source/quizz_drapeauView.mc - Version propre sans mosaïque
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -79,7 +79,7 @@ class quizz_drapeauView extends WatchUi.View {
 
         var width = dc.getWidth();
         var height = dc.getHeight();
-        var centerX = width / 2;
+        var screenCenterX = width / 2;
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
@@ -87,104 +87,81 @@ class quizz_drapeauView extends WatchUi.View {
         var questionText = _quizManager.getCurrentQuestionNumber() + "/" + 
                           _quizManager.getTotalQuestions() + 
                           " - Score: " + _quizManager.getScore();
-        dc.drawText(centerX, 10, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterX, height * 0.05, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Zone pour le drapeau - AUGMENTÉE
-        var flagX = centerX - 60;  // Augmenté de 40 à 60
-        var flagY = 30;
-        var flagWidth = 120;       // Augmenté de 80 à 120
-        var flagHeight = 75;       // Augmenté de 50 à 75
+        // Zone pour le drapeau - DIMENSIONS RELATIVES AUGMENTÉES DE 15%
+        var flagWidth = (width * 0.805).toNumber();   // 70% * 1.15 = 80.5% de la largeur d'écran
+        var flagHeight = (height * 0.4025).toNumber(); // 35% * 1.15 = 40.25% de la hauteur d'écran
+        var flagX = screenCenterX - (flagWidth / 2);
+        var flagY = (height * 0.15).toNumber();      // Commence à 15% du haut
         
-        // Arrière-plan pour le drapeau
-        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        dc.fillRectangle(flagX, flagY, flagWidth, flagHeight);
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawRectangle(flagX, flagY, flagWidth, flagHeight);
+        // SUPPRIMÉ: Plus de rectangle gris de fond
+        // dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        // dc.fillRectangle(flagX, flagY, flagWidth, flagHeight);
+        // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        // dc.drawRectangle(flagX, flagY, flagWidth, flagHeight);
         
-// Alternative si drawBitmap2() n'est pas disponible
-// Remplacer la section de chargement du drapeau par ceci :
-
-// Chargement et affichage du drapeau - SOLUTION ALTERNATIVE
-var flagLoaded = false;
-var flagId = question[:flag] as String;
-
-try {
-    var flagResource = getFlagResource(flagId);
-    if (flagResource != null) {
-        var flagBitmap = WatchUi.loadResource(flagResource);
-        if (flagBitmap != null) {
-            
-            // Vérifier la taille native de l'image
-            var bw = flagBitmap.getWidth().toNumber();
-            var bh = flagBitmap.getHeight().toNumber();
-
-            // drawBitmap ne redimensionne pas dans la plupart des SDK :
-            // on centre l'image dans la zone définie.
-            var imgX = flagX + (flagWidth - bw) / 2;
-            var imgY = flagY + (flagHeight - bh) / 2;
-            dc.drawBitmap(imgX, imgY, flagBitmap);
-
-            // Afficher la taille native pour debug (utile pour vérifier si
-            // vos PNG sont trop petits pour l'affichage souhaité)
+        // Chargement et affichage du drapeau - SANS FOND
+        var flagId = question[:flag] as String;
+        var flagResource = getFlagResource(flagId);
+        
+        if (flagResource != null) {
+            try {
+                var flagBitmap = WatchUi.loadResource(flagResource);
+                if (flagBitmap != null) {
+                    // Centrer l'image dans la zone définie
+                    var bitmapWidth = flagBitmap.getWidth().toNumber();
+                    var bitmapHeight = flagBitmap.getHeight().toNumber();
+                    
+                    var imgX = flagX + (flagWidth - bitmapWidth) / 2;
+                    var imgY = flagY + (flagHeight - bitmapHeight) / 2;
+                    
+                    // Dessiner le drapeau directement sur le fond noir
+                    dc.drawBitmap(imgX, imgY, flagBitmap);
+                } else {
+                    // Fallback si le bitmap ne peut pas être chargé
+                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                    dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
+                               flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
+                }
+            } catch (e) {
+                // Fallback en cas d'erreur
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
+                           flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
+            }
+        } else {
+            // Fallback si la ressource n'existe pas
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(flagX + (flagWidth / 2), flagY + flagHeight - 6, Graphics.FONT_XTINY,
-                        bw.toString() + "x" + bh.toString(), Graphics.TEXT_JUSTIFY_CENTER);
-            flagLoaded = true;
-            
-            // OPTION 2: Dessiner l'image plusieurs fois pour simuler un agrandissement
-            // (moins propre mais fonctionne toujours)
-            /*
-            var imgX = flagX + (flagWidth - flagBitmap.getWidth()) / 2;
-            var imgY = flagY + (flagHeight - flagBitmap.getHeight()) / 2;
-            
-            // Dessiner l'image plusieurs fois légèrement décalée pour un effet "gras"
-            dc.drawBitmap(imgX, imgY, flagBitmap);
-            dc.drawBitmap(imgX + 1, imgY, flagBitmap);
-            dc.drawBitmap(imgX, imgY + 1, flagBitmap);
-            dc.drawBitmap(imgX + 1, imgY + 1, flagBitmap);
-            flagLoaded = true;
-            */
-        }
-    }
-} catch (e) {
-    // Erreur de chargement
-}
-        
-        // Si le chargement a échoué, afficher un placeholder
-        if (!flagLoaded) {
-            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(centerX, flagY + 25, Graphics.FONT_XTINY, 
-                       "Drapeau:", Graphics.TEXT_JUSTIFY_CENTER);
-            dc.drawText(centerX, flagY + 45, Graphics.FONT_SMALL, 
+            dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse avec sélection - MAINTENANT SEULEMENT 3 RÉPONSES
+        // Options de réponse - LARGEUR RÉDUITE ET NOUVELLES COULEURS
         var answers = question[:answers] as Array;
-        var startY = flagY + flagHeight + 15;
-        var buttonHeight = 25;  // Légèrement augmenté pour compenser l'espace libéré
+        var buttonsStartY = (height * 0.6).toNumber();   // Ajusté à 60% pour compenser drapeau plus grand
+        var buttonHeight = (height * 0.12).toNumber();   // 12% de hauteur d'écran par bouton
+        var buttonMargin = (width * 0.15).toNumber();    // AUGMENTÉ: 15% de marge (au lieu de 5%)
         var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
-            var y = startY + (i * buttonHeight);
+            var y = buttonsStartY + (i * buttonHeight);
             var isSelected = (i == selectedIndex);
             
-            // Couleur du bouton selon la sélection
-            var buttonColor = isSelected ? Graphics.COLOR_BLUE : Graphics.COLOR_DK_GRAY;
-            var textColor = isSelected ? Graphics.COLOR_WHITE : Graphics.COLOR_LT_GRAY;
+            // NOUVELLES COULEURS PERSONNALISÉES
+            var buttonColor = isSelected ? 0x1E5631 : 0x9F7E69;  // Vert foncé si sélectionné, beige sinon
+            var textColor = Graphics.COLOR_WHITE;  // Texte blanc pour contraste sur les deux couleurs
             
             dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(10, y, width - 20, buttonHeight - 2, 3);
+            dc.fillRoundedRectangle(buttonMargin, y, width - (2 * buttonMargin), 
+                                  (buttonHeight * 0.8).toNumber(), 3);
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
             var answerText = answers[i] as String;
             var buttonText = (i + 1) + ". " + answerText;
-            dc.drawText(centerX, y + 6, Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(screenCenterX, y + (buttonHeight * 0.2).toNumber(), 
+                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
         }
-        
-        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(centerX, height - 15, Graphics.FONT_XTINY, 
-                   "UP/DOWN: naviguer, SELECT: répondre", Graphics.TEXT_JUSTIFY_CENTER);
     }
 
     // Fonction pour mapper les IDs de drapeaux aux ressources
@@ -232,23 +209,9 @@ try {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Titre de résultat
-        dc.drawText(centerX, centerY - 30, Graphics.FONT_MEDIUM, 
+        // Afficher seulement si c'est correct ou incorrect - SIMPLIFIÉ
+        dc.drawText(centerX, centerY, Graphics.FONT_LARGE, 
                    _lastResultTitle, Graphics.TEXT_JUSTIFY_CENTER);
-
-        // Score actuel
-        var scoreText = "Score: " + _quizManager.getScore() + "/" + 
-                       _quizManager.getCurrentQuestionNumber();
-        dc.drawText(centerX, centerY, Graphics.FONT_SMALL, scoreText, Graphics.TEXT_JUSTIFY_CENTER);
-
-        // Message automatique - plus de SELECT pour continuer
-        if (_quizManager.isGameFinished()) {
-            dc.drawText(centerX, centerY + 25, Graphics.FONT_TINY, 
-                       "Affichage du score final...", Graphics.TEXT_JUSTIFY_CENTER);
-        } else {
-            dc.drawText(centerX, centerY + 25, Graphics.FONT_TINY, 
-                       "Question suivante...", Graphics.TEXT_JUSTIFY_CENTER);
-        }
     }
 
     function drawFinalScore(dc as Dc) as Void {
@@ -305,7 +268,6 @@ try {
     function setGameState(state as Symbol) as Void {
         _gameState = state;
         
-        // NOUVELLE LOGIQUE: Démarrer le timer automatique pour l'écran de résultat
         if (state == :result) {
             startResultTimer();
         } else {
@@ -320,19 +282,17 @@ try {
     }
 
     function getSelectedAnswerIndex() as Number {
-        // Appel sécurisé au delegate
         if (_delegate != null && _delegate has :getSelectedAnswerIndex) {
             return _delegate.getSelectedAnswerIndex();
         }
         return 0;
     }
 
-    // NOUVELLES MÉTHODES pour la gestion automatique
     private function startResultTimer() as Void {
-        stopResultTimer(); // Arrêter tout timer existant
+        stopResultTimer();
         
         _resultTimer = new Timer.Timer();
-        _resultTimer.start(method(:onResultTimerCallback), 2000, false); // 2 secondes
+        _resultTimer.start(method(:onResultTimerCallback), 2000, false);
     }
 
     private function stopResultTimer() as Void {
@@ -343,13 +303,11 @@ try {
     }
 
     function onResultTimerCallback() as Void {
-        // Transition automatique après affichage du résultat
         if (_gameState == :result) {
             if (_quizManager.isGameFinished()) {
                 setGameState(:finalScore);
             } else {
                 setGameState(:playing);
-                // Réinitialiser la sélection pour la prochaine question
                 if (_delegate != null && _delegate has :resetSelectedAnswerIndex) {
                     _delegate.resetSelectedAnswerIndex();
                 }

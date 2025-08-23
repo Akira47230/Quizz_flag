@@ -1,4 +1,4 @@
-// source/quizz_drapeauDelegate.mc - Modifié pour transition automatique et 3 réponses
+// source/quizz_drapeauDelegate.mc - Modifié pour messages de résultat simplifiés
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;
@@ -28,29 +28,22 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
                 return true;
                 
             case :playing:
-                // Sauvegarder la question actuelle avant de répondre
-                var currentQuestion = quizManager.getCurrentQuestion();
-                var correctAnswer = (currentQuestion != null) ? 
-                    (currentQuestion[:correctAnswer] as String) : "";
-                
                 // Répondre à la question
                 var isCorrect = quizManager.answerQuestion(_selectedAnswerIndex);
                 
-                // Afficher le résultat
+                // Afficher SEULEMENT le résultat - SIMPLIFIÉ
                 if (isCorrect) {
-                    _view.setResultTitle("✓ Correct!");
+                    _view.setResultTitle("✓ CORRECT");
                 } else {
-                    _view.setResultTitle("✗ Incorrect - " + correctAnswer);
+                    _view.setResultTitle("✗ INCORRECT");
                 }
                 
-                // CHANGEMENT: Plus de gestion manuelle de SELECT pour continuer
-                // Le timer automatique dans la vue s'en charge
+                // Transition automatique vers l'écran de résultat
                 _view.setGameState(:result);
                 return true;
                 
             case :result:
-                // SUPPRIMÉ: Plus de gestion manuelle ici
-                // Le timer automatique gère la transition
+                // Plus de gestion manuelle, le timer automatique s'en charge
                 return false;
                 
             case :finalScore:
@@ -98,7 +91,7 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
                 var answers = question[:answers] as Array;
                 var newIndex = _selectedAnswerIndex + direction;
                 
-                // Gestion circulaire des réponses (maintenant pour 3 réponses au lieu de 4)
+                // Gestion circulaire des réponses (3 réponses)
                 if (newIndex >= answers.size()) {
                     newIndex = 0;
                 } else if (newIndex < 0) {
@@ -128,12 +121,12 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
         return true;
     }
 
-    // Getter pour l'index de réponse sélectionnée (pour l'affichage)
+    // Getter pour l'index de réponse sélectionnée
     function getSelectedAnswerIndex() as Number {
         return _selectedAnswerIndex;
     }
 
-    // NOUVELLE MÉTHODE: Réinitialiser la sélection pour la question suivante
+    // Réinitialiser la sélection pour la question suivante
     function resetSelectedAnswerIndex() as Void {
         _selectedAnswerIndex = 0;
     }
