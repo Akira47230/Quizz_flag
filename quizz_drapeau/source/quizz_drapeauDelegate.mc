@@ -1,4 +1,4 @@
-// source/quizz_drapeauDelegate.mc - Modifié pour messages de résultat simplifiés
+// source/quizz_drapeauDelegate.mc - Version corrigée
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;

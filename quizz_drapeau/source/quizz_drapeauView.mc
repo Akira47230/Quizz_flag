@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Version propre sans mosaïque
+// source/quizz_drapeauView.mc - Version optimisée sans carré invisible
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -83,84 +83,90 @@ class quizz_drapeauView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Numéro de question et score
+        // Numéro de question et score - PLUS COMPACT
         var questionText = _quizManager.getCurrentQuestionNumber() + "/" + 
                           _quizManager.getTotalQuestions() + 
                           " - Score: " + _quizManager.getScore();
-        dc.drawText(screenCenterX, height * 0.05, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterX, height * 0.02, Graphics.FONT_XTINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Zone pour le drapeau - DIMENSIONS RELATIVES AUGMENTÉES DE 15%
-        var flagWidth = (width * 0.805).toNumber();   // 70% * 1.15 = 80.5% de la largeur d'écran
-        var flagHeight = (height * 0.4025).toNumber(); // 35% * 1.15 = 40.25% de la hauteur d'écran
-        var flagX = screenCenterX - (flagWidth / 2);
-        var flagY = (height * 0.15).toNumber();      // Commence à 15% du haut
-        
-        // SUPPRIMÉ: Plus de rectangle gris de fond
-        // dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
-        // dc.fillRectangle(flagX, flagY, flagWidth, flagHeight);
-        // dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        // dc.drawRectangle(flagX, flagY, flagWidth, flagHeight);
-        
-        // Chargement et affichage du drapeau - SANS FOND
+        // Chargement du drapeau AVANT de définir la zone d'affichage
         var flagId = question[:flag] as String;
         var flagResource = getFlagResource(flagId);
+        var flagBitmap = null;
         
         if (flagResource != null) {
             try {
-                var flagBitmap = WatchUi.loadResource(flagResource);
-                if (flagBitmap != null) {
-                    // Centrer l'image dans la zone définie
-                    var bitmapWidth = flagBitmap.getWidth().toNumber();
-                    var bitmapHeight = flagBitmap.getHeight().toNumber();
-                    
-                    var imgX = flagX + (flagWidth - bitmapWidth) / 2;
-                    var imgY = flagY + (flagHeight - bitmapHeight) / 2;
-                    
-                    // Dessiner le drapeau directement sur le fond noir
-                    dc.drawBitmap(imgX, imgY, flagBitmap);
-                } else {
-                    // Fallback si le bitmap ne peut pas être chargé
-                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                    dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
-                               flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
-                }
+                flagBitmap = WatchUi.loadResource(flagResource);
             } catch (e) {
-                // Fallback en cas d'erreur
-                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-                dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
-                           flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
+                flagBitmap = null;
             }
+        }
+        
+        // Calcul de la zone disponible pour le drapeau - TAILLE RÉDUITE DE 15%
+        var headerHeight = (height * 0.08).toNumber();  // 8% pour le header
+        var buttonsHeight = (height * 0.30).toNumber(); // 30% pour 3 boutons
+        var availableHeight = height - headerHeight - buttonsHeight;
+        
+        // Zone pour le drapeau - RÉDUITE DE 15% et RECENTRÉE
+        var flagDisplayHeight = (availableHeight * 0.85).toNumber(); // 85% de l'espace disponible (réduction de 15%)
+        var flagDisplayWidth = (width * 0.8).toNumber(); // 80% de la largeur d'écran (réduction de 15%)
+        
+        // Position de début de la zone drapeau - RECENTRAGE PARFAIT
+        var flagZoneY = headerHeight + ((availableHeight - flagDisplayHeight) / 2); // Centré verticalement dans l'espace disponible
+        
+        if (flagBitmap != null) {
+            // Utiliser les vraies dimensions du drapeau pour un affichage optimal
+            var bitmapWidth = flagBitmap.getWidth().toNumber();
+            var bitmapHeight = flagBitmap.getHeight().toNumber();
+            
+            // Calculer le ratio d'échelle pour la nouvelle taille réduite
+            var scaleX = flagDisplayWidth.toFloat() / bitmapWidth.toFloat();
+            var scaleY = flagDisplayHeight.toFloat() / bitmapHeight.toFloat();
+            var scale = scaleX < scaleY ? scaleX : scaleY; // Prendre le plus petit pour garder les proportions
+            
+            // Nouvelles dimensions réduites de 15% avec le ratio optimal
+            var scaledWidth = (bitmapWidth.toFloat() * scale).toNumber();
+            var scaledHeight = (bitmapHeight.toFloat() * scale).toNumber();
+            
+            // Position PARFAITEMENT CENTRÉE - Recalcul précis après réduction
+            var flagX = screenCenterX - (scaledWidth / 2);  // Centrage horizontal parfait
+            var flagY = flagZoneY + (flagDisplayHeight - scaledHeight) / 2; // Centrage vertical parfait dans la zone réduite
+            
+            // Affichage direct du drapeau réduit et recentré - SANS zone de fond
+            dc.drawBitmap(flagX, flagY, flagBitmap);
+            
         } else {
-            // Fallback si la ressource n'existe pas
+            // Fallback si le drapeau ne peut pas être chargé
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
+            dc.drawText(screenCenterX, flagZoneY + (flagDisplayHeight / 2), Graphics.FONT_MEDIUM, 
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse - LARGEUR RÉDUITE ET NOUVELLES COULEURS
+        // Options de réponse - COMPACTES pour laisser plus de place au drapeau
         var answers = question[:answers] as Array;
-        var buttonsStartY = (height * 0.6).toNumber();   // Ajusté à 60% pour compenser drapeau plus grand
-        var buttonHeight = (height * 0.12).toNumber();   // 12% de hauteur d'écran par bouton
-        var buttonMargin = (width * 0.15).toNumber();    // AUGMENTÉ: 15% de marge (au lieu de 5%)
+        var buttonsStartY = height - buttonsHeight; // Commence pile à la bonne position
+        var buttonHeight = (buttonsHeight / 3).toNumber(); // Divise l'espace également
+        var buttonMargin = (width * 0.08).toNumber(); // RÉDUIT: 8% de marge latérale (au lieu de 15%)
         var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
             var y = buttonsStartY + (i * buttonHeight);
             var isSelected = (i == selectedIndex);
             
-            // NOUVELLES COULEURS PERSONNALISÉES
+            // Couleurs personnalisées
             var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;  // Vert foncé si sélectionné, beige sinon
-            var textColor = Graphics.COLOR_WHITE;  // Texte blanc pour contraste sur les deux couleurs
+            var textColor = Graphics.COLOR_WHITE;
             
             dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(buttonMargin, y, width - (2 * buttonMargin), 
-                                  (buttonHeight * 0.8).toNumber(), 3);
+            dc.fillRoundedRectangle(buttonMargin, y + (buttonHeight * 0.05).toNumber(), 
+                                  width - (2 * buttonMargin), 
+                                  (buttonHeight * 0.85).toNumber(), 2); // PLUS FINE: rayons de 2px
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
             var answerText = answers[i] as String;
             var buttonText = (i + 1) + ". " + answerText;
-            dc.drawText(screenCenterX, y + (buttonHeight * 0.2).toNumber(), 
-                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(screenCenterX, y + (buttonHeight * 0.35).toNumber(), 
+                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER); // POLICE PLUS PETITE
         }
     }
 

@@ -172,107 +172,107 @@
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauDelegate.mc" id="18" lineNum="76" parent="globals/quizz_drapeauDelegate" pc="268438709" symbol="onNextPage"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauDelegate.mc" id="19" lineNum="130" parent="globals/quizz_drapeauDelegate" pc="268438720" symbol="resetSelectedAnswerIndex"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauDelegate.mc" id="19" lineNum="131" parent="globals/quizz_drapeauDelegate" pc="268438722" symbol="resetSelectedAnswerIndex"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="20" lineNum="280" parent="globals/quizz_drapeauView" pc="268438731" symbol="setResultTitle"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="20" lineNum="281" parent="globals/quizz_drapeauView" pc="268438733" symbol="setResultTitle"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="305" parent="globals/quizz_drapeauView" pc="268438743" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="306" parent="globals/quizz_drapeauView" pc="268438745" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="307" parent="globals/quizz_drapeauView" pc="268438759" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="308" parent="globals/quizz_drapeauView" pc="268438773" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="310" parent="globals/quizz_drapeauView" pc="268438790" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="311" parent="globals/quizz_drapeauView" pc="268438804" symbol="onResultTimerCallback"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="312" parent="globals/quizz_drapeauView" pc="268438827" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="20" lineNum="286" parent="globals/quizz_drapeauView" pc="268438731" symbol="setResultTitle"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="20" lineNum="287" parent="globals/quizz_drapeauView" pc="268438733" symbol="setResultTitle"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="311" parent="globals/quizz_drapeauView" pc="268438743" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="312" parent="globals/quizz_drapeauView" pc="268438745" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="313" parent="globals/quizz_drapeauView" pc="268438759" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="314" parent="globals/quizz_drapeauView" pc="268438773" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="316" parent="globals/quizz_drapeauView" pc="268438790" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="317" parent="globals/quizz_drapeauView" pc="268438804" symbol="onResultTimerCallback"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="21" lineNum="318" parent="globals/quizz_drapeauView" pc="268438827" symbol="onResultTimerCallback"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="23" lineNum="27" parent="globals/quizz_drapeauView" pc="268438846" symbol="onLayout"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="168" parent="globals/quizz_drapeauView" pc="268438849" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="169" parent="globals/quizz_drapeauView" pc="268438851" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="170" parent="globals/quizz_drapeauView" pc="268438853" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="171" parent="globals/quizz_drapeauView" pc="268438872" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="172" parent="globals/quizz_drapeauView" pc="268438891" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="173" parent="globals/quizz_drapeauView" pc="268438910" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="174" parent="globals/quizz_drapeauView" pc="268438929" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="175" parent="globals/quizz_drapeauView" pc="268438948" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="176" parent="globals/quizz_drapeauView" pc="268438967" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="177" parent="globals/quizz_drapeauView" pc="268438986" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="178" parent="globals/quizz_drapeauView" pc="268439005" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="179" parent="globals/quizz_drapeauView" pc="268439024" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="180" parent="globals/quizz_drapeauView" pc="268439043" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="181" parent="globals/quizz_drapeauView" pc="268439062" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="182" parent="globals/quizz_drapeauView" pc="268439081" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="183" parent="globals/quizz_drapeauView" pc="268439100" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="184" parent="globals/quizz_drapeauView" pc="268439119" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="185" parent="globals/quizz_drapeauView" pc="268439138" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="186" parent="globals/quizz_drapeauView" pc="268439157" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="187" parent="globals/quizz_drapeauView" pc="268439176" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="188" parent="globals/quizz_drapeauView" pc="268439195" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="189" parent="globals/quizz_drapeauView" pc="268439214" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="190" parent="globals/quizz_drapeauView" pc="268439233" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="191" parent="globals/quizz_drapeauView" pc="268439252" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="192" parent="globals/quizz_drapeauView" pc="268439271" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="193" parent="globals/quizz_drapeauView" pc="268439290" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="194" parent="globals/quizz_drapeauView" pc="268439309" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="195" parent="globals/quizz_drapeauView" pc="268439328" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="196" parent="globals/quizz_drapeauView" pc="268439347" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="197" parent="globals/quizz_drapeauView" pc="268439366" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="198" parent="globals/quizz_drapeauView" pc="268439385" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="199" parent="globals/quizz_drapeauView" pc="268439404" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="200" parent="globals/quizz_drapeauView" pc="268439423" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="170" parent="globals/quizz_drapeauView" pc="268439426" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="171" parent="globals/quizz_drapeauView" pc="268439446" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="172" parent="globals/quizz_drapeauView" pc="268439466" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="173" parent="globals/quizz_drapeauView" pc="268439486" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="174" parent="globals/quizz_drapeauView" pc="268439506" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="175" parent="globals/quizz_drapeauView" pc="268439526" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="176" parent="globals/quizz_drapeauView" pc="268439546" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="177" parent="globals/quizz_drapeauView" pc="268439566" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="178" parent="globals/quizz_drapeauView" pc="268439586" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="179" parent="globals/quizz_drapeauView" pc="268439606" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="180" parent="globals/quizz_drapeauView" pc="268439626" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="181" parent="globals/quizz_drapeauView" pc="268439646" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="182" parent="globals/quizz_drapeauView" pc="268439666" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="183" parent="globals/quizz_drapeauView" pc="268439686" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="184" parent="globals/quizz_drapeauView" pc="268439706" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="185" parent="globals/quizz_drapeauView" pc="268439726" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="186" parent="globals/quizz_drapeauView" pc="268439746" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="187" parent="globals/quizz_drapeauView" pc="268439766" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="188" parent="globals/quizz_drapeauView" pc="268439786" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="189" parent="globals/quizz_drapeauView" pc="268439806" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="190" parent="globals/quizz_drapeauView" pc="268439826" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="191" parent="globals/quizz_drapeauView" pc="268439846" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="192" parent="globals/quizz_drapeauView" pc="268439866" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="193" parent="globals/quizz_drapeauView" pc="268439886" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="194" parent="globals/quizz_drapeauView" pc="268439906" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="195" parent="globals/quizz_drapeauView" pc="268439926" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="196" parent="globals/quizz_drapeauView" pc="268439946" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="197" parent="globals/quizz_drapeauView" pc="268439966" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="198" parent="globals/quizz_drapeauView" pc="268439986" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="199" parent="globals/quizz_drapeauView" pc="268440006" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="200" parent="globals/quizz_drapeauView" pc="268440026" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="217" parent="globals/quizz_drapeauView" pc="268440030" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="218" parent="globals/quizz_drapeauView" pc="268440033" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="219" parent="globals/quizz_drapeauView" pc="268440042" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="220" parent="globals/quizz_drapeauView" pc="268440051" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="221" parent="globals/quizz_drapeauView" pc="268440058" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="223" parent="globals/quizz_drapeauView" pc="268440065" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="225" parent="globals/quizz_drapeauView" pc="268440082" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="228" parent="globals/quizz_drapeauView" pc="268440108" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="230" parent="globals/quizz_drapeauView" pc="268440145" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="233" parent="globals/quizz_drapeauView" pc="268440168" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="234" parent="globals/quizz_drapeauView" pc="268440187" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="238" parent="globals/quizz_drapeauView" pc="268440207" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="239" parent="globals/quizz_drapeauView" pc="268440214" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="240" parent="globals/quizz_drapeauView" pc="268440227" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="241" parent="globals/quizz_drapeauView" pc="268440235" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="242" parent="globals/quizz_drapeauView" pc="268440245" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="243" parent="globals/quizz_drapeauView" pc="268440253" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="244" parent="globals/quizz_drapeauView" pc="268440263" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="245" parent="globals/quizz_drapeauView" pc="268440271" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="247" parent="globals/quizz_drapeauView" pc="268440281" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="250" parent="globals/quizz_drapeauView" pc="268440288" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="253" parent="globals/quizz_drapeauView" pc="268440311" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="255" parent="globals/quizz_drapeauView" pc="268440337" symbol="drawFinalScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="284" parent="globals/quizz_drapeauView" pc="268440364" symbol="getSelectedAnswerIndex"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="285" parent="globals/quizz_drapeauView" pc="268440366" symbol="getSelectedAnswerIndex"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="286" parent="globals/quizz_drapeauView" pc="268440389" symbol="getSelectedAnswerIndex"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="288" parent="globals/quizz_drapeauView" pc="268440404" symbol="getSelectedAnswerIndex"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="174" parent="globals/quizz_drapeauView" pc="268438849" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="175" parent="globals/quizz_drapeauView" pc="268438851" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="176" parent="globals/quizz_drapeauView" pc="268438853" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="177" parent="globals/quizz_drapeauView" pc="268438872" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="178" parent="globals/quizz_drapeauView" pc="268438891" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="179" parent="globals/quizz_drapeauView" pc="268438910" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="180" parent="globals/quizz_drapeauView" pc="268438929" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="181" parent="globals/quizz_drapeauView" pc="268438948" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="182" parent="globals/quizz_drapeauView" pc="268438967" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="183" parent="globals/quizz_drapeauView" pc="268438986" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="184" parent="globals/quizz_drapeauView" pc="268439005" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="185" parent="globals/quizz_drapeauView" pc="268439024" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="186" parent="globals/quizz_drapeauView" pc="268439043" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="187" parent="globals/quizz_drapeauView" pc="268439062" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="188" parent="globals/quizz_drapeauView" pc="268439081" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="189" parent="globals/quizz_drapeauView" pc="268439100" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="190" parent="globals/quizz_drapeauView" pc="268439119" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="191" parent="globals/quizz_drapeauView" pc="268439138" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="192" parent="globals/quizz_drapeauView" pc="268439157" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="193" parent="globals/quizz_drapeauView" pc="268439176" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="194" parent="globals/quizz_drapeauView" pc="268439195" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="195" parent="globals/quizz_drapeauView" pc="268439214" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="196" parent="globals/quizz_drapeauView" pc="268439233" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="197" parent="globals/quizz_drapeauView" pc="268439252" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="198" parent="globals/quizz_drapeauView" pc="268439271" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="199" parent="globals/quizz_drapeauView" pc="268439290" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="200" parent="globals/quizz_drapeauView" pc="268439309" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="201" parent="globals/quizz_drapeauView" pc="268439328" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="202" parent="globals/quizz_drapeauView" pc="268439347" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="203" parent="globals/quizz_drapeauView" pc="268439366" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="204" parent="globals/quizz_drapeauView" pc="268439385" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="205" parent="globals/quizz_drapeauView" pc="268439404" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="206" parent="globals/quizz_drapeauView" pc="268439423" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="176" parent="globals/quizz_drapeauView" pc="268439426" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="177" parent="globals/quizz_drapeauView" pc="268439446" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="178" parent="globals/quizz_drapeauView" pc="268439466" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="179" parent="globals/quizz_drapeauView" pc="268439486" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="180" parent="globals/quizz_drapeauView" pc="268439506" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="181" parent="globals/quizz_drapeauView" pc="268439526" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="182" parent="globals/quizz_drapeauView" pc="268439546" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="183" parent="globals/quizz_drapeauView" pc="268439566" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="184" parent="globals/quizz_drapeauView" pc="268439586" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="185" parent="globals/quizz_drapeauView" pc="268439606" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="186" parent="globals/quizz_drapeauView" pc="268439626" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="187" parent="globals/quizz_drapeauView" pc="268439646" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="188" parent="globals/quizz_drapeauView" pc="268439666" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="189" parent="globals/quizz_drapeauView" pc="268439686" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="190" parent="globals/quizz_drapeauView" pc="268439706" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="191" parent="globals/quizz_drapeauView" pc="268439726" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="192" parent="globals/quizz_drapeauView" pc="268439746" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="193" parent="globals/quizz_drapeauView" pc="268439766" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="194" parent="globals/quizz_drapeauView" pc="268439786" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="195" parent="globals/quizz_drapeauView" pc="268439806" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="196" parent="globals/quizz_drapeauView" pc="268439826" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="197" parent="globals/quizz_drapeauView" pc="268439846" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="198" parent="globals/quizz_drapeauView" pc="268439866" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="199" parent="globals/quizz_drapeauView" pc="268439886" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="200" parent="globals/quizz_drapeauView" pc="268439906" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="201" parent="globals/quizz_drapeauView" pc="268439926" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="202" parent="globals/quizz_drapeauView" pc="268439946" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="203" parent="globals/quizz_drapeauView" pc="268439966" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="204" parent="globals/quizz_drapeauView" pc="268439986" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="205" parent="globals/quizz_drapeauView" pc="268440006" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="24" lineNum="206" parent="globals/quizz_drapeauView" pc="268440026" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;getFlagResource&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="223" parent="globals/quizz_drapeauView" pc="268440030" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="224" parent="globals/quizz_drapeauView" pc="268440033" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="225" parent="globals/quizz_drapeauView" pc="268440042" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="226" parent="globals/quizz_drapeauView" pc="268440051" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="227" parent="globals/quizz_drapeauView" pc="268440058" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="229" parent="globals/quizz_drapeauView" pc="268440065" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="231" parent="globals/quizz_drapeauView" pc="268440082" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="234" parent="globals/quizz_drapeauView" pc="268440108" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="236" parent="globals/quizz_drapeauView" pc="268440145" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="239" parent="globals/quizz_drapeauView" pc="268440168" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="240" parent="globals/quizz_drapeauView" pc="268440187" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="244" parent="globals/quizz_drapeauView" pc="268440207" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="245" parent="globals/quizz_drapeauView" pc="268440214" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="246" parent="globals/quizz_drapeauView" pc="268440227" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="247" parent="globals/quizz_drapeauView" pc="268440235" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="248" parent="globals/quizz_drapeauView" pc="268440245" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="249" parent="globals/quizz_drapeauView" pc="268440253" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="250" parent="globals/quizz_drapeauView" pc="268440263" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="251" parent="globals/quizz_drapeauView" pc="268440271" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="253" parent="globals/quizz_drapeauView" pc="268440281" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="256" parent="globals/quizz_drapeauView" pc="268440288" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="259" parent="globals/quizz_drapeauView" pc="268440311" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="25" lineNum="261" parent="globals/quizz_drapeauView" pc="268440337" symbol="drawFinalScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="290" parent="globals/quizz_drapeauView" pc="268440364" symbol="getSelectedAnswerIndex"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="291" parent="globals/quizz_drapeauView" pc="268440366" symbol="getSelectedAnswerIndex"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="292" parent="globals/quizz_drapeauView" pc="268440389" symbol="getSelectedAnswerIndex"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="26" lineNum="294" parent="globals/quizz_drapeauView" pc="268440404" symbol="getSelectedAnswerIndex"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="27" lineNum="23" parent="globals/quizz_drapeauView" pc="268440406" symbol="setDelegate"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="27" lineNum="24" parent="globals/quizz_drapeauView" pc="268440408" symbol="setDelegate"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="28" lineNum="54" parent="globals/quizz_drapeauView" pc="268440418" symbol="drawMenu"/>
@@ -285,13 +285,13 @@
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="28" lineNum="64" parent="globals/quizz_drapeauView" pc="268440496" symbol="drawMenu"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="28" lineNum="67" parent="globals/quizz_drapeauView" pc="268440522" symbol="drawMenu"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="28" lineNum="70" parent="globals/quizz_drapeauView" pc="268440548" symbol="drawMenu"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="204" parent="globals/quizz_drapeauView" pc="268440575" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="205" parent="globals/quizz_drapeauView" pc="268440578" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="206" parent="globals/quizz_drapeauView" pc="268440587" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="207" parent="globals/quizz_drapeauView" pc="268440596" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="208" parent="globals/quizz_drapeauView" pc="268440603" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="210" parent="globals/quizz_drapeauView" pc="268440610" symbol="drawResult"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="213" parent="globals/quizz_drapeauView" pc="268440627" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="210" parent="globals/quizz_drapeauView" pc="268440575" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="211" parent="globals/quizz_drapeauView" pc="268440578" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="212" parent="globals/quizz_drapeauView" pc="268440587" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="213" parent="globals/quizz_drapeauView" pc="268440596" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="214" parent="globals/quizz_drapeauView" pc="268440603" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="216" parent="globals/quizz_drapeauView" pc="268440610" symbol="drawResult"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="29" lineNum="219" parent="globals/quizz_drapeauView" pc="268440627" symbol="drawResult"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="74" parent="globals/quizz_drapeauView" pc="268440651" symbol="drawQuestion"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="75" parent="globals/quizz_drapeauView" pc="268440654" symbol="drawQuestion"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="76" parent="globals/quizz_drapeauView" pc="268440667" symbol="drawQuestion"/>
@@ -302,161 +302,166 @@
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="84" parent="globals/quizz_drapeauView" pc="268440702" symbol="drawQuestion"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="87" parent="globals/quizz_drapeauView" pc="268440719" symbol="drawQuestion"/>
         <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="90" parent="globals/quizz_drapeauView" pc="268440768" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="93" parent="globals/quizz_drapeauView" pc="268440794" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="94" parent="globals/quizz_drapeauView" pc="268440810" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="95" parent="globals/quizz_drapeauView" pc="268440826" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="96" parent="globals/quizz_drapeauView" pc="268440836" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="105" parent="globals/quizz_drapeauView" pc="268440852" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="106" parent="globals/quizz_drapeauView" pc="268440862" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="108" parent="globals/quizz_drapeauView" pc="268440874" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="110" parent="globals/quizz_drapeauView" pc="268440880" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="111" parent="globals/quizz_drapeauView" pc="268440896" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="113" parent="globals/quizz_drapeauView" pc="268440902" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="114" parent="globals/quizz_drapeauView" pc="268440918" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="116" parent="globals/quizz_drapeauView" pc="268440934" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="117" parent="globals/quizz_drapeauView" pc="268440947" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="120" parent="globals/quizz_drapeauView" pc="268440960" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="123" parent="globals/quizz_drapeauView" pc="268440979" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="124" parent="globals/quizz_drapeauView" pc="268440996" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="127" parent="globals/quizz_drapeauView" pc="268441033" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="129" parent="globals/quizz_drapeauView" pc="268441037" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="130" parent="globals/quizz_drapeauView" pc="268441054" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="135" parent="globals/quizz_drapeauView" pc="268441100" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="136" parent="globals/quizz_drapeauView" pc="268441117" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="141" parent="globals/quizz_drapeauView" pc="268441148" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="142" parent="globals/quizz_drapeauView" pc="268441158" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="143" parent="globals/quizz_drapeauView" pc="268441174" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="144" parent="globals/quizz_drapeauView" pc="268441190" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="145" parent="globals/quizz_drapeauView" pc="268441206" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="147" parent="globals/quizz_drapeauView" pc="268441214" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="148" parent="globals/quizz_drapeauView" pc="268441230" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="149" parent="globals/quizz_drapeauView" pc="268441240" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="152" parent="globals/quizz_drapeauView" pc="268441247" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="153" parent="globals/quizz_drapeauView" pc="268441266" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="155" parent="globals/quizz_drapeauView" pc="268441273" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="156" parent="globals/quizz_drapeauView" pc="268441287" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="159" parent="globals/quizz_drapeauView" pc="268441325" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="160" parent="globals/quizz_drapeauView" pc="268441339" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="161" parent="globals/quizz_drapeauView" pc="268441346" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="162" parent="globals/quizz_drapeauView" pc="268441362" symbol="drawQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="298" parent="globals/quizz_drapeauView" pc="268441407" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="299" parent="globals/quizz_drapeauView" pc="268441409" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="300" parent="globals/quizz_drapeauView" pc="268441418" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="301" parent="globals/quizz_drapeauView" pc="268441430" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="32" lineNum="264" parent="globals/quizz_drapeauView" pc="268441442" symbol="getGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="32" lineNum="265" parent="globals/quizz_drapeauView" pc="268441444" symbol="getGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="268" parent="globals/quizz_drapeauView" pc="268441450" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="269" parent="globals/quizz_drapeauView" pc="268441452" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="271" parent="globals/quizz_drapeauView" pc="268441461" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="272" parent="globals/quizz_drapeauView" pc="268441472" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="274" parent="globals/quizz_drapeauView" pc="268441482" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="277" parent="globals/quizz_drapeauView" pc="268441489" symbol="setGameState"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="14" parent="globals/quizz_drapeauView" pc="268441501" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="15" parent="globals/quizz_drapeauView" pc="268441503" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="16" parent="globals/quizz_drapeauView" pc="268441515" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="17" parent="globals/quizz_drapeauView" pc="268441540" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="18" parent="globals/quizz_drapeauView" pc="268441552" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="19" parent="globals/quizz_drapeauView" pc="268441560" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="20" parent="globals/quizz_drapeauView" pc="268441572" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="35" lineNum="318" parent="globals/quizz_drapeauView" pc="268441581" symbol="onHide"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="35" lineNum="319" parent="globals/quizz_drapeauView" pc="268441583" symbol="onHide"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="291" parent="globals/quizz_drapeauView" pc="268441591" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="292" parent="globals/quizz_drapeauView" pc="268441593" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="294" parent="globals/quizz_drapeauView" pc="268441600" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="295" parent="globals/quizz_drapeauView" pc="268441629" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="34" parent="globals/quizz_drapeauView" pc="268441661" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="35" parent="globals/quizz_drapeauView" pc="268441663" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="36" parent="globals/quizz_drapeauView" pc="268441675" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="38" parent="globals/quizz_drapeauView" pc="268441683" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="39" parent="globals/quizz_drapeauView" pc="268441688" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="42" parent="globals/quizz_drapeauView" pc="268441707" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="45" parent="globals/quizz_drapeauView" pc="268441726" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="48" parent="globals/quizz_drapeauView" pc="268441745" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="40" parent="globals/quizz_drapeauView" pc="268441767" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="41" parent="globals/quizz_drapeauView" pc="268441778" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="43" parent="globals/quizz_drapeauView" pc="268441781" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="44" parent="globals/quizz_drapeauView" pc="268441792" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="46" parent="globals/quizz_drapeauView" pc="268441795" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="47" parent="globals/quizz_drapeauView" pc="268441806" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="49" parent="globals/quizz_drapeauView" pc="268441809" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="50" parent="globals/quizz_drapeauView" pc="268441820" symbol="onUpdate"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="38" lineNum="260" parent="globals/quizz_drapeauView" pc="268441825" symbol="getQuizManager"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="38" lineNum="261" parent="globals/quizz_drapeauView" pc="268441827" symbol="getQuizManager"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="20" parent="globals/QuizManager" pc="268441833" symbol="startNewGame"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="21" parent="globals/QuizManager" pc="268441835" symbol="startNewGame"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="22" parent="globals/QuizManager" pc="268441843" symbol="startNewGame"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="23" parent="globals/QuizManager" pc="268441851" symbol="startNewGame"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="24" parent="globals/QuizManager" pc="268441859" symbol="startNewGame"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="79" parent="globals/QuizManager" pc="268441867" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="80" parent="globals/QuizManager" pc="268441870" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="81" parent="globals/QuizManager" pc="268441878" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="82" parent="globals/QuizManager" pc="268441884" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="85" parent="globals/QuizManager" pc="268441889" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="87" parent="globals/QuizManager" pc="268441902" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="88" parent="globals/QuizManager" pc="268441907" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="91" parent="globals/QuizManager" pc="268441925" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="93" parent="globals/QuizManager" pc="268441940" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="94" parent="globals/QuizManager" pc="268441960" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="97" parent="globals/QuizManager" pc="268441971" symbol="answerQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="116" parent="globals/QuizManager" pc="268441974" symbol="getScorePercentage"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="117" parent="globals/QuizManager" pc="268441976" symbol="getScorePercentage"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="118" parent="globals/QuizManager" pc="268441986" symbol="getScorePercentage"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="120" parent="globals/QuizManager" pc="268441991" symbol="getScorePercentage"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="42" lineNum="100" parent="globals/QuizManager" pc="268442006" symbol="isGameActive"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="42" lineNum="101" parent="globals/QuizManager" pc="268442008" symbol="isGameActive"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="43" lineNum="123" parent="globals/QuizManager" pc="268442014" symbol="isGameFinished"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="43" lineNum="124" parent="globals/QuizManager" pc="268442016" symbol="isGameFinished"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="44" lineNum="104" parent="globals/QuizManager" pc="268442034" symbol="getCurrentQuestionNumber"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="44" lineNum="105" parent="globals/QuizManager" pc="268442036" symbol="getCurrentQuestionNumber"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="12" parent="globals/QuizManager" pc="268442045" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="13" parent="globals/QuizManager" pc="268442047" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="14" parent="globals/QuizManager" pc="268442055" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="15" parent="globals/QuizManager" pc="268442063" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="16" parent="globals/QuizManager" pc="268442072" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="17" parent="globals/QuizManager" pc="268442080" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="72" parent="globals/QuizManager" pc="268442090" symbol="getCurrentQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="73" parent="globals/QuizManager" pc="268442092" symbol="getCurrentQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="74" parent="globals/QuizManager" pc="268442112" symbol="getCurrentQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="76" parent="globals/QuizManager" pc="268442127" symbol="getCurrentQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="47" lineNum="112" parent="globals/QuizManager" pc="268442129" symbol="getScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="47" lineNum="113" parent="globals/QuizManager" pc="268442131" symbol="getScore"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="37" parent="globals/QuizManager" pc="268442137" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="39" parent="globals/QuizManager" pc="268442140" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="40" parent="globals/QuizManager" pc="268442159" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="43" parent="globals/QuizManager" pc="268442176" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="44" parent="globals/QuizManager" pc="268442192" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="48" parent="globals/QuizManager" pc="268442217" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="49" parent="globals/QuizManager" pc="268442236" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="50" parent="globals/QuizManager" pc="268442254" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="51" parent="globals/QuizManager" pc="268442261" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="52" parent="globals/QuizManager" pc="268442271" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="56" parent="globals/QuizManager" pc="268442288" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="57" parent="globals/QuizManager" pc="268442291" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="58" parent="globals/QuizManager" pc="268442307" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="59" parent="globals/QuizManager" pc="268442331" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="60" parent="globals/QuizManager" pc="268442335" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="64" parent="globals/QuizManager" pc="268442351" symbol="generateQuestion"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="27" parent="globals/QuizManager" pc="268442401" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="28" parent="globals/QuizManager" pc="268442404" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="29" parent="globals/QuizManager" pc="268442413" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="31" parent="globals/QuizManager" pc="268442433" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="32" parent="globals/QuizManager" pc="268442449" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="33" parent="globals/QuizManager" pc="268442464" symbol="generateQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="50" lineNum="108" parent="globals/QuizManager" pc="268442491" symbol="getTotalQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="50" lineNum="109" parent="globals/QuizManager" pc="268442493" symbol="getTotalQuestions"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="51" lineNum="13" parent="globals/quizz_drapeauApp" pc="268442499" symbol="onStart"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="21" parent="globals/quizz_drapeauApp" pc="268442502" symbol="getInitialView"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="22" parent="globals/quizz_drapeauApp" pc="268442505" symbol="getInitialView"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="23" parent="globals/quizz_drapeauApp" pc="268442525" symbol="getInitialView"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="24" parent="globals/quizz_drapeauApp" pc="268442547" symbol="getInitialView"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="53" lineNum="8" parent="globals/quizz_drapeauApp" pc="268442562" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="53" lineNum="9" parent="globals/quizz_drapeauApp" pc="268442564" symbol="initialize"/>
-        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="54" lineNum="17" parent="globals/quizz_drapeauApp" pc="268442577" symbol="onStop"/>
-        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="55" lineNum="267" parent="globals/Rez/Menus/MainMenu" pc="268442580" symbol="&lt;init&gt;"/>
-        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="268" parent="globals/Rez/Menus/MainMenu" pc="268442592" symbol="initialize"/>
-        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="269" parent="globals/Rez/Menus/MainMenu" pc="268442594" symbol="initialize"/>
-        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="270" parent="globals/Rez/Menus/MainMenu" pc="268442606" symbol="initialize"/>
-        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="271" parent="globals/Rez/Menus/MainMenu" pc="268442625" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="93" parent="globals/quizz_drapeauView" pc="268440793" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="94" parent="globals/quizz_drapeauView" pc="268440803" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="95" parent="globals/quizz_drapeauView" pc="268440815" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="97" parent="globals/quizz_drapeauView" pc="268440818" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="99" parent="globals/quizz_drapeauView" pc="268440824" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="100" parent="globals/quizz_drapeauView" pc="268440846" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="101" parent="globals/quizz_drapeauView" pc="268440850" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="106" parent="globals/quizz_drapeauView" pc="268440868" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="107" parent="globals/quizz_drapeauView" pc="268440884" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="108" parent="globals/quizz_drapeauView" pc="268440900" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="111" parent="globals/quizz_drapeauView" pc="268440910" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="112" parent="globals/quizz_drapeauView" pc="268440926" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="115" parent="globals/quizz_drapeauView" pc="268440942" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="117" parent="globals/quizz_drapeauView" pc="268440955" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="119" parent="globals/quizz_drapeauView" pc="268440961" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="120" parent="globals/quizz_drapeauView" pc="268440977" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="123" parent="globals/quizz_drapeauView" pc="268440993" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="124" parent="globals/quizz_drapeauView" pc="268441010" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="125" parent="globals/quizz_drapeauView" pc="268441027" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="128" parent="globals/quizz_drapeauView" pc="268441044" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="129" parent="globals/quizz_drapeauView" pc="268441062" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="132" parent="globals/quizz_drapeauView" pc="268441080" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="133" parent="globals/quizz_drapeauView" pc="268441090" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="136" parent="globals/quizz_drapeauView" pc="268441103" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="140" parent="globals/quizz_drapeauView" pc="268441122" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="141" parent="globals/quizz_drapeauView" pc="268441139" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="146" parent="globals/quizz_drapeauView" pc="268441170" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="147" parent="globals/quizz_drapeauView" pc="268441180" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="148" parent="globals/quizz_drapeauView" pc="268441187" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="149" parent="globals/quizz_drapeauView" pc="268441200" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="150" parent="globals/quizz_drapeauView" pc="268441216" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="152" parent="globals/quizz_drapeauView" pc="268441224" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="153" parent="globals/quizz_drapeauView" pc="268441240" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="154" parent="globals/quizz_drapeauView" pc="268441250" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="157" parent="globals/quizz_drapeauView" pc="268441257" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="158" parent="globals/quizz_drapeauView" pc="268441276" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="160" parent="globals/quizz_drapeauView" pc="268441283" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="161" parent="globals/quizz_drapeauView" pc="268441297" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="165" parent="globals/quizz_drapeauView" pc="268441350" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="166" parent="globals/quizz_drapeauView" pc="268441364" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="167" parent="globals/quizz_drapeauView" pc="268441371" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="30" lineNum="168" parent="globals/quizz_drapeauView" pc="268441387" symbol="drawQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="304" parent="globals/quizz_drapeauView" pc="268441432" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="305" parent="globals/quizz_drapeauView" pc="268441434" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="306" parent="globals/quizz_drapeauView" pc="268441443" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="31" lineNum="307" parent="globals/quizz_drapeauView" pc="268441455" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="32" lineNum="270" parent="globals/quizz_drapeauView" pc="268441467" symbol="getGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="32" lineNum="271" parent="globals/quizz_drapeauView" pc="268441469" symbol="getGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="274" parent="globals/quizz_drapeauView" pc="268441475" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="275" parent="globals/quizz_drapeauView" pc="268441477" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="277" parent="globals/quizz_drapeauView" pc="268441486" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="278" parent="globals/quizz_drapeauView" pc="268441497" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="280" parent="globals/quizz_drapeauView" pc="268441507" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="33" lineNum="283" parent="globals/quizz_drapeauView" pc="268441514" symbol="setGameState"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="14" parent="globals/quizz_drapeauView" pc="268441526" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="15" parent="globals/quizz_drapeauView" pc="268441528" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="16" parent="globals/quizz_drapeauView" pc="268441540" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="17" parent="globals/quizz_drapeauView" pc="268441565" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="18" parent="globals/quizz_drapeauView" pc="268441577" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="19" parent="globals/quizz_drapeauView" pc="268441585" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="34" lineNum="20" parent="globals/quizz_drapeauView" pc="268441597" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="35" lineNum="324" parent="globals/quizz_drapeauView" pc="268441606" symbol="onHide"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="35" lineNum="325" parent="globals/quizz_drapeauView" pc="268441608" symbol="onHide"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="297" parent="globals/quizz_drapeauView" pc="268441616" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="298" parent="globals/quizz_drapeauView" pc="268441618" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="300" parent="globals/quizz_drapeauView" pc="268441625" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="36" lineNum="301" parent="globals/quizz_drapeauView" pc="268441654" symbol="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="34" parent="globals/quizz_drapeauView" pc="268441686" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="35" parent="globals/quizz_drapeauView" pc="268441688" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="36" parent="globals/quizz_drapeauView" pc="268441700" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="38" parent="globals/quizz_drapeauView" pc="268441708" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="39" parent="globals/quizz_drapeauView" pc="268441713" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="42" parent="globals/quizz_drapeauView" pc="268441732" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="45" parent="globals/quizz_drapeauView" pc="268441751" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="48" parent="globals/quizz_drapeauView" pc="268441770" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="40" parent="globals/quizz_drapeauView" pc="268441792" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="41" parent="globals/quizz_drapeauView" pc="268441803" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="43" parent="globals/quizz_drapeauView" pc="268441806" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="44" parent="globals/quizz_drapeauView" pc="268441817" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="46" parent="globals/quizz_drapeauView" pc="268441820" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="47" parent="globals/quizz_drapeauView" pc="268441831" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="49" parent="globals/quizz_drapeauView" pc="268441834" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="37" lineNum="50" parent="globals/quizz_drapeauView" pc="268441845" symbol="onUpdate"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="38" lineNum="266" parent="globals/quizz_drapeauView" pc="268441850" symbol="getQuizManager"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauView.mc" id="38" lineNum="267" parent="globals/quizz_drapeauView" pc="268441852" symbol="getQuizManager"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="20" parent="globals/QuizManager" pc="268441858" symbol="startNewGame"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="21" parent="globals/QuizManager" pc="268441860" symbol="startNewGame"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="22" parent="globals/QuizManager" pc="268441868" symbol="startNewGame"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="23" parent="globals/QuizManager" pc="268441876" symbol="startNewGame"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="39" lineNum="24" parent="globals/QuizManager" pc="268441884" symbol="startNewGame"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="79" parent="globals/QuizManager" pc="268441892" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="80" parent="globals/QuizManager" pc="268441895" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="81" parent="globals/QuizManager" pc="268441903" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="82" parent="globals/QuizManager" pc="268441909" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="85" parent="globals/QuizManager" pc="268441914" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="87" parent="globals/QuizManager" pc="268441927" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="88" parent="globals/QuizManager" pc="268441932" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="91" parent="globals/QuizManager" pc="268441950" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="93" parent="globals/QuizManager" pc="268441965" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="94" parent="globals/QuizManager" pc="268441985" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="40" lineNum="97" parent="globals/QuizManager" pc="268441996" symbol="answerQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="116" parent="globals/QuizManager" pc="268441999" symbol="getScorePercentage"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="117" parent="globals/QuizManager" pc="268442001" symbol="getScorePercentage"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="118" parent="globals/QuizManager" pc="268442011" symbol="getScorePercentage"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="41" lineNum="120" parent="globals/QuizManager" pc="268442016" symbol="getScorePercentage"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="42" lineNum="100" parent="globals/QuizManager" pc="268442031" symbol="isGameActive"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="42" lineNum="101" parent="globals/QuizManager" pc="268442033" symbol="isGameActive"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="43" lineNum="123" parent="globals/QuizManager" pc="268442039" symbol="isGameFinished"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="43" lineNum="124" parent="globals/QuizManager" pc="268442041" symbol="isGameFinished"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="44" lineNum="104" parent="globals/QuizManager" pc="268442059" symbol="getCurrentQuestionNumber"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="44" lineNum="105" parent="globals/QuizManager" pc="268442061" symbol="getCurrentQuestionNumber"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="12" parent="globals/QuizManager" pc="268442070" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="13" parent="globals/QuizManager" pc="268442072" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="14" parent="globals/QuizManager" pc="268442080" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="15" parent="globals/QuizManager" pc="268442088" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="16" parent="globals/QuizManager" pc="268442097" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="45" lineNum="17" parent="globals/QuizManager" pc="268442105" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="72" parent="globals/QuizManager" pc="268442115" symbol="getCurrentQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="73" parent="globals/QuizManager" pc="268442117" symbol="getCurrentQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="74" parent="globals/QuizManager" pc="268442137" symbol="getCurrentQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="46" lineNum="76" parent="globals/QuizManager" pc="268442152" symbol="getCurrentQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="47" lineNum="112" parent="globals/QuizManager" pc="268442154" symbol="getScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="47" lineNum="113" parent="globals/QuizManager" pc="268442156" symbol="getScore"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="37" parent="globals/QuizManager" pc="268442162" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="39" parent="globals/QuizManager" pc="268442165" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="40" parent="globals/QuizManager" pc="268442184" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="43" parent="globals/QuizManager" pc="268442201" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="44" parent="globals/QuizManager" pc="268442217" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="48" parent="globals/QuizManager" pc="268442242" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="49" parent="globals/QuizManager" pc="268442261" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="50" parent="globals/QuizManager" pc="268442279" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="51" parent="globals/QuizManager" pc="268442286" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="52" parent="globals/QuizManager" pc="268442296" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="56" parent="globals/QuizManager" pc="268442313" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="57" parent="globals/QuizManager" pc="268442316" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="58" parent="globals/QuizManager" pc="268442332" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="59" parent="globals/QuizManager" pc="268442356" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="60" parent="globals/QuizManager" pc="268442360" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="48" lineNum="64" parent="globals/QuizManager" pc="268442376" symbol="generateQuestion"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="27" parent="globals/QuizManager" pc="268442426" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="28" parent="globals/QuizManager" pc="268442429" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="29" parent="globals/QuizManager" pc="268442438" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="31" parent="globals/QuizManager" pc="268442458" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="32" parent="globals/QuizManager" pc="268442474" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="49" lineNum="33" parent="globals/QuizManager" pc="268442489" symbol="generateQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="50" lineNum="108" parent="globals/QuizManager" pc="268442516" symbol="getTotalQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\QuizManager.mc" id="50" lineNum="109" parent="globals/QuizManager" pc="268442518" symbol="getTotalQuestions"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="51" lineNum="13" parent="globals/quizz_drapeauApp" pc="268442524" symbol="onStart"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="21" parent="globals/quizz_drapeauApp" pc="268442527" symbol="getInitialView"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="22" parent="globals/quizz_drapeauApp" pc="268442530" symbol="getInitialView"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="23" parent="globals/quizz_drapeauApp" pc="268442550" symbol="getInitialView"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="52" lineNum="24" parent="globals/quizz_drapeauApp" pc="268442572" symbol="getInitialView"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="53" lineNum="8" parent="globals/quizz_drapeauApp" pc="268442587" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="53" lineNum="9" parent="globals/quizz_drapeauApp" pc="268442589" symbol="initialize"/>
+        <entry filename="C:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\source\\quizz_drapeauApp.mc" id="54" lineNum="17" parent="globals/quizz_drapeauApp" pc="268442602" symbol="onStop"/>
+        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="55" lineNum="267" parent="globals/Rez/Menus/MainMenu" pc="268442605" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="268" parent="globals/Rez/Menus/MainMenu" pc="268442617" symbol="initialize"/>
+        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="269" parent="globals/Rez/Menus/MainMenu" pc="268442619" symbol="initialize"/>
+        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="270" parent="globals/Rez/Menus/MainMenu" pc="268442631" symbol="initialize"/>
+        <entry filename="c:\\Applications\\Projet_garmin\\Quizz_flag\\quizz_drapeau\\bin\\gen\\006-B3990-00\\source\\Rez.mcgen" id="56" lineNum="271" parent="globals/Rez/Menus/MainMenu" pc="268442650" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -886,55 +891,62 @@
         <entry endPc="268440649" name="height" stackId="3" startPc="268440578"/>
         <entry endPc="268440649" name="centerX" stackId="4" startPc="268440578"/>
         <entry endPc="268440649" name="centerY" stackId="5" startPc="268440578"/>
-        <entry arg="true" endPc="268441406" name="dc" stackId="1" startPc="268440651"/>
-        <entry endPc="268441405" name="question" stackId="2" startPc="268440654"/>
-        <entry endPc="268441405" name="width" stackId="3" startPc="268440654"/>
-        <entry endPc="268441405" name="height" stackId="4" startPc="268440654"/>
-        <entry endPc="268441405" name="screenCenterX" stackId="5" startPc="268440654"/>
-        <entry endPc="268441405" name="questionText" stackId="6" startPc="268440654"/>
-        <entry endPc="268441405" name="flagWidth" stackId="7" startPc="268440654"/>
-        <entry endPc="268441405" name="flagHeight" stackId="8" startPc="268440654"/>
-        <entry endPc="268441405" name="flagX" stackId="9" startPc="268440654"/>
-        <entry endPc="268441405" name="flagY" stackId="10" startPc="268440654"/>
-        <entry endPc="268441405" name="flagId" stackId="11" startPc="268440654"/>
-        <entry endPc="268441405" name="flagResource" stackId="12" startPc="268440654"/>
-        <entry endPc="268441026" name="flagBitmap" stackId="13" startPc="268440880"/>
-        <entry endPc="268440975" name="bitmapWidth" stackId="14" startPc="268440902"/>
-        <entry endPc="268440975" name="bitmapHeight" stackId="15" startPc="268440902"/>
-        <entry endPc="268440975" name="imgX" stackId="16" startPc="268440902"/>
-        <entry endPc="268440975" name="imgY" stackId="17" startPc="268440902"/>
-        <entry endPc="268441091" name="e" stackId="18" startPc="268441033"/>
-        <entry endPc="268441405" name="answers" stackId="19" startPc="268440654"/>
-        <entry endPc="268441405" name="buttonsStartY" stackId="20" startPc="268440654"/>
-        <entry endPc="268441405" name="buttonHeight" stackId="21" startPc="268440654"/>
-        <entry endPc="268441405" name="buttonMargin" stackId="22" startPc="268440654"/>
-        <entry endPc="268441405" name="selectedIndex" stackId="23" startPc="268440654"/>
-        <entry endPc="268441405" name="i" stackId="24" startPc="268441230"/>
-        <entry endPc="268441395" name="y" stackId="25" startPc="268441230"/>
-        <entry endPc="268441395" name="isSelected" stackId="26" startPc="268441230"/>
-        <entry endPc="268441395" name="buttonColor" stackId="27" startPc="268441230"/>
-        <entry endPc="268441395" name="textColor" stackId="28" startPc="268441230"/>
-        <entry endPc="268441395" name="answerText" stackId="29" startPc="268441230"/>
-        <entry endPc="268441395" name="buttonText" stackId="30" startPc="268441230"/>
-        <entry arg="true" endPc="268441500" name="state" stackId="1" startPc="268441450"/>
-        <entry arg="true" endPc="268441824" name="dc" stackId="1" startPc="268441661"/>
-        <entry arg="true" endPc="268441973" name="selectedIndex" stackId="1" startPc="268441867"/>
-        <entry endPc="268441973" name="currentQuestion" stackId="2" startPc="268441870"/>
-        <entry endPc="268441973" name="isCorrect" stackId="3" startPc="268441870"/>
-        <entry arg="true" endPc="268442400" name="correctCountry" stackId="1" startPc="268442137"/>
-        <entry endPc="268442400" name="wrongAnswers" stackId="2" startPc="268442140"/>
-        <entry endPc="268442400" name="allAnswers" stackId="3" startPc="268442140"/>
-        <entry endPc="268442216" name="i" stackId="4" startPc="268442192"/>
-        <entry endPc="268442287" name="i" stackId="5" startPc="268442236"/>
-        <entry endPc="268442277" name="j" stackId="6" startPc="268442236"/>
-        <entry endPc="268442277" name="temp" stackId="7" startPc="268442236"/>
-        <entry endPc="268442400" name="correctIndex" stackId="8" startPc="268442140"/>
-        <entry endPc="268442350" name="i" stackId="9" startPc="268442307"/>
-        <entry endPc="268442489" name="countries" stackId="1" startPc="268442404"/>
-        <entry endPc="268442489" name="i" stackId="2" startPc="268442449"/>
-        <entry endPc="268442479" name="question" stackId="3" startPc="268442449"/>
-        <entry endPc="268442561" name="view" stackId="1" startPc="268442505"/>
-        <entry endPc="268442561" name="delegate" stackId="2" startPc="268442505"/>
+        <entry arg="true" endPc="268441431" name="dc" stackId="1" startPc="268440651"/>
+        <entry endPc="268441430" name="question" stackId="2" startPc="268440654"/>
+        <entry endPc="268441430" name="width" stackId="3" startPc="268440654"/>
+        <entry endPc="268441430" name="height" stackId="4" startPc="268440654"/>
+        <entry endPc="268441430" name="screenCenterX" stackId="5" startPc="268440654"/>
+        <entry endPc="268441430" name="questionText" stackId="6" startPc="268440654"/>
+        <entry endPc="268441430" name="flagId" stackId="7" startPc="268440654"/>
+        <entry endPc="268441430" name="flagResource" stackId="8" startPc="268440654"/>
+        <entry endPc="268441430" name="flagBitmap" stackId="9" startPc="268440654"/>
+        <entry endPc="268440859" name="e" stackId="10" startPc="268440846"/>
+        <entry endPc="268441430" name="headerHeight" stackId="11" startPc="268440654"/>
+        <entry endPc="268441430" name="buttonsHeight" stackId="12" startPc="268440654"/>
+        <entry endPc="268441430" name="availableHeight" stackId="13" startPc="268440654"/>
+        <entry endPc="268441430" name="flagDisplayHeight" stackId="14" startPc="268440654"/>
+        <entry endPc="268441430" name="flagDisplayWidth" stackId="15" startPc="268440654"/>
+        <entry endPc="268441430" name="flagZoneY" stackId="16" startPc="268440654"/>
+        <entry endPc="268441118" name="bitmapWidth" stackId="17" startPc="268440961"/>
+        <entry endPc="268441118" name="bitmapHeight" stackId="18" startPc="268440961"/>
+        <entry endPc="268441118" name="scaleX" stackId="19" startPc="268440961"/>
+        <entry endPc="268441118" name="scaleY" stackId="20" startPc="268440961"/>
+        <entry endPc="268441118" name="scale" stackId="21" startPc="268440961"/>
+        <entry endPc="268441118" name="scaledWidth" stackId="22" startPc="268440961"/>
+        <entry endPc="268441118" name="scaledHeight" stackId="23" startPc="268440961"/>
+        <entry endPc="268441118" name="flagX" stackId="24" startPc="268440961"/>
+        <entry endPc="268441118" name="flagY" stackId="25" startPc="268440961"/>
+        <entry endPc="268441430" name="answers" stackId="26" startPc="268440654"/>
+        <entry endPc="268441430" name="buttonsStartY" stackId="27" startPc="268440654"/>
+        <entry endPc="268441430" name="buttonHeight" stackId="28" startPc="268440654"/>
+        <entry endPc="268441430" name="buttonMargin" stackId="29" startPc="268440654"/>
+        <entry endPc="268441430" name="selectedIndex" stackId="30" startPc="268440654"/>
+        <entry endPc="268441430" name="i" stackId="31" startPc="268441240"/>
+        <entry endPc="268441420" name="y" stackId="32" startPc="268441240"/>
+        <entry endPc="268441420" name="isSelected" stackId="33" startPc="268441240"/>
+        <entry endPc="268441420" name="buttonColor" stackId="34" startPc="268441240"/>
+        <entry endPc="268441420" name="textColor" stackId="35" startPc="268441240"/>
+        <entry endPc="268441420" name="answerText" stackId="36" startPc="268441240"/>
+        <entry endPc="268441420" name="buttonText" stackId="37" startPc="268441240"/>
+        <entry arg="true" endPc="268441525" name="state" stackId="1" startPc="268441475"/>
+        <entry arg="true" endPc="268441849" name="dc" stackId="1" startPc="268441686"/>
+        <entry arg="true" endPc="268441998" name="selectedIndex" stackId="1" startPc="268441892"/>
+        <entry endPc="268441998" name="currentQuestion" stackId="2" startPc="268441895"/>
+        <entry endPc="268441998" name="isCorrect" stackId="3" startPc="268441895"/>
+        <entry arg="true" endPc="268442425" name="correctCountry" stackId="1" startPc="268442162"/>
+        <entry endPc="268442425" name="wrongAnswers" stackId="2" startPc="268442165"/>
+        <entry endPc="268442425" name="allAnswers" stackId="3" startPc="268442165"/>
+        <entry endPc="268442241" name="i" stackId="4" startPc="268442217"/>
+        <entry endPc="268442312" name="i" stackId="5" startPc="268442261"/>
+        <entry endPc="268442302" name="j" stackId="6" startPc="268442261"/>
+        <entry endPc="268442302" name="temp" stackId="7" startPc="268442261"/>
+        <entry endPc="268442425" name="correctIndex" stackId="8" startPc="268442165"/>
+        <entry endPc="268442375" name="i" stackId="9" startPc="268442332"/>
+        <entry endPc="268442514" name="countries" stackId="1" startPc="268442429"/>
+        <entry endPc="268442514" name="i" stackId="2" startPc="268442474"/>
+        <entry endPc="268442504" name="question" stackId="3" startPc="268442474"/>
+        <entry endPc="268442586" name="view" stackId="1" startPc="268442530"/>
+        <entry endPc="268442586" name="delegate" stackId="2" startPc="268442530"/>
     </localVars>
     <deviceInfo deviceVersion="0ed082a335bbf00c12e5da810e92d4f89288090c" partNumber="006-B3990-00"/>
     <annotations>
@@ -1335,34 +1347,34 @@
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441406" name="drawQuestion" parent="quizz_drapeauView" startPc="268440651">
+        <functionEntry accessMode="public" endPc="268441431" name="drawQuestion" parent="quizz_drapeauView" startPc="268440651">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268441441" name="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;" parent="quizz_drapeauView" startPc="268441407">
+        <functionEntry accessMode="private" endPc="268441466" name="&lt;globals/quizz_drapeauView/&lt;&gt;stopResultTimer&gt;" parent="quizz_drapeauView" startPc="268441432">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441449" name="getGameState" parent="quizz_drapeauView" startPc="268441442">
+        <functionEntry accessMode="public" endPc="268441474" name="getGameState" parent="quizz_drapeauView" startPc="268441467">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441500" name="setGameState" parent="quizz_drapeauView" startPc="268441450">
+        <functionEntry accessMode="public" endPc="268441525" name="setGameState" parent="quizz_drapeauView" startPc="268441475">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441580" name="initialize" parent="quizz_drapeauView" startPc="268441501">
+        <functionEntry accessMode="public" endPc="268441605" name="initialize" parent="quizz_drapeauView" startPc="268441526">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441590" name="onHide" parent="quizz_drapeauView" startPc="268441581">
+        <functionEntry accessMode="public" endPc="268441615" name="onHide" parent="quizz_drapeauView" startPc="268441606">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268441660" name="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;" parent="quizz_drapeauView" startPc="268441591">
+        <functionEntry accessMode="private" endPc="268441685" name="&lt;globals/quizz_drapeauView/&lt;&gt;startResultTimer&gt;" parent="quizz_drapeauView" startPc="268441616">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441824" name="onUpdate" parent="quizz_drapeauView" startPc="268441661">
+        <functionEntry accessMode="public" endPc="268441849" name="onUpdate" parent="quizz_drapeauView" startPc="268441686">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441832" name="getQuizManager" parent="quizz_drapeauView" startPc="268441825">
+        <functionEntry accessMode="public" endPc="268441857" name="getQuizManager" parent="quizz_drapeauView" startPc="268441850">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -1374,62 +1386,62 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441866" name="startNewGame" parent="QuizManager" startPc="268441833">
+        <functionEntry accessMode="public" endPc="268441891" name="startNewGame" parent="QuizManager" startPc="268441858">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268441973" name="answerQuestion" parent="QuizManager" startPc="268441867">
+        <functionEntry accessMode="public" endPc="268441998" name="answerQuestion" parent="QuizManager" startPc="268441892">
             <param id="selectedIndex"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442005" name="getScorePercentage" parent="QuizManager" startPc="268441974">
+        <functionEntry accessMode="public" endPc="268442030" name="getScorePercentage" parent="QuizManager" startPc="268441999">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442013" name="isGameActive" parent="QuizManager" startPc="268442006">
+        <functionEntry accessMode="public" endPc="268442038" name="isGameActive" parent="QuizManager" startPc="268442031">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442033" name="isGameFinished" parent="QuizManager" startPc="268442014">
+        <functionEntry accessMode="public" endPc="268442058" name="isGameFinished" parent="QuizManager" startPc="268442039">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442044" name="getCurrentQuestionNumber" parent="QuizManager" startPc="268442034">
+        <functionEntry accessMode="public" endPc="268442069" name="getCurrentQuestionNumber" parent="QuizManager" startPc="268442059">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442089" name="initialize" parent="QuizManager" startPc="268442045">
+        <functionEntry accessMode="public" endPc="268442114" name="initialize" parent="QuizManager" startPc="268442070">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442128" name="getCurrentQuestion" parent="QuizManager" startPc="268442090">
+        <functionEntry accessMode="public" endPc="268442153" name="getCurrentQuestion" parent="QuizManager" startPc="268442115">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442136" name="getScore" parent="QuizManager" startPc="268442129">
+        <functionEntry accessMode="public" endPc="268442161" name="getScore" parent="QuizManager" startPc="268442154">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442400" name="generateQuestion" parent="QuizManager" startPc="268442137">
+        <functionEntry accessMode="public" endPc="268442425" name="generateQuestion" parent="QuizManager" startPc="268442162">
             <param id="correctCountry"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442490" name="generateQuestions" parent="QuizManager" startPc="268442401">
+        <functionEntry accessMode="public" endPc="268442515" name="generateQuestions" parent="QuizManager" startPc="268442426">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442498" name="getTotalQuestions" parent="QuizManager" startPc="268442491">
+        <functionEntry accessMode="public" endPc="268442523" name="getTotalQuestions" parent="QuizManager" startPc="268442516">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442501" name="onStart" parent="quizz_drapeauApp" startPc="268442499">
+        <functionEntry accessMode="public" endPc="268442526" name="onStart" parent="quizz_drapeauApp" startPc="268442524">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442561" name="getInitialView" parent="quizz_drapeauApp" startPc="268442502">
+        <functionEntry accessMode="public" endPc="268442586" name="getInitialView" parent="quizz_drapeauApp" startPc="268442527">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442576" name="initialize" parent="quizz_drapeauApp" startPc="268442562">
+        <functionEntry accessMode="public" endPc="268442601" name="initialize" parent="quizz_drapeauApp" startPc="268442587">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442579" name="onStop" parent="quizz_drapeauApp" startPc="268442577">
+        <functionEntry accessMode="public" endPc="268442604" name="onStop" parent="quizz_drapeauApp" startPc="268442602">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442591" name="&lt;init&gt;" parent="MainMenu" startPc="268442580">
+        <functionEntry accessMode="public" endPc="268442616" name="&lt;init&gt;" parent="MainMenu" startPc="268442605">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268442644" name="initialize" parent="MainMenu" startPc="268442592">
+        <functionEntry accessMode="public" endPc="268442669" name="initialize" parent="MainMenu" startPc="268442617">
             <documentation/>
         </functionEntry>
     </functions>
