@@ -149,7 +149,7 @@ class quizz_drapeauView extends WatchUi.View {
             var isSelected = (i == selectedIndex);
             
             // NOUVELLES COULEURS PERSONNALISÉES
-            var buttonColor = isSelected ? 0x1E5631 : 0x9F7E69;  // Vert foncé si sélectionné, beige sinon
+            var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;  // Vert foncé si sélectionné, beige sinon
             var textColor = Graphics.COLOR_WHITE;  // Texte blanc pour contraste sur les deux couleurs
             
             dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
