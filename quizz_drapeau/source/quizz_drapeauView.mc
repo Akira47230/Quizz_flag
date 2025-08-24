@@ -81,13 +81,19 @@ class quizz_drapeauView extends WatchUi.View {
         var height = dc.getHeight();
         var screenCenterX = width / 2;
 
+        // MARGES DE SÉCURITÉ RELATIVES pour éviter tout débordement
+        var safeMarginX = (width * 0.05).toNumber();   // 5% de marge horizontale
+        var safeMarginY = (height * 0.03).toNumber();  // 3% de marge verticale
+        var safeWidth = width - (2 * safeMarginX);     // Largeur sécurisée
+        var safeHeight = height - (2 * safeMarginY);   // Hauteur sécurisée
+
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Numéro de question et score - PLUS COMPACT
+        // Numéro de question et score - DANS LA ZONE SÉCURISÉE
         var questionText = _quizManager.getCurrentQuestionNumber() + "/" + 
                           _quizManager.getTotalQuestions() + 
                           " - Score: " + _quizManager.getScore();
-        dc.drawText(screenCenterX, height * 0.02, Graphics.FONT_XTINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(screenCenterX, safeMarginY + (safeHeight * 0.02), Graphics.FONT_XTINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
 
         // Chargement du drapeau AVANT de définir la zone d'affichage
         var flagId = question[:flag] as String;
@@ -102,51 +108,51 @@ class quizz_drapeauView extends WatchUi.View {
             }
         }
         
-        // Calcul de la zone disponible pour le drapeau - TAILLE RÉDUITE DE 15%
-        var headerHeight = (height * 0.08).toNumber();  // 8% pour le header
-        var buttonsHeight = (height * 0.30).toNumber(); // 30% pour 3 boutons
-        var availableHeight = height - headerHeight - buttonsHeight;
+        // Calcul de la zone disponible pour le drapeau - DANS LES MARGES DE SÉCURITÉ
+        var headerHeight = (safeHeight * 0.08).toNumber();    // 8% du safe height
+        var buttonsHeight = (safeHeight * 0.35).toNumber();   // 35% du safe height
+        var availableHeight = safeHeight - headerHeight - buttonsHeight;
         
-        // Zone pour le drapeau - RÉDUITE DE 15% et RECENTRÉE
-        var flagDisplayHeight = (availableHeight * 0.85).toNumber(); // 85% de l'espace disponible (réduction de 15%)
-        var flagDisplayWidth = (width * 0.8).toNumber(); // 80% de la largeur d'écran (réduction de 15%)
+        // Zone pour le drapeau - TAILLE RÉDUITE ET SÉCURISÉE
+        var flagDisplayHeight = (availableHeight * 0.65).toNumber(); // 65% de l'espace disponible (plus petit)
+        var flagDisplayWidth = (safeWidth * 0.65).toNumber();        // 65% de la largeur sécurisée (plus petit)
         
-        // Position de début de la zone drapeau - RECENTRAGE PARFAIT
-        var flagZoneY = headerHeight + ((availableHeight - flagDisplayHeight) / 2); // Centré verticalement dans l'espace disponible
+        // Position de début de la zone drapeau - CENTRAGE PARFAIT DANS LA ZONE SÉCURISÉE
+        var flagZoneY = safeMarginY + headerHeight + ((availableHeight - flagDisplayHeight) / 2);
         
         if (flagBitmap != null) {
-            // Utiliser les vraies dimensions du drapeau pour un affichage optimal
+            // Utiliser les vraies dimensions du drapeau
             var bitmapWidth = flagBitmap.getWidth().toNumber();
             var bitmapHeight = flagBitmap.getHeight().toNumber();
             
-            // Calculer le ratio d'échelle pour la nouvelle taille réduite
+            // Calculer le ratio d'échelle pour la taille réduite et sécurisée
             var scaleX = flagDisplayWidth.toFloat() / bitmapWidth.toFloat();
             var scaleY = flagDisplayHeight.toFloat() / bitmapHeight.toFloat();
-            var scale = scaleX < scaleY ? scaleX : scaleY; // Prendre le plus petit pour garder les proportions
+            var scale = scaleX < scaleY ? scaleX : scaleY; // Garder les proportions
             
-            // Nouvelles dimensions réduites de 15% avec le ratio optimal
+            // Nouvelles dimensions sécurisées
             var scaledWidth = (bitmapWidth.toFloat() * scale).toNumber();
             var scaledHeight = (bitmapHeight.toFloat() * scale).toNumber();
             
-            // Position PARFAITEMENT CENTRÉE - Recalcul précis après réduction
-            var flagX = screenCenterX - (scaledWidth / 2);  // Centrage horizontal parfait
-            var flagY = flagZoneY + (flagDisplayHeight - scaledHeight) / 2; // Centrage vertical parfait dans la zone réduite
+            // Position PARFAITEMENT CENTRÉE - Dans la zone sécurisée
+            var flagX = screenCenterX - (scaledWidth / 2);  // Centrage horizontal
+            var flagY = flagZoneY + (flagDisplayHeight - scaledHeight) / 2; // Centrage vertical
             
-            // Affichage direct du drapeau réduit et recentré - SANS zone de fond
+            // Affichage du drapeau centré et sécurisé
             dc.drawBitmap(flagX, flagY, flagBitmap);
             
         } else {
             // Fallback si le drapeau ne peut pas être chargé
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(screenCenterX, flagZoneY + (flagDisplayHeight / 2), Graphics.FONT_MEDIUM, 
+            dc.drawText(screenCenterX, flagZoneY + (flagDisplayHeight / 2), Graphics.FONT_SMALL, 
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse - COMPACTES pour laisser plus de place au drapeau
+        // Options de réponse - DANS LA ZONE SÉCURISÉE
         var answers = question[:answers] as Array;
-        var buttonsStartY = height - buttonsHeight; // Commence pile à la bonne position
-        var buttonHeight = (buttonsHeight / 3).toNumber(); // Divise l'espace également
-        var buttonMargin = (width * 0.08).toNumber(); // RÉDUIT: 8% de marge latérale (au lieu de 15%)
+        var buttonsStartY = safeMarginY + safeHeight - buttonsHeight; // Dans la zone sécurisée
+        var buttonHeight = (buttonsHeight / 3).toNumber();
+        var buttonMargin = safeMarginX + (safeWidth * 0.08).toNumber(); // Marge + 8% de la largeur sécurisée
         var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
@@ -154,19 +160,22 @@ class quizz_drapeauView extends WatchUi.View {
             var isSelected = (i == selectedIndex);
             
             // Couleurs personnalisées
-            var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;  // Vert foncé si sélectionné, beige sinon
+            var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;
             var textColor = Graphics.COLOR_WHITE;
+            
+            // Largeur de bouton sécurisée
+            var buttonWidth = safeWidth - (2 * (safeWidth * 0.08).toNumber());
             
             dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
             dc.fillRoundedRectangle(buttonMargin, y + (buttonHeight * 0.05).toNumber(), 
-                                  width - (2 * buttonMargin), 
-                                  (buttonHeight * 0.85).toNumber(), 2); // PLUS FINE: rayons de 2px
+                                  buttonWidth, 
+                                  (buttonHeight * 0.85).toNumber(), 2);
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
             var answerText = answers[i] as String;
             var buttonText = (i + 1) + ". " + answerText;
             dc.drawText(screenCenterX, y + (buttonHeight * 0.35).toNumber(), 
-                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER); // POLICE PLUS PETITE
+                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
