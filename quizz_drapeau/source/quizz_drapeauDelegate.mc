@@ -1,4 +1,4 @@
-// source/quizz_drapeauDelegate.mc - Version corrigée
+// source/quizz_drapeauDelegate.mc - Mis à jour pour les nouvelles fonctionnalités
 import Toybox.Lang;
 import Toybox.WatchUi;
 import Toybox.System;
@@ -31,11 +31,14 @@ class quizz_drapeauDelegate extends WatchUi.BehaviorDelegate {
                 // Répondre à la question
                 var isCorrect = quizManager.answerQuestion(_selectedAnswerIndex);
                 
-                // Afficher SEULEMENT le résultat - SIMPLIFIÉ
+                // MODIFIÉ: Définir si la réponse était correcte pour l'affichage coloré
+                _view.setResultCorrect(isCorrect);
+                
+                // Afficher le résultat simplifié
                 if (isCorrect) {
-                    _view.setResultTitle("✓ CORRECT");
+                    _view.setResultTitle("CORRECT");
                 } else {
-                    _view.setResultTitle("✗ INCORRECT");
+                    _view.setResultTitle("INCORRECT");
                 }
                 
                 // Transition automatique vers l'écran de résultat

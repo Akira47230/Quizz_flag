@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Version optimisée sans carré invisible
+// source/quizz_drapeauView.mc - Version améliorée selon les demandes
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -9,6 +9,7 @@ class quizz_drapeauView extends WatchUi.View {
     private var _gameState as Symbol; // :menu, :playing, :result, :finalScore
     private var _delegate as Object or Null;
     private var _lastResultTitle as String;
+    private var _lastResultCorrect as Boolean;
     private var _resultTimer as Timer.Timer or Null;
 
     function initialize() {
@@ -17,6 +18,7 @@ class quizz_drapeauView extends WatchUi.View {
         _gameState = :menu;
         _delegate = null;
         _lastResultTitle = "";
+        _lastResultCorrect = false;
         _resultTimer = null;
     }
 
@@ -66,9 +68,8 @@ class quizz_drapeauView extends WatchUi.View {
                    
         dc.drawText(centerX, centerY + 20, Graphics.FONT_TINY, 
                    "SELECT pour commencer", Graphics.TEXT_JUSTIFY_CENTER);
-                   
-        dc.drawText(centerX, centerY + 35, Graphics.FONT_TINY, 
-                   "MENU pour quitter", Graphics.TEXT_JUSTIFY_CENTER);
+        
+        // SUPPRIMÉ: "MENU pour quitter" n'est plus nécessaire
     }
 
     function drawQuestion(dc as Dc) as Void {
@@ -81,101 +82,76 @@ class quizz_drapeauView extends WatchUi.View {
         var height = dc.getHeight();
         var screenCenterX = width / 2;
 
-        // MARGES DE SÉCURITÉ RELATIVES pour éviter tout débordement
-        var safeMarginX = (width * 0.05).toNumber();   // 5% de marge horizontale
-        var safeMarginY = (height * 0.03).toNumber();  // 3% de marge verticale
-        var safeWidth = width - (2 * safeMarginX);     // Largeur sécurisée
-        var safeHeight = height - (2 * safeMarginY);   // Hauteur sécurisée
-
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Numéro de question et score - DANS LA ZONE SÉCURISÉE
+        // MODIFIÉ: Score sur une ligne en dessous du numéro de question
         var questionText = _quizManager.getCurrentQuestionNumber() + "/" + 
-                          _quizManager.getTotalQuestions() + 
-                          " - Score: " + _quizManager.getScore();
-        dc.drawText(screenCenterX, safeMarginY + (safeHeight * 0.02), Graphics.FONT_XTINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
+                          _quizManager.getTotalQuestions();
+        dc.drawText(screenCenterX, height * 0.02, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
+        
+        var scoreText = "Score: " + _quizManager.getScore();
+        dc.drawText(screenCenterX, height * 0.08, Graphics.FONT_TINY, scoreText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Chargement du drapeau AVANT de définir la zone d'affichage
+        // Zone pour le drapeau - légèrement remontée
+        var flagWidth = (width * 0.805).toNumber();
+        var flagHeight = (height * 0.4025).toNumber();
+        var flagX = screenCenterX - (flagWidth / 2);
+        var flagY = (height * 0.14).toNumber();      // Remonté de 15% à 14%
+        
+        // Chargement et affichage du drapeau
         var flagId = question[:flag] as String;
         var flagResource = getFlagResource(flagId);
-        var flagBitmap = null;
         
         if (flagResource != null) {
             try {
-                flagBitmap = WatchUi.loadResource(flagResource);
+                var flagBitmap = WatchUi.loadResource(flagResource);
+                if (flagBitmap != null) {
+                    var bitmapWidth = flagBitmap.getWidth().toNumber();
+                    var bitmapHeight = flagBitmap.getHeight().toNumber();
+                    
+                    var imgX = flagX + (flagWidth - bitmapWidth) / 2;
+                    var imgY = flagY + (flagHeight - bitmapHeight) / 2;
+                    
+                    dc.drawBitmap(imgX, imgY, flagBitmap);
+                } else {
+                    dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                    dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
+                               flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
+                }
             } catch (e) {
-                flagBitmap = null;
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
+                           flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
             }
-        }
-        
-        // Calcul de la zone disponible pour le drapeau - DANS LES MARGES DE SÉCURITÉ
-        var headerHeight = (safeHeight * 0.08).toNumber();    // 8% du safe height
-        var buttonsHeight = (safeHeight * 0.35).toNumber();   // 35% du safe height
-        var availableHeight = safeHeight - headerHeight - buttonsHeight;
-        
-        // Zone pour le drapeau - TAILLE RÉDUITE ET SÉCURISÉE
-        var flagDisplayHeight = (availableHeight * 0.65).toNumber(); // 65% de l'espace disponible (plus petit)
-        var flagDisplayWidth = (safeWidth * 0.65).toNumber();        // 65% de la largeur sécurisée (plus petit)
-        
-        // Position de début de la zone drapeau - CENTRAGE PARFAIT DANS LA ZONE SÉCURISÉE
-        var flagZoneY = safeMarginY + headerHeight + ((availableHeight - flagDisplayHeight) / 2);
-        
-        if (flagBitmap != null) {
-            // Utiliser les vraies dimensions du drapeau
-            var bitmapWidth = flagBitmap.getWidth().toNumber();
-            var bitmapHeight = flagBitmap.getHeight().toNumber();
-            
-            // Calculer le ratio d'échelle pour la taille réduite et sécurisée
-            var scaleX = flagDisplayWidth.toFloat() / bitmapWidth.toFloat();
-            var scaleY = flagDisplayHeight.toFloat() / bitmapHeight.toFloat();
-            var scale = scaleX < scaleY ? scaleX : scaleY; // Garder les proportions
-            
-            // Nouvelles dimensions sécurisées
-            var scaledWidth = (bitmapWidth.toFloat() * scale).toNumber();
-            var scaledHeight = (bitmapHeight.toFloat() * scale).toNumber();
-            
-            // Position PARFAITEMENT CENTRÉE - Dans la zone sécurisée
-            var flagX = screenCenterX - (scaledWidth / 2);  // Centrage horizontal
-            var flagY = flagZoneY + (flagDisplayHeight - scaledHeight) / 2; // Centrage vertical
-            
-            // Affichage du drapeau centré et sécurisé
-            dc.drawBitmap(flagX, flagY, flagBitmap);
-            
         } else {
-            // Fallback si le drapeau ne peut pas être chargé
             dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-            dc.drawText(screenCenterX, flagZoneY + (flagDisplayHeight / 2), Graphics.FONT_SMALL, 
+            dc.drawText(screenCenterX, flagY + flagHeight/2, Graphics.FONT_SMALL, 
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse - DANS LA ZONE SÉCURISÉE
+        // MODIFIÉ: Options de réponse remontées et sans numérotation
         var answers = question[:answers] as Array;
-        var buttonsStartY = safeMarginY + safeHeight - buttonsHeight; // Dans la zone sécurisée
-        var buttonHeight = (buttonsHeight / 3).toNumber();
-        var buttonMargin = safeMarginX + (safeWidth * 0.08).toNumber(); // Marge + 8% de la largeur sécurisée
+        var buttonsStartY = (height * 0.57).toNumber();  // Remonté de 60% à 57%
+        var buttonHeight = (height * 0.12).toNumber();
+        var buttonMargin = (width * 0.15).toNumber();
         var selectedIndex = getSelectedAnswerIndex();
         
         for (var i = 0; i < answers.size(); i++) {
             var y = buttonsStartY + (i * buttonHeight);
             var isSelected = (i == selectedIndex);
             
-            // Couleurs personnalisées
             var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;
             var textColor = Graphics.COLOR_WHITE;
             
-            // Largeur de bouton sécurisée
-            var buttonWidth = safeWidth - (2 * (safeWidth * 0.08).toNumber());
-            
             dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(buttonMargin, y + (buttonHeight * 0.05).toNumber(), 
-                                  buttonWidth, 
-                                  (buttonHeight * 0.85).toNumber(), 2);
+            dc.fillRoundedRectangle(buttonMargin, y, width - (2 * buttonMargin), 
+                                  (buttonHeight * 0.8).toNumber(), 3);
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
+            // SUPPRIMÉ: Plus de numérotation "(i + 1). "
             var answerText = answers[i] as String;
-            var buttonText = (i + 1) + ". " + answerText;
-            dc.drawText(screenCenterX, y + (buttonHeight * 0.35).toNumber(), 
-                       Graphics.FONT_XTINY, buttonText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(screenCenterX, y + (buttonHeight * 0.2).toNumber(), 
+                       Graphics.FONT_XTINY, answerText, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
@@ -222,11 +198,25 @@ class quizz_drapeauView extends WatchUi.View {
         var centerX = width / 2;
         var centerY = height / 2;
 
+        // MODIFIÉ: Couleur de fond selon si c'est correct ou non
+        if (_lastResultCorrect) {
+            dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_GREEN);
+        } else {
+            dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_RED);
+        }
+        dc.clear();
+        
+        // Texte en blanc sur fond coloré
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // Afficher seulement si c'est correct ou incorrect - SIMPLIFIÉ
-        dc.drawText(centerX, centerY, Graphics.FONT_LARGE, 
-                   _lastResultTitle, Graphics.TEXT_JUSTIFY_CENTER);
+        // MODIFIÉ: Affichage simplifié sans logos
+        if (_lastResultCorrect) {
+            dc.drawText(centerX, centerY, Graphics.FONT_LARGE, 
+                       "CORRECT", Graphics.TEXT_JUSTIFY_CENTER);
+        } else {
+            dc.drawText(centerX, centerY, Graphics.FONT_LARGE, 
+                       "INCORRECT", Graphics.TEXT_JUSTIFY_CENTER);
+        }
     }
 
     function drawFinalScore(dc as Dc) as Void {
@@ -294,6 +284,11 @@ class quizz_drapeauView extends WatchUi.View {
 
     function setResultTitle(title as String) as Void {
         _lastResultTitle = title;
+    }
+
+    // NOUVELLE MÉTHODE: Définir si la réponse était correcte
+    function setResultCorrect(isCorrect as Boolean) as Void {
+        _lastResultCorrect = isCorrect;
     }
 
     function getSelectedAnswerIndex() as Number {
