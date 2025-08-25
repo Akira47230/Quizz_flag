@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Version améliorée selon les demandes
+// source/quizz_drapeauView.mc - Version complète pour tous les pays ISO 3166-1 alpha-2
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -64,12 +64,10 @@ class quizz_drapeauView extends WatchUi.View {
                    "Quiz Drapeaux", Graphics.TEXT_JUSTIFY_CENTER);
         
         dc.drawText(centerX, centerY - 10, Graphics.FONT_SMALL, 
-                   "20 questions", Graphics.TEXT_JUSTIFY_CENTER);
+                   "20 questions - 255 pays", Graphics.TEXT_JUSTIFY_CENTER);
                    
         dc.drawText(centerX, centerY + 20, Graphics.FONT_TINY, 
                    "SELECT pour commencer", Graphics.TEXT_JUSTIFY_CENTER);
-        
-        // SUPPRIMÉ: "MENU pour quitter" n'est plus nécessaire
     }
 
     function drawQuestion(dc as Dc) as Void {
@@ -84,7 +82,7 @@ class quizz_drapeauView extends WatchUi.View {
 
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // MODIFIÉ: Score sur une ligne en dessous du numéro de question
+        // Score sur une ligne en dessous du numéro de question
         var questionText = _quizManager.getCurrentQuestionNumber() + "/" + 
                           _quizManager.getTotalQuestions();
         dc.drawText(screenCenterX, height * 0.02, Graphics.FONT_TINY, questionText, Graphics.TEXT_JUSTIFY_CENTER);
@@ -92,11 +90,11 @@ class quizz_drapeauView extends WatchUi.View {
         var scoreText = "Score: " + _quizManager.getScore();
         dc.drawText(screenCenterX, height * 0.08, Graphics.FONT_TINY, scoreText, Graphics.TEXT_JUSTIFY_CENTER);
 
-        // Zone pour le drapeau - légèrement remontée
+        // Zone pour le drapeau
         var flagWidth = (width * 0.805).toNumber();
         var flagHeight = (height * 0.4025).toNumber();
         var flagX = screenCenterX - (flagWidth / 2);
-        var flagY = (height * 0.14).toNumber();      // Remonté de 15% à 14%
+        var flagY = (height * 0.14).toNumber();
         
         // Chargement et affichage du drapeau
         var flagId = question[:flag] as String;
@@ -129,9 +127,9 @@ class quizz_drapeauView extends WatchUi.View {
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // MODIFIÉ: Options de réponse remontées et sans numérotation
+        // Options de réponse (3 choix)
         var answers = question[:answers] as Array;
-        var buttonsStartY = (height * 0.57).toNumber();  // Remonté de 60% à 57%
+        var buttonsStartY = (height * 0.57).toNumber();
         var buttonHeight = (height * 0.12).toNumber();
         var buttonMargin = (width * 0.15).toNumber();
         var selectedIndex = getSelectedAnswerIndex();
@@ -148,48 +146,16 @@ class quizz_drapeauView extends WatchUi.View {
                                   (buttonHeight * 0.8).toNumber(), 3);
             
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
-            // SUPPRIMÉ: Plus de numérotation "(i + 1). "
             var answerText = answers[i] as String;
             dc.drawText(screenCenterX, y + (buttonHeight * 0.2).toNumber(), 
                        Graphics.FONT_XTINY, answerText, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
-    // Fonction pour mapper les IDs de drapeaux aux ressources
+    // Fonction complète pour mapper tous les IDs de drapeaux aux ressources
     private function getFlagResource(flagId as String) as ResourceId or Null {
-        switch (flagId) {
-            case "fr": return Rez.Drawables.fr;
-            case "de": return Rez.Drawables.de;
-            case "es": return Rez.Drawables.es;
-            case "it": return Rez.Drawables.it;
-            case "gb": return Rez.Drawables.gb;
-            case "us": return Rez.Drawables.us;
-            case "ca": return Rez.Drawables.ca;
-            case "jp": return Rez.Drawables.jp;
-            case "cn": return Rez.Drawables.cn;
-            case "br": return Rez.Drawables.br;
-            case "ar": return Rez.Drawables.ar;
-            case "au": return Rez.Drawables.au;
-            case "ru": return Rez.Drawables.ru;
-            case "in": return Rez.Drawables.in;
-            case "mx": return Rez.Drawables.mx;
-            case "se": return Rez.Drawables.se;
-            case "no": return Rez.Drawables.no;
-            case "nl": return Rez.Drawables.nl;
-            case "ch": return Rez.Drawables.ch;
-            case "be": return Rez.Drawables.be;
-            case "pt": return Rez.Drawables.pt;
-            case "gr": return Rez.Drawables.gr;
-            case "tr": return Rez.Drawables.tr;
-            case "eg": return Rez.Drawables.eg;
-            case "za": return Rez.Drawables.za;
-            case "kr": return Rez.Drawables.kr;
-            case "th": return Rez.Drawables.th;
-            case "vn": return Rez.Drawables.vn;
-            case "sg": return Rez.Drawables.sg;
-            case "nz": return Rez.Drawables.nz;
-            default: return null;
-        }
+        // Utilise la fonction statique de FlagData pour obtenir la ressource
+        return FlagData.getFlagResource(flagId);
     }
 
     function drawResult(dc as Dc) as Void {
@@ -198,7 +164,7 @@ class quizz_drapeauView extends WatchUi.View {
         var centerX = width / 2;
         var centerY = height / 2;
 
-        // MODIFIÉ: Couleur de fond selon si c'est correct ou non
+        // Couleur de fond selon si c'est correct ou non
         if (_lastResultCorrect) {
             dc.setColor(Graphics.COLOR_GREEN, Graphics.COLOR_GREEN);
         } else {
@@ -209,7 +175,6 @@ class quizz_drapeauView extends WatchUi.View {
         // Texte en blanc sur fond coloré
         dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
-        // MODIFIÉ: Affichage simplifié sans logos
         if (_lastResultCorrect) {
             dc.drawText(centerX, centerY, Graphics.FONT_LARGE, 
                        "CORRECT", Graphics.TEXT_JUSTIFY_CENTER);
@@ -286,7 +251,6 @@ class quizz_drapeauView extends WatchUi.View {
         _lastResultTitle = title;
     }
 
-    // NOUVELLE MÉTHODE: Définir si la réponse était correcte
     function setResultCorrect(isCorrect as Boolean) as Void {
         _lastResultCorrect = isCorrect;
     }

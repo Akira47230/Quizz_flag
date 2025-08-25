@@ -1,10 +1,10 @@
-<!-- resources/drawables/drawables.xml - Generated drawables list -->
+<!-- resources/drawables/drawables.xml - Version corrigée sans traits d'union -->
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <!-- Icône de lancement -->
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
 
-    <!-- Flags (generated from resources/drawables/flags) -->
-    <!-- Each id is the filename without extension -->
+    <!-- Flags (corrigés pour respecter les identifiants Monkey C valides) -->
+    <!-- A -->
     <bitmap id="ad" filename="flags/ad.png" dithering="none" />
     <bitmap id="ae" filename="flags/ae.png" dithering="none" />
     <bitmap id="af" filename="flags/af.png" dithering="none" />
@@ -15,12 +15,14 @@
     <bitmap id="ao" filename="flags/ao.png" dithering="none" />
     <bitmap id="aq" filename="flags/aq.png" dithering="none" />
     <bitmap id="ar" filename="flags/ar.png" dithering="none" />
-    <bitmap id="as" filename="flags/as.png" dithering="none" />
+    <bitmap id="as_samoa" filename="flags/as.png" dithering="none" />
     <bitmap id="at" filename="flags/at.png" dithering="none" />
     <bitmap id="au" filename="flags/au.png" dithering="none" />
     <bitmap id="aw" filename="flags/aw.png" dithering="none" />
     <bitmap id="ax" filename="flags/ax.png" dithering="none" />
     <bitmap id="az" filename="flags/az.png" dithering="none" />
+
+    <!-- B -->
     <bitmap id="ba" filename="flags/ba.png" dithering="none" />
     <bitmap id="bb" filename="flags/bb.png" dithering="none" />
     <bitmap id="bd" filename="flags/bd.png" dithering="none" />
@@ -42,6 +44,8 @@
     <bitmap id="bw" filename="flags/bw.png" dithering="none" />
     <bitmap id="by" filename="flags/by.png" dithering="none" />
     <bitmap id="bz" filename="flags/bz.png" dithering="none" />
+
+    <!-- C -->
     <bitmap id="ca" filename="flags/ca.png" dithering="none" />
     <bitmap id="cc" filename="flags/cc.png" dithering="none" />
     <bitmap id="cd" filename="flags/cd.png" dithering="none" />
@@ -61,12 +65,16 @@
     <bitmap id="cx" filename="flags/cx.png" dithering="none" />
     <bitmap id="cy" filename="flags/cy.png" dithering="none" />
     <bitmap id="cz" filename="flags/cz.png" dithering="none" />
+
+    <!-- D -->
     <bitmap id="de" filename="flags/de.png" dithering="none" />
     <bitmap id="dj" filename="flags/dj.png" dithering="none" />
     <bitmap id="dk" filename="flags/dk.png" dithering="none" />
     <bitmap id="dm" filename="flags/dm.png" dithering="none" />
-    <bitmap id="do" filename="flags/do.png" dithering="none" />
+    <bitmap id="do_republic" filename="flags/do.png" dithering="none" />
     <bitmap id="dz" filename="flags/dz.png" dithering="none" />
+
+    <!-- E -->
     <bitmap id="ec" filename="flags/ec.png" dithering="none" />
     <bitmap id="ee" filename="flags/ee.png" dithering="none" />
     <bitmap id="eg" filename="flags/eg.png" dithering="none" />
@@ -74,17 +82,22 @@
     <bitmap id="er" filename="flags/er.png" dithering="none" />
     <bitmap id="es" filename="flags/es.png" dithering="none" />
     <bitmap id="et" filename="flags/et.png" dithering="none" />
+
+    <!-- F -->
     <bitmap id="fi" filename="flags/fi.png" dithering="none" />
     <bitmap id="fj" filename="flags/fj.png" dithering="none" />
     <bitmap id="fk" filename="flags/fk.png" dithering="none" />
     <bitmap id="fm" filename="flags/fm.png" dithering="none" />
     <bitmap id="fo" filename="flags/fo.png" dithering="none" />
     <bitmap id="fr" filename="flags/fr.png" dithering="none" />
+
+    <!-- G -->
     <bitmap id="ga" filename="flags/ga.png" dithering="none" />
-    <bitmap id="gb-eng" filename="flags/gb-eng.png" dithering="none" />
-    <bitmap id="gb-nir" filename="flags/gb-nir.png" dithering="none" />
-    <bitmap id="gb-sct" filename="flags/gb-sct.png" dithering="none" />
-    <bitmap id="gb-wls" filename="flags/gb-wls.png" dithering="none" />
+    <!-- CORRIGÉ: Utilisation d'underscores au lieu de traits d'union -->
+    <bitmap id="gb_eng" filename="flags/gb-eng.png" dithering="none" />
+    <bitmap id="gb_nir" filename="flags/gb-nir.png" dithering="none" />
+    <bitmap id="gb_sct" filename="flags/gb-sct.png" dithering="none" />
+    <bitmap id="gb_wls" filename="flags/gb-wls.png" dithering="none" />
     <bitmap id="gb" filename="flags/gb.png" dithering="none" />
     <bitmap id="gd" filename="flags/gd.png" dithering="none" />
     <bitmap id="ge" filename="flags/ge.png" dithering="none" />
@@ -103,12 +116,16 @@
     <bitmap id="gu" filename="flags/gu.png" dithering="none" />
     <bitmap id="gw" filename="flags/gw.png" dithering="none" />
     <bitmap id="gy" filename="flags/gy.png" dithering="none" />
+
+    <!-- H -->
     <bitmap id="hk" filename="flags/hk.png" dithering="none" />
     <bitmap id="hm" filename="flags/hm.png" dithering="none" />
     <bitmap id="hn" filename="flags/hn.png" dithering="none" />
     <bitmap id="hr" filename="flags/hr.png" dithering="none" />
     <bitmap id="ht" filename="flags/ht.png" dithering="none" />
     <bitmap id="hu" filename="flags/hu.png" dithering="none" />
+
+    <!-- I -->
     <bitmap id="id" filename="flags/id.png" dithering="none" />
     <bitmap id="ie" filename="flags/ie.png" dithering="none" />
     <bitmap id="il" filename="flags/il.png" dithering="none" />
@@ -119,10 +136,14 @@
     <bitmap id="ir" filename="flags/ir.png" dithering="none" />
     <bitmap id="is" filename="flags/is.png" dithering="none" />
     <bitmap id="it" filename="flags/it.png" dithering="none" />
+
+    <!-- J -->
     <bitmap id="je" filename="flags/je.png" dithering="none" />
     <bitmap id="jm" filename="flags/jm.png" dithering="none" />
     <bitmap id="jo" filename="flags/jo.png" dithering="none" />
     <bitmap id="jp" filename="flags/jp.png" dithering="none" />
+
+    <!-- K -->
     <bitmap id="ke" filename="flags/ke.png" dithering="none" />
     <bitmap id="kg" filename="flags/kg.png" dithering="none" />
     <bitmap id="kh" filename="flags/kh.png" dithering="none" />
@@ -134,6 +155,8 @@
     <bitmap id="kw" filename="flags/kw.png" dithering="none" />
     <bitmap id="ky" filename="flags/ky.png" dithering="none" />
     <bitmap id="kz" filename="flags/kz.png" dithering="none" />
+
+    <!-- L -->
     <bitmap id="la" filename="flags/la.png" dithering="none" />
     <bitmap id="lb" filename="flags/lb.png" dithering="none" />
     <bitmap id="lc" filename="flags/lc.png" dithering="none" />
@@ -145,10 +168,12 @@
     <bitmap id="lu" filename="flags/lu.png" dithering="none" />
     <bitmap id="lv" filename="flags/lv.png" dithering="none" />
     <bitmap id="ly" filename="flags/ly.png" dithering="none" />
+
+    <!-- M -->
     <bitmap id="ma" filename="flags/ma.png" dithering="none" />
     <bitmap id="mc" filename="flags/mc.png" dithering="none" />
     <bitmap id="md" filename="flags/md.png" dithering="none" />
-    <bitmap id="me" filename="flags/me.png" dithering="none" />
+    <bitmap id="me_montenegro" filename="flags/me.png" dithering="none" />
     <bitmap id="mf" filename="flags/mf.png" dithering="none" />
     <bitmap id="mg" filename="flags/mg.png" dithering="none" />
     <bitmap id="mh" filename="flags/mh.png" dithering="none" />
@@ -168,6 +193,8 @@
     <bitmap id="mx" filename="flags/mx.png" dithering="none" />
     <bitmap id="my" filename="flags/my.png" dithering="none" />
     <bitmap id="mz" filename="flags/mz.png" dithering="none" />
+
+    <!-- N -->
     <bitmap id="na" filename="flags/na.png" dithering="none" />
     <bitmap id="nc" filename="flags/nc.png" dithering="none" />
     <bitmap id="ne" filename="flags/ne.png" dithering="none" />
@@ -180,7 +207,11 @@
     <bitmap id="nr" filename="flags/nr.png" dithering="none" />
     <bitmap id="nu" filename="flags/nu.png" dithering="none" />
     <bitmap id="nz" filename="flags/nz.png" dithering="none" />
+
+    <!-- O -->
     <bitmap id="om" filename="flags/om.png" dithering="none" />
+
+    <!-- P -->
     <bitmap id="pa" filename="flags/pa.png" dithering="none" />
     <bitmap id="pe" filename="flags/pe.png" dithering="none" />
     <bitmap id="pf" filename="flags/pf.png" dithering="none" />
@@ -195,12 +226,18 @@
     <bitmap id="pt" filename="flags/pt.png" dithering="none" />
     <bitmap id="pw" filename="flags/pw.png" dithering="none" />
     <bitmap id="py" filename="flags/py.png" dithering="none" />
+
+    <!-- Q -->
     <bitmap id="qa" filename="flags/qa.png" dithering="none" />
+
+    <!-- R -->
     <bitmap id="re" filename="flags/re.png" dithering="none" />
     <bitmap id="ro" filename="flags/ro.png" dithering="none" />
     <bitmap id="rs" filename="flags/rs.png" dithering="none" />
     <bitmap id="ru" filename="flags/ru.png" dithering="none" />
     <bitmap id="rw" filename="flags/rw.png" dithering="none" />
+
+    <!-- S -->
     <bitmap id="sa" filename="flags/sa.png" dithering="none" />
     <bitmap id="sb" filename="flags/sb.png" dithering="none" />
     <bitmap id="sc" filename="flags/sc.png" dithering="none" />
@@ -222,6 +259,8 @@
     <bitmap id="sx" filename="flags/sx.png" dithering="none" />
     <bitmap id="sy" filename="flags/sy.png" dithering="none" />
     <bitmap id="sz" filename="flags/sz.png" dithering="none" />
+
+    <!-- T -->
     <bitmap id="tc" filename="flags/tc.png" dithering="none" />
     <bitmap id="td" filename="flags/td.png" dithering="none" />
     <bitmap id="tf" filename="flags/tf.png" dithering="none" />
@@ -238,12 +277,16 @@
     <bitmap id="tv" filename="flags/tv.png" dithering="none" />
     <bitmap id="tw" filename="flags/tw.png" dithering="none" />
     <bitmap id="tz" filename="flags/tz.png" dithering="none" />
+
+    <!-- U -->
     <bitmap id="ua" filename="flags/ua.png" dithering="none" />
     <bitmap id="ug" filename="flags/ug.png" dithering="none" />
     <bitmap id="um" filename="flags/um.png" dithering="none" />
     <bitmap id="us" filename="flags/us.png" dithering="none" />
     <bitmap id="uy" filename="flags/uy.png" dithering="none" />
     <bitmap id="uz" filename="flags/uz.png" dithering="none" />
+
+    <!-- V -->
     <bitmap id="va" filename="flags/va.png" dithering="none" />
     <bitmap id="vc" filename="flags/vc.png" dithering="none" />
     <bitmap id="ve" filename="flags/ve.png" dithering="none" />
@@ -251,11 +294,19 @@
     <bitmap id="vi" filename="flags/vi.png" dithering="none" />
     <bitmap id="vn" filename="flags/vn.png" dithering="none" />
     <bitmap id="vu" filename="flags/vu.png" dithering="none" />
+
+    <!-- W -->
     <bitmap id="wf" filename="flags/wf.png" dithering="none" />
     <bitmap id="ws" filename="flags/ws.png" dithering="none" />
+
+    <!-- X -->
     <bitmap id="xk" filename="flags/xk.png" dithering="none" />
+
+    <!-- Y -->
     <bitmap id="ye" filename="flags/ye.png" dithering="none" />
     <bitmap id="yt" filename="flags/yt.png" dithering="none" />
+
+    <!-- Z -->
     <bitmap id="za" filename="flags/za.png" dithering="none" />
     <bitmap id="zm" filename="flags/zm.png" dithering="none" />
     <bitmap id="zw" filename="flags/zw.png" dithering="none" />
