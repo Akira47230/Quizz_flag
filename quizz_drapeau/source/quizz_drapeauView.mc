@@ -1,4 +1,4 @@
-// source/quizz_drapeauView.mc - Version complète pour tous les pays ISO 3166-1 alpha-2
+// source/quizz_drapeauView.mc - Version modifiée pour centrer les propositions
 import Toybox.Graphics;
 import Toybox.WatchUi;
 import Toybox.Lang;
@@ -127,12 +127,39 @@ class quizz_drapeauView extends WatchUi.View {
                        flagId.toUpper(), Graphics.TEXT_JUSTIFY_CENTER);
         }
 
-        // Options de réponse (3 choix)
+        // Options de réponse (3 choix) - VERSION MODIFIÉE AVEC LARGEUR DYNAMIQUE
         var answers = question[:answers] as Array;
-        var buttonsStartY = (height * 0.57).toNumber();
-        var buttonHeight = (height * 0.12).toNumber();
-        var buttonMargin = (width * 0.15).toNumber();
+        var buttonsStartY = (height * 0.52).toNumber(); // Remonté de 0.57 à 0.52
+        var buttonHeight = (height * 0.10).toNumber(); // Réduit de 0.12 à 0.10 pour rapprocher
         var selectedIndex = getSelectedAnswerIndex();
+        
+        // Calculer la largeur nécessaire pour le texte le plus long
+        var maxTextWidth = 0;
+        var padding = 20; // Padding horizontal dans chaque bouton
+        var minButtonWidth = width * 0.4; // Largeur minimum (40% de l'écran)
+        var maxButtonWidth = width * 0.85; // Largeur maximum (85% de l'écran)
+        
+        for (var i = 0; i < answers.size(); i++) {
+            var answerText = answers[i] as String;
+            var textDimensions = dc.getTextDimensions(answerText, Graphics.FONT_XTINY);
+            var textWidth = textDimensions[0];
+            if (textWidth > maxTextWidth) {
+                maxTextWidth = textWidth;
+            }
+        }
+        
+        // Calculer la largeur optimale des boutons
+        var buttonWidth = maxTextWidth + padding;
+        if (buttonWidth < minButtonWidth) {
+            buttonWidth = minButtonWidth.toNumber();
+        } else if (buttonWidth > maxButtonWidth) {
+            buttonWidth = maxButtonWidth.toNumber();
+        } else {
+            buttonWidth = buttonWidth.toNumber();
+        }
+        
+        // Calculer la marge pour centrer les boutons
+        var buttonMargin = (width - buttonWidth) / 2;
         
         for (var i = 0; i < answers.size(); i++) {
             var y = buttonsStartY + (i * buttonHeight);
@@ -141,14 +168,16 @@ class quizz_drapeauView extends WatchUi.View {
             var buttonColor = isSelected ? 0x1E5631 : 0x110323ff;
             var textColor = Graphics.COLOR_WHITE;
             
-            dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
-            dc.fillRoundedRectangle(buttonMargin, y, width - (2 * buttonMargin), 
-                                  (buttonHeight * 0.8).toNumber(), 3);
+            var buttonActualHeight = (buttonHeight * 0.9).toNumber();
             
+            dc.setColor(buttonColor, Graphics.COLOR_TRANSPARENT);
+            dc.fillRoundedRectangle(buttonMargin, y, buttonWidth, buttonActualHeight, 3);
+            
+            // Texte parfaitement centré dans le bouton
+            var textY = y + (buttonActualHeight / 2) - 6;
             dc.setColor(textColor, Graphics.COLOR_TRANSPARENT);
             var answerText = answers[i] as String;
-            dc.drawText(screenCenterX, y + (buttonHeight * 0.2).toNumber(), 
-                       Graphics.FONT_XTINY, answerText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.drawText(screenCenterX, textY, Graphics.FONT_XTINY, answerText, Graphics.TEXT_JUSTIFY_CENTER);
         }
     }
 
